@@ -1,0 +1,68 @@
+<ion-modal-view class="bottom-padd modal-shape-Replies" ng-controller="RepliesCtrl">
+  <ion-header-bar class="bar bar-header bar-assertive modal-header">
+    <h1 class="title modal-title">Replies</h1>
+    <button class="button button-clear button-primary icon ion-ios-close-empty close-padd2 close-button" title="Cancel" 
+		ng-click="modalReplies.hide()">
+    </button>
+  </ion-header-bar>
+  
+  <ion-content class="modal-content">
+	  
+	  <div align="center">
+         <div class="replies-layer1"> 
+          <div class="replies-layer2">
+            
+			<ion-list>
+			
+               <ion-item id="rounded-rectangle" class="card card-color replies-item" ng-repeat="reply in rayz.replies">
+                  <div class="card-header text-left">
+                     <span id="item-icon-clock"> <i class="icon ion-clock"> {{reply.timestamp}}</i></span>
+                     <i class="icon report-red-icon" id="item-icon-alert" ng-show="reply.report !== 0"></i>
+                     <i class="icon ion-chevron-down" id="item-icon-chevron"
+                        ng-click="openPopover($event,reply.rayzReplyId,'replyId')">
+					 </i>
+                  </div>
+
+                  <div class="item item-body item-message-copyable">
+                     <div id="rayz-letters">{{reply.rayz_reply_message}}</div>
+                  </div>
+
+                  <div id="card-footer-icons">
+					  <span class="card-footer">
+						 <span class="power-small-text">power {{reply.upVotes}}</span>
+					  </span>
+                  </div>
+
+                  <div id="message-tabs2">
+                     <div class="item tabs tabs-icon-left">
+                        <a class="tab-item button-raised ink-dark message-tabs-power-up"   
+                           ng-click="powerUp(reply.rayzReplyId)" data-ink-color="#444444" data-ink-opacity="0.3">
+                           <i class="icon powerUp-big-icon message-tabs-power-up-icon"></i>         
+                           <span class="star-big-text2">Power up</span>
+                        </a>
+                        <a class="tab-item button-raised ink-dark message-tabs-power-down" 
+                           ng-click="powerDown(reply.rayzReplyId)" data-ink-color="#444444" data-ink-opacity="0.3">
+                           <i class="icon powerDown-big-icon message-tabs-power-down-icon"></i> 
+                           <span class="rerayz-big-text2">Power down</span>
+                        </a>
+                     </div>
+                  </div>
+               </ion-item>
+			   
+            </ion-list>
+			
+         </div>
+       </div>
+     </div>
+ 
+  </ion-content>
+  
+  <div class="replies-outer-layer-button">      
+	  <button class="button button-raised reply-blue ink-dark replies-inner-layer-button" ng-click='openModal("new-reply")'>                            
+		 <span class="replies-button-text">
+			<strong>New Reply</strong> 
+		 </span>
+	   </button>
+   </div>
+	
+</ion-modal-view>

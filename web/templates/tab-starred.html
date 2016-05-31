@@ -1,0 +1,127 @@
+<ion-nav-bar class="bar-assertive">
+   <ion-nav-title class="title-style">
+
+      <div class="title-layer1" align="center">
+         <div class="title-layer2">
+
+            <div class="left-padd title-float-left">
+               <div class="item tabs tabs-icon-top tabs-striped tabs-background-assertive tabs-color-stable title-tabs">
+
+                  <a icon-on="livefeed-on" icon-off="livefeed-off" href="#/tab/livefeed"
+                     ng-class="{'tab-item-active': false, 'has-badge':badge, 'tab-hidden':isHidden()}"
+                     ng-disabled="disabled()" class="tab-item title-livefeed-off">
+
+                     <i class="icon livefeed-off"></i>
+                     <span class="tab-title ng-binding">Live Feed</span>
+                  </a>
+
+                  <a icon-on="radar-on" icon-off="radar-off" href="#/tab/nearby"
+                     ng-class="{'tab-item-active': false, 'has-badge':badge, 'tab-hidden':isHidden()}"
+                     ng-disabled="disabled()" class="tab-item title-nearby-off">
+
+                     <i class="icon radar-off"></i>
+                     <span class="tab-title ng-binding">Nearby</span>
+                  </a>
+
+                  <a icon-on="star-on" icon-off="star-off" href="#/tab/starred"
+                     ng-class="{'tab-item-active': true, 'has-badge':badge, 'tab-hidden':isHidden()}"
+                     ng-disabled="disabled()" class="tab-item tab-item-active title-starred-on">
+
+                     <i class="icon star-on"></i>
+                     <span class="tab-title ng-binding">Starred</span>
+                  </a>
+
+               </div>
+            </div>
+			
+            <div class="title-float-center">
+               <a href="http://rayzit.com/" target="_blank" class="title-link-icon">
+                  <img src="img/logo.png" class="shadow"/>
+               </a>
+            </div>
+			
+            <div align="right" class="right-padd title-float-right">
+			   <button class="button button-clear ion-compose title-button-compose" ng-click='openModal("new-rayz")'></button>
+			   <button class="button button-clear ion-gear-a title-button-settings" ng-click='openModal("settings")'></button>
+            </div>
+
+         </div>
+      </div>
+
+   </ion-nav-title>
+</ion-nav-bar>
+
+
+<ion-view ng-controller="StarredCtrl">
+   <div style="display: block;" id="main-loading-outter" class="spinner3">
+      <div id="main-loading-container">
+         <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+         </svg>
+      </div>
+   </div>
+   <ion-content class="padding ion-content-marging">
+
+      <div align="center">
+         <div ng-show="!starredRayzs.length" class="no-rayzs-position">
+            <h3 class="no-rayzs-font1">It's lonely here :(</h3>
+            <h4 class="no-rayzs-font2">Go star a rayz, don't be
+               shy!</h4>
+         </div>
+
+         <div ng-show="starredRayzs.length">
+            <ion-list>
+               <ion-item id="rounded-rectangle" class="card card-color item-width" ng-repeat="rayz in starredRayzs">
+
+                  <div class="card-header text-left">
+                     <span id="item-icon-clock"> <i class="icon ion-clock"> {{rayz.timestamp}}</i></span>
+                     <i class="icon report-red-icon" id="item-icon-alert" ng-show="rayz.report !== 0"></i>
+                     <i class="icon ion-chevron-down" id="item-icon-chevron" ng-click="openPopover($event,rayz.rayzId,'rayzId')"></i>
+                  </div>
+
+                  <div class="item item-body item-message-copyable">
+                     <div id="rayz-letters">{{rayz.rayz_message}}</div>
+                  </div>
+
+                  <div id="card-footer-icons">
+					  <span class="card-footer">
+						<i class="icon"></i>
+						<i class="icon star-small-icon"><span class="star-small-text"> {{rayz.follow}} </span></i>
+						<i class="icon rerayz-small-icon"><span class="rerayz-small-text"> {{rayz.rerayz}} </span></i>
+						<i class="icon replies-small-icon"><span class="replies-small-text"> {{rayz.answers}} </span></i>
+					  </span>
+
+                     <i class="icon ion-android-globe globe-small-icon">
+						<span class="distance-small-text">{{rayz.maxDistance}}</span>
+					 </i>
+                  </div>
+
+                  <div id="message-tabs">
+					  <div class="item tabs tabs-icon-left message-tabs-background-color">
+						 <a class=" tab-item button-clear message-tabs-star"
+							ng-click="starToggle(rayz.rayzId, 'main-tabs')" data-ink-color="#444444" data-ink-opacity="0.3">
+							<i class="icon star-big-icon message-tabs-star-icon"></i>
+							<span class="star-big-text">{{rayz.starByMe}}</span>
+						 </a>
+						 <a class="tab-item button-clear message-tabs-rerayz"
+							ng-click="rerayzItem(rayz.rayzId, 'main-tabs')" data-ink-color="#444444" data-ink-opacity="0.3">
+							<i class="icon rerayz-big-icon message-tabs-rerayz-icon"></i>
+							<span class="rerayz-big-text">Rerayz</span>
+						 </a>
+						 <a class="tab-item button-clear message-tabs-replies"
+							ng-click="setRayzId_Replies(rayz)" data-ink-color="#444444" data-ink-opacity="0.3">
+							<i class="icon replies-big-icon message-tabs-replies-icon"></i>
+							<span class="replies-big-text">Replies</span>
+						 </a>
+					  </div>
+				   </div>
+
+               </ion-item>
+            </ion-list>
+
+            <br><br>
+         </div>
+      </div>
+   </ion-content>
+
+</ion-view>

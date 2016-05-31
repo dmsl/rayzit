@@ -1,0 +1,105 @@
+<ion-modal-view class="bottom-padd height-resize modal-shape-Settings" ng-controller="SettingsCtrl">
+  <ion-header-bar class="bar bar-header bar-assertive modal-header">
+    <h1 class="title modal-title">Settings</h1>
+    <button class="button button-clear button-primary icon ion-ios-close-empty close-padd close-button"
+		title="Cancel" ng-click="modalSettings.hide()">
+    </button>
+  </ion-header-bar>
+  
+  <ion-content  class="settings-scroll modal-content" style="overflow-y:hidden;">
+	  
+	  <div align="center">
+         <div class="settings-layer1">
+          <div class="settings-layer2">
+		  
+            <ion-list>
+               <h6 class="settings-rayz-title" align="left">
+                  <div class="ion-email settings-rayz-icon"></div>
+                  <div class="settings-rayz-letters">RAYZ</div>
+               </h6>
+
+               <ion-item class="settings_letters settings-item-metric">
+                  <div class="settings-metric"> 
+                     <h2 class="settings-metric-title">Distance Metric</h2>
+                  </div>
+				  
+                  <div class="settings-select-metric"> 
+					 <label class="item item-input item-select settings-select-metric-label">
+                        <select id="settings-select-metric-select">
+                           <option value="kilometers" class="settings-select-option">kilometers</option> 
+                        </select>
+                     </label>
+                  </div>
+               </ion-item>
+
+               <ion-item class="settings_letters settings-item-distance">
+                  <div class="settings-distance">
+                     <h2 class="settings-distance-title1">Maximum Sending</h2>
+                     <h2 class="settings-distance-title2">Distance</h2>
+                  </div>
+
+                  <div class="settings-select-distance"> 
+					 <label class="item item-input item-select settings-select-distance-label">
+                        <select ng-model="data.selectDistance" ng-change="updateMaxDistance(data.selectDistance)"
+                                id="settings-select-distance-select">
+                           <option value="unlimited" class="settings-select-option">unlimited</option> 
+                           <option value="0.5 km" class="settings-select-option">0.5 km</option>
+                           <option value="5 km" class="settings-select-option">5 km</option>
+                           <option value="50 km" class="settings-select-option">50 km</option>
+                           <option value="500 km" class="settings-select-option">500 km</option>
+                           <option value="5000 km" class="settings-select-option">5000 km</option>
+                        </select>
+                     </label>
+                  </div>
+               </ion-item>
+
+               <ion-item class="settings_letters settings-item-star"> 		 
+                  <h2 class="settings-star-title1">Auto-star Rayz </h2> 
+                  <h2 class="settings-star-title2">I Reply To</h2> 
+
+                  <div align="right"> 
+                     <ion-toggle ng-model="auto_star.checked"
+                                 ng-change="updateAutoStar('Auto-star')"
+                                 toggle-class="toggle-assertive"
+                                 class="settings-star-toggle"> 
+                     </ion-toggle>
+                  </div>
+               </ion-item>
+
+               <div class="settings-layer3"> 
+			   
+                  <h6 class="settings-location-title" align="left"> 
+                     <div class="ion-location settings-location-icon"></div> 
+                     <div class="settings-location-letters">LOCATION</div> 
+                  </h6>
+
+                  <ion-item class="settings_letters settings_item settings-item-location">
+					 <h2 class="settings-item-location-title">Location</h2> 
+                     <div align="right">
+                        <ion-toggle ng-model="location.checked"
+                                    ng-change="updateLocation('Location')"
+                                    toggle-class="toggle-assertive"
+                                    class="settings-location-toggle"> 
+                        </ion-toggle>
+                     </div>
+                  </ion-item>
+
+                  <div class="item  item-body settings_item_body">
+                     <div class="item item-body settings_item_body settings-location-descr"> 
+                        <div class="settings-location-descr-color">Why should i keep location on?</div>   
+                        Location allows you to send and receive accurate location based messages. If it is turned off,
+                        you will receive rayz messages based on your last known location and you may miss important
+                        rayz messages around you!
+                     </div>
+                  </div>
+				  
+               </div>
+
+            </ion-list>
+    
+    	</div>
+      </div>
+    </div>
+ 
+  </ion-content>
+</ion-modal-view>

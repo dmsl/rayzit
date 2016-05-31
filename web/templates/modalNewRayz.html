@@ -1,0 +1,82 @@
+<ion-modal-view class="modal-padd modal-shape-New-R" ng-controller="NewRayzCtrl">
+  <ion-header-bar class="bar bar-header bar-assertive modal-header">
+    <h1 class="title modal-title">Create new Rayz</h1>
+    <button class="button button-clear button-primary icon ion-ios-close-empty close-button" title="Cancel" 
+		ng-click="modalNewRayz.hide()">
+    </button>
+  </ion-header-bar>
+  
+  <ion-content class="modal-content" style="overflow-y: hidden;">
+    
+	<div align="center" class="modal-newR-layer1">         
+            <div class="modal-newR-layer2">         
+			
+			    <div id="main-loading-outter" class="spinner4 modal-newR-spinner4">   
+				   <div id="main-loading-container2">
+					  <svg class="circular" viewBox="25 25 50 50">
+						 <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+					  </svg>
+				   </div>
+				</div>
+				
+				<textarea rows="4" cols="40" class="ng-valid ng-valid-required ng-dirty form-control modal-newR-textarea" 
+				    placeholder="Rayz your message..." ng-model="messageModel" name="title" type="text" id="messageArea">	   
+				</textarea>
+
+               <div align="left" class="modal-newR-layer3">   
+                  <div class="list modal-newR-layer4">
+				  
+                     <i class="icon ion-android-globe globe-small-icon modal-newR-globe-icon"></i>   
+                     <label class="item item-input item-select modal-newR-select-label">
+                        <select id="rayz-temp-distance" ng-model="selectSendDistance" ng-change="updateSendDistance(selectSendDistance)"
+                                class="modal-newR-select" style="color: rgb(228, 67, 35)!important;">   
+                           <option value="unlimited" class="modal-newR-select-option">unlimited</option>    
+                           <option value="0.5 km" class="modal-newR-select-option">0.5 km</option>
+                           <option value="5 km" class="modal-newR-select-option">5 km</option>
+                           <option value="50 km" class="modal-newR-select-option">50 km</option>
+                           <option value="500 km" class="modal-newR-select-option">500 km</option>
+                           <option value="5000 km" class="modal-newR-select-option">5000 km</option>
+                        </select>
+                     </label>
+
+                  </div>
+               </div>
+
+               <div class="modal-newR-power-text1">    
+                  {{power}}/100
+               </div>
+			   
+               <div class="modal-newR-outer-progress1">        
+                  <div class=" progress modal-newR-inner-progress">   
+                     <div ng-style="{'width': power + '%'}" id="progressBar" 
+					      class="power-bar active progress-bar progress-bar-striped modal-newR-progress-bar" 
+                          role="progressbar" aria-valuemin="0" aria-valuenow="100" aria-valuemax="100">   
+                     </div>
+                  </div>
+                  <br></br><br></br>         
+			   </div>
+			   
+            </div>
+
+            <div class="modal-newR-layer5"> 
+			   <div class="modal-newR-send-outer"> 
+				   <button class="button button-raised button-assertive ink-dark modal-newR-send-button" 
+						   ng-click="sendRayz(messageModel)">
+					  <span class="modal-newR-send-text">Rayz</span>   
+					  <i class="icon airplane-send-icon modal-newR-send-icon"></i>    
+				   </button>
+			   </div>
+			   
+			   <div class="modal-newR-clear-outer">  
+				   <button class="button button-raised button-assertive ink-dark" id="modal-newR-clear-button"
+  				           ng-click="clearRayzArea()">
+					  <span class="modal-newR-clear-text">Clear</span> 
+					  <i class="ion-close-circled customIconClose modal-newR-clear-icon"></i> 
+				   </button>
+			   </div>
+            </div>
+
+      </div>
+ 
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,64 @@
+<ion-modal-view class="modal-padd modal-shape-New-R" ng-controller="NewReplyCtrl">
+  <ion-header-bar class="bar bar-header bar-assertive modal-header">
+    <h1 class="title modal-title">Create new Reply</h1>
+    <button class="button button-clear button-primary icon ion-ios-close-empty close-button" title="Cancel" 
+		ng-click="modalNewReply.hide()">
+    </button>
+  </ion-header-bar>
+  
+  <ion-content class="modal-content" style="overflow-y: hidden;">
+    
+	<div align="center" class="modal-newR-layer1">                 
+            <div class="modal-newR-layer2">                
+			
+			    <div id="main-loading-outter" class="spinner5 modal-newR-spinner5">   
+				   <div id="main-loading-container2">
+					  <svg class="circular" viewBox="25 25 50 50">
+						 <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+					  </svg>
+				   </div>
+				</div>
+				
+				<textarea rows="4" cols="40" class="ng-valid ng-valid-required ng-dirty form-control modal-newR-textarea" 
+				    placeholder="Rayz your answer..." ng-model="messageModel" name="title" type="text" id="messageArea2">	   
+				</textarea>
+
+               <div class="modal-newR-power-text2">
+                  {{power}}/100
+               </div>
+
+
+               <div class="modal-newR-outer-progress2">    
+                  <div class=" progress modal-newR-inner-progress">   
+                     <div aria-valuemin="0" aria-valuenow="100" aria-valuemax="100"
+					      ng-style="{'width': power + '%'}" id="progressBar2" role="progressbar"
+					      class="power-bar active progress-bar progress-bar-striped modal-newR-progress-bar">    
+                     </div>
+                  </div>
+                  <br></br><br></br>         
+			   </div>
+			   
+            </div>
+
+            <div class="modal-newR-layer5"> 
+			   <div class="modal-newR-send-outer2">  
+				   <button class="button button-raised button-assertive ink-dark" id="modal-newR-send-button2"
+						   ng-click="sendRayzReply(messageModel)">
+					  <span class="modal-newR-send-text">Reply</span>  
+					  <i class="icon airplane-send-icon modal-newR-send-icon"></i>  
+				   </button>
+			   </div>
+			   
+			   <div class="modal-newR-clear-outer">  
+				   <button class="button button-raised button-assertive ink-dark" id="modal-newR-clear-button"
+  				           ng-click="clearReplyArea()">
+					  <span class="modal-newR-clear-text">Clear</span> 
+					  <i class="ion-close-circled customIconClose modal-newR-clear-icon"></i> 
+				   </button>
+			   </div>
+            </div>
+
+      </div>
+ 
+  </ion-content>
+</ion-modal-view>
