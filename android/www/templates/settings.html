@@ -1,0 +1,125 @@
+<ion-view view-title="Settings" ng-controller="SettingsCtrl" tabs-item-hide class="view-top">
+  <div
+    style="width:100%; height:10px; background-color: black; z-index:9999999; position:absolute; top:34px;box-shadow: 0px 2px 5px 0px #888;"></div>
+
+  <ion-content>
+
+    <div class="view-top">
+      <div class="white-line1"></div>
+      <div class="white-line2"></div>
+      <h6 style="position:relative;left: 30px; top: 5px;">
+        <div class="ion-email"
+             style="font-size:20px; position:relative; top: 19px; right: 8px; color: #243E3F !important;"></div>
+        <div style="position: relative; left: 14px; color: #243E3F !important; font-weight:bold;">RAYZ</div>
+      </h6>
+
+      <div class="card custom-card" style="border-radius: 11px !important;position: relative; bottom: 10px;">
+        <ion-list>
+          <ion-item class="settings_letters settings_item item-icon-right"
+                    style="margin-top: -2px; border-top: 0px!important; height: 46px !important;  z-index: auto !important; "
+                    href="#distance-metric">
+
+            <div style="position:relative; bottom: 11px; right:10px;">
+              <h2 style="position:relative;left: 5px; color:#202020;">Distance Metric</h2>
+
+              <div style="position:relative;bottom:5px; left:70px;"><i
+                class="icon ion-chevron-right icon-accessory"></i>
+              </div>
+              <h4 style="position:relative;left: 5px; color:#737373; font-weight: normal;">kilometers</h4>
+            </div>
+
+          </ion-item>
+
+          <ion-item class="settings_letters settings_item item-icon-right"
+                    style="height: 46px !important;  z-index: auto !important;" href="#select-distance">
+
+            <div style="position:relative; bottom: 11px;">
+              <h2 style="position:relative;right: 5px; color:#202020; overflow: visible !important;">Maximum sending
+                distance</h2>
+
+              <div style="position:relative;bottom:5px; left:59px;"><i
+                class="icon ion-chevron-right icon-accessory"></i></div>
+              <h4 style="position:relative;right: 5px; color:#737373;font-weight: normal;">
+                {{$root.data.selectDistance}}</h4>
+            </div>
+
+          </ion-item>
+
+          <ion-item class="settings_letters settings_item"
+                    style="margin-bottom: 4px; border-bottom: 0px solid white !important; height: 48px !important;">
+            <h2 style=" position:relative;right: 5px; bottom: 4px; color:#202020; z-index:999; width:170px;">Auto-star rayz i reply
+              to</h2>
+
+            <div align="right">
+            <ion-toggle ng-model="auto_star.checked"
+                        ng-change="updateAutoStar('Auto-star')"
+                        toggle-class="toggle-positive"
+                        style="left:20px; position: relative; bottom: 24px; width: 0px!important; height: 43px;z-index: 9999!important;">
+            </ion-toggle>
+           </div>
+            <br>
+          </ion-item>
+        </ion-list>
+      </div>
+
+
+      <div style="position:relative; bottom: 6px;">
+        <h6 style="position:relative;left: 30px; top: 5px; color:#95949A; ">
+          <div class="ion-location"
+               style="font-size:18px;  position:relative; top: 15px; right: 8px; color: #243E3F !important;"></div>
+          <div style="position: relative; left: 7px; bottom: 2px; color: #243E3F !important; font-weight:bold;">
+            LOCATION
+          </div>
+        </h6>
+
+
+        <div class="card custom-card" style=" border-radius: 11px !important;position: relative; bottom: 10px;">
+          <ion-list>
+            <div
+              style="height:5px; border-right: 1px solid #D0D0D2; border-left: 1px solid #D0D0D2; z-index:1!important;"></div>
+            <ion-item class="settings_letters settings_item "
+                      style="margin-top: 4px; border-top: 0px!important; border-bottom: 0px!important; z-index:999; height: 40px !important; ">
+              <h2 style="position:relative;right: 5px; bottom: 4px; color:#202020; width:80px;">Location</h2>
+
+             <div align="right">
+              <ion-toggle ng-model="location.checked"
+                          ng-change="updateLocation('Location')"
+                          toggle-class="toggle-positive"
+                          style="left:20px; height:40px;  position:relative; bottom: 30px; width: 0px;height: 43px;z-index: 9999!important;">
+              </ion-toggle>
+             </div>
+            </ion-item>
+            <div
+              style="height:5px; border-right: 1px solid #D0D0D2; border-left: 1px solid #D0D0D2; z-index:1!important;"></div>
+            <ion-item class="settings_letters settings_item "
+                      style="margin-bottom: 5px;  border-top: 0px!important; border-bottom: 0px!important; z-index:999; top:0px;">
+
+              <div class="item item-body settings_item_body"
+                   style="margin-bottom: -40px; margin-right: -30px; position:relative; bottom: 20px; right:20px; border-bottom: 1px solid #000000;">
+
+                <div style="color: #E44323;">Why should i keep location on?</div>
+                <span style="color:#737373;">
+                  Location allows you to send and receive accurate location based messages. If it is turned off, you
+                  will receive rayz messages based on your last known location and you may miss important rayz
+                  messages around you!
+                </span>
+
+                <div style="position:relative; top:12px;">
+                  <div style="color: #E44323; ">Does location use GPS and drains my battery?</div>
+                <span style="color:#737373;">
+                  No. Location uses a cell-tower based location service instead of GPS positioning.
+                  This does not cause excessive battery consumption.
+                </span>
+                </div>
+
+              </div>
+            </ion-item>
+
+          </ion-list>
+        </div>
+      </div>
+
+    </div>
+  </ion-content>
+
+</ion-view>

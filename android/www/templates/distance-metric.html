@@ -1,0 +1,35 @@
+<ion-view ng-controller="SettingsCtrl" tabs-item-hide>
+  <ion-nav-title>
+    <h1 class="title">Select Metric</h1>
+  </ion-nav-title>
+  <div style="width:100%; height:10px; background-color: black; z-index:9999999; position:absolute; top:34px;box-shadow: 0px 2px 5px 0px #888;"></div>
+
+  <ion-content>
+    <div style="position: relative; bottom: 43px;">
+      <div style="position: relative; top:60px;">
+        <div
+          style="position: relative; left: 22px; bottom: 5px; font-size:16px; color: #243E3F !important; font-weight: bold;">
+          distance metric
+        </div>
+
+      </div>
+
+      <ion-list style="position: relative; top:62px;">
+        <label class="item item-icon-left item-radio settings_item" style="height: 50px;">
+          <input type="radio" name="distanceMetric" value="kilometers" ng-model="data2.selectDistanceMetric">
+
+          <div class="item-content " style="position: relative; left: 7px;">
+            <h2 style="color:#626262;">kilometers</h2>
+          </div>
+          <i class="radio-icon ion-android-checkbox-outline "
+             style="color:#243E3F; font-size:30px; position:absolute; right:3px; top:-10px;"></i>
+          <i class="ion-android-checkbox-outline-blank"
+             style="position: relative; bottom: 48px; font-size: 30px; color: #E9E9E9;"
+             ng-style="{'left': settings_check + 'px'}"></i>
+        </label>
+
+      </ion-list>
+    </div>
+  </ion-content>
+
+</ion-view>

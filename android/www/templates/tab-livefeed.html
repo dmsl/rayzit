@@ -1,0 +1,87 @@
+<ion-view view-title="Live Feed" ng-controller="LivefeedCtrl">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" ng-class="active" class="c-hamburger c-hamburger--htla" ng-click="fun()">
+      <span>toggle menu</span>
+    </button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button ng-show="!$root.refresh" ng-class="active"
+            class="button button-icon button-clear ion-android-refresh refreshButton" ng-click="refresh()">
+    </button>
+    <div id="main-loading-container2" class="refresher" ng-show="$root.refresh">
+      <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>
+    </div>
+  </ion-nav-buttons>
+
+  <ion-content class="padding" on-swipe-left="onSwipeLeft()">
+
+    <div style="display: block;" id="main-loading-outter" class="spinner1">
+      <div id="main-loading-container">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+        </svg>
+      </div>
+    </div>
+
+    <div style="height:10px;"></div>
+
+    <ion-list style="font-family: RobotoDraft,Roboto;">
+      <ion-item id="rounded-rectangle" class="card card-color" ng-repeat="rayz in livefeed"
+
+                style="margin-top:-10px!important;margin-left:-3px !important;margin-right:-3px!important; border: medium none;font-size: 14px; padding:0px;">
+
+        <div class="card-header text-left" style="z-index:99!important;" ng-click="setRayzId_Replies(rayz)">
+          <span id="item-icon-clock"> <i class="icon ion-clock"> {{rayz.timestamp}}</i></span>
+          <i class="icon report-red-icon" id="item-icon-alert" ng-show="rayz.report !== 0"></i>
+        </div>
+        <div style="position: absolute; right:0px; top:2px; height:30px;width:40px; z-index: 99999!important;"
+             ng-click="showActionsheetRayzs(rayz.rayzId, rayz.rayz_message)">
+          <i class="icon icon-right ion-chevron-down" id="item-icon-chevron"></i>
+        </div>
+
+        <div ng-click="setRayzId_Replies(rayz)">
+          <div class="item item-body">
+            <div id="rayz-letters">{{rayz.rayz_message}}</div>
+          </div>
+
+          <div id="card-footer-icons">
+              <span class="card-footer">
+                 <i class="icon"></i>
+               <i class="icon star-small-icon"><span class="star-small-text"> {{rayz.follow}} </span></i>
+               <i class="icon rerayz-small-icon"><span class="rerayz-small-text"> {{rayz.rerayz}} </span></i>
+               <i class="icon replies-small-icon"><span class="replies-small-text"> {{rayz.answers}} </span></i>
+              </span>
+
+            <i class="icon ion-android-globe globe-small-icon"><span
+              class="distance-small-text">{{rayz.maxDistance}}</span></i>
+          </div>
+        </div>
+        <div id="message-tabs">
+          <div class="item tabs tabs-icon-left " style="background-color:#F8F8F8!important;">
+            <a class=" tab-item tabsR" ng-click="starToggle(rayz.rayzId, 'main-tabs')">
+              <i class="icon star-big-icon"></i>
+              <span class="star-big-text">{{rayz.starByMe}}</span>
+            </a>
+            <a class="tab-item tabsR" ng-click="rerayzItem(rayz.rayzId, 'main-tabs')">
+              <i class="icon rerayz-big-icon"></i>
+              <span class="rerayz-big-text">Rerayz</span>
+            </a>
+          </div>
+        </div>
+
+      </ion-item>
+    </ion-list>
+
+    <div style="height:60px;"></div>
+  </ion-content>
+
+  <div style="position:relative; bottom:0px;  width:100%; height:0px; background-color: white;" align="right">
+    <button class="button-fab-bottom-right button-fab color-assertive " ng-hide="hideValL"
+            ng-click="getCurrentPower('new-rayz')">
+      <i class="icon ion-android-create"></i>
+    </button>
+  </div>
+
+</ion-view>

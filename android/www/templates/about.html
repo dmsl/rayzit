@@ -1,0 +1,115 @@
+<ion-view view-title="About" ng-controller="AboutCtrl" tabs-item-hide>
+  <div style="width:100%; height:10px; background-color: black; z-index:9999999;  position:absolute; top:34px;box-shadow: 0px 2px 5px 0px #888;"></div>
+
+  <ion-content style="margin-bottom:-80px!important;">
+    <div class="view-top">
+      <div class="white-line8"></div>
+      <div class="white-line9"></div>
+      <div class="white-line10"></div>
+
+      <ion-list>
+
+        <div style="position:relative; bottom: 6px;">
+          <h5 style="position:relative;left: 30px; top: 5px; color:#95949A; ">
+            <div class="ion-android-phone-portrait"
+                 style="font-size:18px;  position:relative; top: 16px; right: 8px; color: #243E3F !important;"></div>
+            <div style="position: relative; left: 9px; bottom: 2px; color: #243E3F !important; font-weight: bold;">
+              version
+            </div>
+          </h5>
+
+
+          <div class="card custom-card" style="border-radius: 11px !important;position: relative; bottom: 10px; ">
+            <ion-list>
+              <ion-item class="settings_letters settings_item"
+                        style="border-top: 0px!important; border-bottom: 0px!important;height: 40px !important; ">
+                <h2 style="position:relative;right: 5px; bottom: 7px; color:#202020;">1.1.0</h2>
+              </ion-item>
+            </ion-list>
+          </div>
+        </div>
+
+        <div style="position: relative;bottom: 25px;">
+          <h5 style="position:relative;left: 30px; top: 1px;">
+            <div class="ion-information-circled"
+                 style="font-size:18px; position:relative; top: 18px; right: 8px; color: #243E3F !important;"></div>
+            <div style="position: relative; left: 14px; color: #243E3F !important; font-weight: bold;">information</div>
+          </h5>
+          <div class="card custom-card" style=" border-radius: 11px !important;position: relative; bottom: 10px;">
+            <ion-list >
+              <ion-item class=" settings_letters settings_item item-icon-right"
+                        style=" z-index: auto !important; position: relative; bottom: 3px;  height: 43px;"
+                        ng-click="openUrl('http://rayzit.com', '_blank', 'location=no')">
+
+                <h2 style="position:relative; bottom:5px; right: 5px; color:#202020;">Send Feedback</h2>
+                <div style="position:relative;bottom:16px; left:60px;"><i
+                  class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+              <ion-item class="settings_letters settings_item item-icon-right"
+                        style="z-index: auto !important; position: relative; bottom: 3px;  height: 43px;"
+                        ng-click="openUrl('http://rayzit.com/tos/', '_blank', 'location=no')">
+                <h2 style="position:relative;right: 5px; bottom:5px; color:#202020;">Term of Service</h2>
+                <div style="position:relative;bottom:16px; left:60px;"><i
+                  class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+              <ion-item class="settings_letters settings_item item-icon-right"
+                        style=" z-index: auto !important; position: relative; bottom: 3px;  height: 43px;"
+                        ng-click="openUrl('http://rayzit.com/rules/', '_blank', 'location=no')">
+                <h2 style="position:relative;right: 5px;bottom:5px; color:#202020;">Rules</h2>
+                <div style="position:relative;bottom:16px; left:60px;"><i
+                  class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+              <ion-item class="settings_letters settings_item item-icon-right"
+                        style="margin-bottom: -6.5px; border-bottom: 0px!important; z-index: auto !important; position: relative; bottom: 3px;  height: 44px;"
+                        ng-click="openUrl('http://rayzit.com/privacy/', '_blank', 'location=no')">
+                <h2 style="position:relative;right: 5px; bottom:6px;color:#202020;">Privacy Policy</h2>
+                <div style="position:relative;bottom:16px; left:60px;"><i
+                  class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+
+            </ion-list>
+          </div>
+        </div>
+
+        <div style="position: relative; bottom: 25px;">
+          <h5 style="position:relative;left: 30px; bottom: 15px;">
+            <div class="ion-document-text"
+                 style="font-size:18px; position:relative; top: 18px; right: 8px; color: #243E3F !important;"></div>
+            <div style="position: relative; left: 9px; color: #243E3F !important; font-weight: bold;">description</div>
+          </h5>
+          <br>
+
+
+          <div class="card custom-card" style="border-radius: 11px !important;position: relative; bottom: 55px;">
+            <ion-list>
+
+              <ion-item class="settings_item_body settings_item"
+                        style="margin-bottom: -40px; border-top: 0px!important; border-bottom: 0px!important; z-index:999;">
+
+                <div class="item item-body settings_item_body"
+                     style="margin-right: -30px; position:relative; bottom: 20px; right:20px; border-bottom: 1px solid #000000;">
+              <span style="color:#737373;">
+                Rayzit is an award-winning messaging technology that delivers your
+                    questions, inquiries and ideas to the closest users around, regardless
+                    of how far these users are and who they are. We utilize a combination
+                    of state-of-the art computational techniques and crowdsourcing concepts
+                    to introduce one of the most compelling social interaction experiences
+                    available, as you will instantly see who is Rayzing around you and engage
+                    immediately!
+              </span>
+                </div>
+              </ion-item>
+
+            </ion-list>
+          </div>
+
+        </div>
+
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

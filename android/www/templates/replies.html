@@ -1,0 +1,108 @@
+<ion-view view-title="Replies" ng-controller="RepliesCtrl" tabs-item-hide class="view-top">
+
+  <ion-content>
+
+    <div style="background-color: #DC4323 !important; position:relative; bottom:13px;">
+      <div class="padding" style="position: relative; top:20px;">
+
+        <ion-list style="font-family: RobotoDraft,Roboto;">
+          <ion-item id="rounded-rectangle" class="card card-color"
+                    style="margin-top:-10px!important;margin-left:-3px !important;margin-right:-3px!important; border: medium none;font-size: 14px; padding:0px;">
+
+            <div class="card-header text-left">
+              <span id="item-icon-clock"> <i class="icon ion-clock"> {{rayz.timestamp}}</i></span>
+              <i class="icon report-red-icon" id="item-icon-alert" ng-show="rayz.report !== 0"></i>
+              <div style="position: absolute; right:0px; top:2px; height:30px;width:40px; z-index: 99999!important;"
+                   ng-click="showActionsheetRayzs(rayz.rayzId, rayz.rayz_message)">
+                <i class="icon icon-right ion-chevron-down" id="item-icon-chevron"></i>
+              </div>
+            </div>
+
+            <div class="item item-body">
+              <div id="rayz-letters">{{rayz.rayz_message}}</div>
+            </div>
+
+            <div id="card-footer-icons">
+              <span class="card-footer">
+                 <i class="icon"></i>
+               <i class="icon star-small-icon"><span class="star-small-text"> {{rayz.follow}} </span></i>
+               <i class="icon rerayz-small-icon"><span class="rerayz-small-text"> {{rayz.rerayz}} </span></i>
+               <i class="icon replies-small-icon"><span class="replies-small-text"> {{rayz.answers}} </span></i>
+              </span>
+
+              <i class="icon ion-android-globe globe-small-icon"><span
+                class="distance-small-text">{{rayz.maxDistance}}</span></i>
+            </div>
+
+            <div id="message-tabs">
+              <div class="item tabs tabs-icon-left " style="background-color:white!important;">
+                <a class=" tab-item" ng-click="starToggle(rayz.rayzId, 'other-tabs')">
+                  <i class="icon star-big-icon"></i>
+                  <span class="star-big-text2">{{rayz.starByMe}}</span>
+                </a>
+                <a class="tab-item" ng-click="rerayzItem(rayz.rayzId, 'other-tabs')">
+                  <i class="icon rerayz-big-icon"></i>
+                  <span class="rerayz-big-text2">Rerayz</span>
+                </a>
+              </div>
+            </div>
+
+          </ion-item>
+        </ion-list>
+
+      </div>
+    </div>
+
+    <div class="padding" style="position: relative; bottom:4px;">
+      <ion-list style="font-family: RobotoDraft,Roboto;">
+        <ion-item id="rounded-rectangle" class="card card-color" ng-repeat="reply in rayz.replies"
+                  style="margin-top:-10px!important;margin-left:-3px !important;margin-right:-3px!important; border: medium none;font-size: 14px; padding:0px;">
+
+          <div class="card-header text-left">
+            <span id="item-icon-clock"> <i class="icon ion-clock"> {{reply.timestamp}}</i></span>
+            <i class="icon report-red-icon" id="item-icon-alert" ng-show="reply.report !== 0"></i>
+            <div style="position: absolute; right:0px; top:2px; height:30px;width:40px; z-index: 99999!important;"
+                 ng-click="showActionsheetReplies(reply.rayzReplyId, reply.rayz_reply_message)">
+              <i class="icon icon-right ion-chevron-down" id="item-icon-chevron"></i>
+            </div>
+          </div>
+
+          <div class="item item-body">
+            <div id="rayz-letters">{{reply.rayz_reply_message}}</div>
+          </div>
+
+          <div id="card-footer-icons">
+              <span class="card-footer">
+                 <!--<i class="icon"></i>-->
+                 <!--<i class="icon power-small-icon"></i>-->
+                 <span class="power-small-text">power {{reply.upVotes}} </span>
+              </span>
+          </div>
+
+          <div id="message-tabs">
+            <div class="item tabs tabs-icon-left" style="background-color:#F8F8F8!important;">
+              <a class="tab-item" ng-click="powerUp(reply.rayzReplyId)">
+                <i class="icon powerUp-big-icon" style="position:relative; bottom:10px"></i>
+                <span class="star-big-text2">Power up</span>
+              </a>
+              <a class="tab-item" ng-click="powerDown(reply.rayzReplyId)">
+                <i class="icon powerDown-big-icon" style="position:relative; bottom:10px"></i>
+                <span class="rerayz-big-text2">Power down</span>
+              </a>
+            </div>
+          </div>
+
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div style="height:50px;"></div>
+  </ion-content>
+
+  <div style="position:relative; bottom:0px;  width:100%; height:0px; background-color: white;" align="right">
+    <button class="button-fab-bottom-right button-fab color-assertive" ng-click="getCurrentPower('new-reply')">
+      <i class="icon ion-reply position-reply"></i>
+    </button>
+  </div>
+
+</ion-view>

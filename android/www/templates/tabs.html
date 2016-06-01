@@ -1,0 +1,17 @@
+<ion-tabs class="tabs-top tabs-icon-top tabs-striped tabs-background-assertive tabs-color-stable">
+
+  <!-- Livefeed Tab -->
+  <ion-tab title="Live Feed" icon-off="livefeed-off" icon-on="livefeed-on" ng-click="changeTab('livefeed')">
+    <ion-nav-view name="tab-livefeed"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Nearby Tab -->
+  <ion-tab title="Nearby"  icon-off="radar-off" icon-on="radar-on" ng-click="changeTab('nearby')">
+    <ion-nav-view name="tab-nearby"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Starred Tab -->
+  <ion-tab title="Starred" icon-off="star-off" icon-on="star-on" ng-click="changeTab('starred')">
+    <ion-nav-view name="tab-starred"></ion-nav-view>
+  </ion-tab>
+</ion-tabs>
