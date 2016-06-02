@@ -60,7 +60,7 @@ Try: https://itunes.apple.com/us/app/rayzit/
 
 ### API
 The Source code for the Rayzit Web API Client. Current Leader: Constantinos Costa. 
-Try: https://itunes.apple.com/us/app/rayzit/
+Try: https://api.rayzit.com/
 
 ### Web widget
 The Source code for the Rayzit web widget. Current Leader: Dimosthenis Stefanidis. 
