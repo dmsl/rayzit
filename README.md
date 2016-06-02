@@ -17,7 +17,7 @@ Enjoy Rayzit!
 
 The Rayzit Team 
 
-Copyright (c) 2014, Data Management Systems Lab (DMSL), Department of Computer Science
+Copyright (c) 2016, Data Management Systems Lab (DMSL), Department of Computer Science
 University of Cyprus.
 
 All rights reserved.
