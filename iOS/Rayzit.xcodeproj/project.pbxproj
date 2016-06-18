@@ -1,0 +1,1846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		105840F09DEF4FCBA7D7A740 /* libPods-Rayzit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961567671E1F4E56BB0DD525 /* libPods-Rayzit.a */; };
+		5702AC9B19F5611800B680A6 /* RayzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5702AC9A19F5611800B680A6 /* RayzViewController.m */; };
+		5702AC9E19F56B7F00B680A6 /* AttachmentsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5702AC9D19F56B7F00B680A6 /* AttachmentsCollectionViewController.m */; };
+		570383A31B1E405600BFAE71 /* ApiRayzRepliesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 570383A21B1E405600BFAE71 /* ApiRayzRepliesResponse.m */; };
+		570383A41B1E473100BFAE71 /* ApiRayzRepliesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 570383A21B1E405600BFAE71 /* ApiRayzRepliesResponse.m */; };
+		571878F819FFDD750037C41F /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571878F719FFDD750037C41F /* SettingsTableViewController.m */; };
+		571878FB19FFDDEF0037C41F /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 571878FA19FFDDEF0037C41F /* SettingsManager.m */; };
+		571878FE19FFEEEA0037C41F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5718790019FFEEEA0037C41F /* Localizable.strings */; };
+		571976F819DB344F00B3D233 /* ApiReRayz.m in Sources */ = {isa = PBXBuildFile; fileRef = 571976F719DB344F00B3D233 /* ApiReRayz.m */; };
+		571976FB19DB35D500B3D233 /* ApiReRayzResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 571976FA19DB35D500B3D233 /* ApiReRayzResponse.m */; };
+		5719770119DB409100B3D233 /* ApiAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770019DB409100B3D233 /* ApiAlertHelper.m */; };
+		5719770419DB444D00B3D233 /* ApiUserRayzAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770319DB444D00B3D233 /* ApiUserRayzAction.m */; };
+		5719770719DB4A1F00B3D233 /* ApiUserRayzActionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770619DB4A1F00B3D233 /* ApiUserRayzActionResponse.m */; };
+		5719770A19DB4EC200B3D233 /* ApiLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770919DB4EC200B3D233 /* ApiLocationManager.m */; };
+		5719770D19DB65F400B3D233 /* RayzitTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770C19DB65F400B3D233 /* RayzitTheme.m */; };
+		5719771019DB667700B3D233 /* UIColor+CAHexConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770F19DB667700B3D233 /* UIColor+CAHexConverter.m */; };
+		571F0B501A004AE300AB6F1A /* GradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571F0B4F1A004AE300AB6F1A /* GradientProgressView.m */; };
+		57310FE819EBFEC600D1A1D9 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57310FE719EBFEC600D1A1D9 /* LocationManager.m */; };
+		57310FEA19EC2ACB00D1A1D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57310FE919EC2ACB00D1A1D9 /* CoreLocation.framework */; };
+		57310FED19EC357C00D1A1D9 /* LiveFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57310FEC19EC357C00D1A1D9 /* LiveFeedTableViewController.m */; };
+		573C562A1A0A9EBB000072F7 /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C56291A0A9EBB000072F7 /* AboutTableViewController.m */; };
+		573C562E1A0ABFE4000072F7 /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C562D1A0ABFE4000072F7 /* MoreTableViewController.m */; };
+		573C562F1A0ACE16000072F7 /* Rayzit_Promo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 573C562B1A0ABFB7000072F7 /* Rayzit_Promo.mp4 */; };
+		5741BAE219D41B83005C8F92 /* ApiStatusMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAE119D41B83005C8F92 /* ApiStatusMessageResponse.m */; };
+		5741BAE519D43382005C8F92 /* ApiUserPowerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAE419D43382005C8F92 /* ApiUserPowerResponse.m */; };
+		5741BAE819D4383D005C8F92 /* RayzRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAE719D4383D005C8F92 /* RayzRequests.m */; };
+		5741BAEB19D43E54005C8F92 /* ApiCreateRayzResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAEA19D43E54005C8F92 /* ApiCreateRayzResponse.m */; };
+		5741BAEF19D44113005C8F92 /* ApiRayz.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAEE19D44113005C8F92 /* ApiRayz.m */; };
+		5742DF7019FE8A5300967D36 /* FayeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742DF6F19FE8A5300967D36 /* FayeManager.m */; };
+		5742DF7319FEBE1500967D36 /* ApiRayzAnswersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742DF7219FEBE1500967D36 /* ApiRayzAnswersResponse.m */; };
+		5746220A19F70AC10058F007 /* AlertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746220919F70AC10058F007 /* AlertUtils.m */; };
+		5746220D19F71DC80058F007 /* StarredRayzsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746220C19F71DC80058F007 /* StarredRayzsTableViewController.m */; };
+		5746221019F721F90058F007 /* MyRayzsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746220F19F721F90058F007 /* MyRayzsTableViewController.m */; };
+		575401CE1A1A120100AB3B93 /* RayzLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 575401CD1A1A120100AB3B93 /* RayzLabelTableViewCell.xib */; };
+		5758290D1B32E53200AAB03B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5758290C1B32E53200AAB03B /* Fabric.framework */; };
+		5758290E1B32E53C00AAB03B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5758290C1B32E53200AAB03B /* Fabric.framework */; };
+		575D509719EFDCAA001A9872 /* RayzTextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D509619EFDCAA001A9872 /* RayzTextCollectionViewCell.m */; };
+		575D509D19F009FE001A9872 /* MediaPickerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D509C19F009FE001A9872 /* MediaPickerHelper.m */; };
+		575D50A019F00C54001A9872 /* CAFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D509F19F00C54001A9872 /* CAFileManager.m */; };
+		575D50A319F067B8001A9872 /* AttachmentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D50A219F067B8001A9872 /* AttachmentCollectionViewCell.m */; };
+		575D50A619F13418001A9872 /* UserPowerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D50A519F13417001A9872 /* UserPowerCollectionViewCell.m */; };
+		576128D71B18817F00964ACC /* NearbyRayzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576128D61B18817F00964ACC /* NearbyRayzViewController.m */; };
+		576128D91B1897A200964ACC /* NearbyRayzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576128D61B18817F00964ACC /* NearbyRayzViewController.m */; };
+		5762D2E31AD41985005774AD /* AttachmentsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5702AC9D19F56B7F00B680A6 /* AttachmentsCollectionViewController.m */; };
+		5762D2E41AD41985005774AD /* ApiRayz.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAEE19D44113005C8F92 /* ApiRayz.m */; };
+		5762D2E51AD41985005774AD /* ApiLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770919DB4EC200B3D233 /* ApiLocationManager.m */; };
+		5762D2E61AD41985005774AD /* ApiRayzAnswersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742DF7219FEBE1500967D36 /* ApiRayzAnswersResponse.m */; };
+		5762D2E71AD41985005774AD /* ApiReRayz.m in Sources */ = {isa = PBXBuildFile; fileRef = 571976F719DB344F00B3D233 /* ApiReRayz.m */; };
+		5762D2E81AD41985005774AD /* ApiRayzReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010619FF0A35005BB094 /* ApiRayzReply.m */; };
+		5762D2E91AD41985005774AD /* ApiUserRayzActionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770619DB4A1F00B3D233 /* ApiUserRayzActionResponse.m */; };
+		5762D2EA1AD41985005774AD /* LumberjackFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C2919CE2A9300642320 /* LumberjackFormatter.m */; };
+		5762D2EB1AD41985005774AD /* RayzDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D2F351A10F9260056B8CF /* RayzDetailsTableViewController.m */; };
+		5762D2EC1AD41985005774AD /* ApiUserRayzAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770319DB444D00B3D233 /* ApiUserRayzAction.m */; };
+		5762D2ED1AD41985005774AD /* ApiLiveFeedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C3619CE342900642320 /* ApiLiveFeedResponse.m */; };
+		5762D2EE1AD41985005774AD /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5765E65019EF16A300036122 /* AppConstants.m */; };
+		5762D2EF1AD41985005774AD /* LiveFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57310FEC19EC357C00D1A1D9 /* LiveFeedTableViewController.m */; };
+		5762D2F01AD41985005774AD /* SettingsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 571878FA19FFDDEF0037C41F /* SettingsManager.m */; };
+		5762D2F11AD41985005774AD /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571878F719FFDD750037C41F /* SettingsTableViewController.m */; };
+		5762D2F21AD41985005774AD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9F19C715C4001240DE /* User.m */; };
+		5762D2F31AD41985005774AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F892C57460803D59144E4D3D /* main.m */; };
+		5762D2F41AD41985005774AD /* RayzTextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D509619EFDCAA001A9872 /* RayzTextCollectionViewCell.m */; };
+		5762D2F51AD41985005774AD /* RayzTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D2F381A1150B60056B8CF /* RayzTableViewDataSource.m */; };
+		5762D2F61AD41985005774AD /* RayzTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D2F321A10D2660056B8CF /* RayzTableViewController.m */; };
+		5762D2F71AD41985005774AD /* ApiUserRayzReplyAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010919FF0C67005BB094 /* ApiUserRayzReplyAction.m */; };
+		5762D2F81AD41985005774AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F892C15AE8ED631AD236938F /* AppDelegate.m */; };
+		5762D2F91AD41985005774AD /* UserPowerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D50A519F13417001A9872 /* UserPowerCollectionViewCell.m */; };
+		5762D2FA1AD41985005774AD /* ApiModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57671ED419C4ADEA0081DC3A /* ApiModel.xcdatamodeld */; };
+		5762D2FB1AD41985005774AD /* ApiPowerReportRayzReplyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010F19FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.m */; };
+		5762D2FC1AD41985005774AD /* RayzTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F5BD819F155DD000A992F /* RayzTableViewCell.m */; };
+		5762D2FD1AD41985005774AD /* RayzRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAE719D4383D005C8F92 /* RayzRequests.m */; };
+		5762D2FE1AD41985005774AD /* AlertUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746220919F70AC10058F007 /* AlertUtils.m */; };
+		5762D2FF1AD41985005774AD /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F892C999F7429277D7284E87 /* Utilities.m */; };
+		5762D3001AD41985005774AD /* UIColor+CAHexConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770F19DB667700B3D233 /* UIColor+CAHexConverter.m */; };
+		5762D3011AD41985005774AD /* RayzitTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770C19DB65F400B3D233 /* RayzitTheme.m */; };
+		5762D3021AD41985005774AD /* ApiCreateRayzResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAEA19D43E54005C8F92 /* ApiCreateRayzResponse.m */; };
+		5762D3031AD41985005774AD /* AboutTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C56291A0A9EBB000072F7 /* AboutTableViewController.m */; };
+		5762D3041AD41985005774AD /* ApiReRayzResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 571976FA19DB35D500B3D233 /* ApiReRayzResponse.m */; };
+		5762D3051AD41985005774AD /* NewRayzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5765E64D19EF053000036122 /* NewRayzViewController.m */; };
+		5762D3061AD41985005774AD /* GradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 571F0B4F1A004AE300AB6F1A /* GradientProgressView.m */; };
+		5762D3071AD41985005774AD /* SelectDistanceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F5BDB19F178DF000A992F /* SelectDistanceTableViewController.m */; };
+		5762D3081AD41985005774AD /* UserRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9B19C71322001240DE /* UserRequests.m */; };
+		5762D3091AD41985005774AD /* AttachmentCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D50A219F067B8001A9872 /* AttachmentCollectionViewCell.m */; };
+		5762D30A1AD41985005774AD /* MediaPickerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D509C19F009FE001A9872 /* MediaPickerHelper.m */; };
+		5762D30B1AD41985005774AD /* RayzReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9219C70D01001240DE /* RayzReply.m */; };
+		5762D30C1AD41985005774AD /* RayzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5702AC9A19F5611800B680A6 /* RayzViewController.m */; };
+		5762D30D1AD41985005774AD /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C0E19CD95C500642320 /* Attachment.m */; };
+		5762D30E1AD41985005774AD /* FayeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5742DF6F19FE8A5300967D36 /* FayeManager.m */; };
+		5762D30F1AD41985005774AD /* ApiUserPowerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAE419D43382005C8F92 /* ApiUserPowerResponse.m */; };
+		5762D3101AD41985005774AD /* RecordAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CC4621A0853EF0092DD0B /* RecordAudioViewController.m */; };
+		5762D3111AD41985005774AD /* StarredRayzsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746220C19F71DC80058F007 /* StarredRayzsTableViewController.m */; };
+		5762D3121AD41985005774AD /* Attachments.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CCBE19C73354001240DE /* Attachments.m */; };
+		5762D3131AD41985005774AD /* ApiAlertHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719770019DB409100B3D233 /* ApiAlertHelper.m */; };
+		5762D3141AD41985005774AD /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 573C562D1A0ABFE4000072F7 /* MoreTableViewController.m */; };
+		5762D3151AD41985005774AD /* LumberjackSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C2B19CE2A9300642320 /* LumberjackSettings.m */; };
+		5762D3161AD41985005774AD /* ApiStatusMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5741BAE119D41B83005C8F92 /* ApiStatusMessageResponse.m */; };
+		5762D3171AD41985005774AD /* ApiConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C2619CE295A00642320 /* ApiConstants.m */; };
+		5762D3181AD41985005774AD /* NSDate+CAStringifiedIntervals.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DBCD0C19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.m */; };
+		5762D3191AD41985005774AD /* Rayz.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9819C71254001240DE /* Rayz.m */; };
+		5762D31A1AD41985005774AD /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57310FE719EBFEC600D1A1D9 /* LocationManager.m */; };
+		5762D31B1AD41985005774AD /* MyRayzsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5746220F19F721F90058F007 /* MyRayzsTableViewController.m */; };
+		5762D31C1AD41985005774AD /* RayzAnswerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010019FEFA31005BB094 /* RayzAnswerTableViewCell.m */; };
+		5762D31D1AD41985005774AD /* RemoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C1A19CDB39B00642320 /* RemoteStore.m */; };
+		5762D31E1AD41985005774AD /* CAFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 575D509F19F00C54001A9872 /* CAFileManager.m */; };
+		5762D31F1AD41985005774AD /* ApiCreateRayzReplyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010C19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.m */; };
+		5762D3201AD41985005774AD /* RayzReplyRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010319FF0837005BB094 /* RayzReplyRequests.m */; };
+		5762D3221AD41985005774AD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57310FE919EC2ACB00D1A1D9 /* CoreLocation.framework */; };
+		5762D3231AD41985005774AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892C07FCB25549C34F0BF8E /* Foundation.framework */; };
+		5762D3241AD41985005774AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892CC0C06385720000CBDAF /* CoreGraphics.framework */; };
+		5762D3251AD41985005774AD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892C0D95105DFDC30C09929 /* UIKit.framework */; };
+		5762D3261AD41985005774AD /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DBCD0F19F7E21A009CD412 /* Crashlytics.framework */; };
+		5762D3271AD41985005774AD /* libPods-Rayzit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 961567671E1F4E56BB0DD525 /* libPods-Rayzit.a */; };
+		5762D3281AD41985005774AD /* libFlurry_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D2F401A12A25D0056B8CF /* libFlurry_5.4.0.a */; };
+		5762D32A1AD41985005774AD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F892C26B337FB4C86D911462 /* InfoPlist.strings */; };
+		5762D32B1AD41985005774AD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5718790019FFEEEA0037C41F /* Localizable.strings */; };
+		5762D32C1AD41985005774AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F892C5EC696AFBBFE0594B8F /* Images.xcassets */; };
+		5762D32D1AD41985005774AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F892C1FE437BDC928D9C2868 /* Main.storyboard */; };
+		5762D32E1AD41985005774AD /* RayzLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 575401CD1A1A120100AB3B93 /* RayzLabelTableViewCell.xib */; };
+		5762D32F1AD41985005774AD /* Rayzit_Promo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 573C562B1A0ABFB7000072F7 /* Rayzit_Promo.mp4 */; };
+		5762D3301AD41985005774AD /* RayzTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576F5BD419F150E9000A992F /* RayzTableViewCell.xib */; };
+		5762D3311AD41985005774AD /* RayzAnswerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576800FD19FEF679005BB094 /* RayzAnswerTableViewCell.xib */; };
+		5765E64E19EF053000036122 /* NewRayzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5765E64D19EF053000036122 /* NewRayzViewController.m */; };
+		5765E65119EF16A300036122 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5765E65019EF16A300036122 /* AppConstants.m */; };
+		57671ED619C4ADEA0081DC3A /* ApiModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57671ED419C4ADEA0081DC3A /* ApiModel.xcdatamodeld */; };
+		576800FE19FEF679005BB094 /* RayzAnswerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576800FD19FEF679005BB094 /* RayzAnswerTableViewCell.xib */; };
+		5768010119FEFA31005BB094 /* RayzAnswerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010019FEFA31005BB094 /* RayzAnswerTableViewCell.m */; };
+		5768010419FF0837005BB094 /* RayzReplyRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010319FF0837005BB094 /* RayzReplyRequests.m */; };
+		5768010719FF0A35005BB094 /* ApiRayzReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010619FF0A35005BB094 /* ApiRayzReply.m */; };
+		5768010A19FF0C67005BB094 /* ApiUserRayzReplyAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010919FF0C67005BB094 /* ApiUserRayzReplyAction.m */; };
+		5768010D19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010C19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.m */; };
+		5768011019FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5768010F19FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.m */; };
+		576A2C0F19CD95C500642320 /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C0E19CD95C500642320 /* Attachment.m */; };
+		576A2C1B19CDB39B00642320 /* RemoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C1A19CDB39B00642320 /* RemoteStore.m */; };
+		576A2C2719CE295A00642320 /* ApiConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C2619CE295A00642320 /* ApiConstants.m */; };
+		576A2C2C19CE2A9300642320 /* LumberjackFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C2919CE2A9300642320 /* LumberjackFormatter.m */; };
+		576A2C2D19CE2A9300642320 /* LumberjackSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C2B19CE2A9300642320 /* LumberjackSettings.m */; };
+		576A2C2F19CE2D7B00642320 /* ApiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C2E19CE2D7B00642320 /* ApiTests.m */; };
+		576A2C3719CE342900642320 /* ApiLiveFeedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 576A2C3619CE342900642320 /* ApiLiveFeedResponse.m */; };
+		576F5BD519F150E9000A992F /* RayzTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576F5BD419F150E9000A992F /* RayzTableViewCell.xib */; };
+		576F5BD919F155DD000A992F /* RayzTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F5BD819F155DD000A992F /* RayzTableViewCell.m */; };
+		576F5BDC19F178DF000A992F /* SelectDistanceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 576F5BDB19F178DF000A992F /* SelectDistanceTableViewController.m */; };
+		577D2F331A10D2660056B8CF /* RayzTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D2F321A10D2660056B8CF /* RayzTableViewController.m */; };
+		577D2F361A10F9260056B8CF /* RayzDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D2F351A10F9260056B8CF /* RayzDetailsTableViewController.m */; };
+		577D2F391A1150B60056B8CF /* RayzTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 577D2F381A1150B60056B8CF /* RayzTableViewDataSource.m */; };
+		577D2F411A12A25D0056B8CF /* libFlurry_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 577D2F401A12A25D0056B8CF /* libFlurry_5.4.0.a */; };
+		578CC4631A0853EF0092DD0B /* RecordAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CC4621A0853EF0092DD0B /* RecordAudioViewController.m */; };
+		57C854571B20657100F414C6 /* TermsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C854561B20657100F414C6 /* TermsWebViewController.m */; };
+		57C854581B20669A00F414C6 /* TermsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C854561B20657100F414C6 /* TermsWebViewController.m */; };
+		57C8545B1B23081900F414C6 /* ApiCheckRayzs.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8545A1B23081900F414C6 /* ApiCheckRayzs.m */; };
+		57C8545C1B230C9300F414C6 /* ApiCheckRayzs.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C8545A1B23081900F414C6 /* ApiCheckRayzs.m */; };
+		57C854621B230FB300F414C6 /* ApiCheckRayzsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C854611B230FB300F414C6 /* ApiCheckRayzsResponse.m */; };
+		57C854651B23100400F414C6 /* ApiRayzStateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C854641B23100400F414C6 /* ApiRayzStateResponse.m */; };
+		57C854661B23134900F414C6 /* ApiCheckRayzsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C854611B230FB300F414C6 /* ApiCheckRayzsResponse.m */; };
+		57C854671B23134900F414C6 /* ApiRayzStateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C854641B23100400F414C6 /* ApiRayzStateResponse.m */; };
+		57DBCD0D19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.m in Sources */ = {isa = PBXBuildFile; fileRef = 57DBCD0C19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.m */; };
+		57DBCD1019F7E21A009CD412 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57DBCD0F19F7E21A009CD412 /* Crashlytics.framework */; };
+		57F7CC9319C70D01001240DE /* RayzReply.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9219C70D01001240DE /* RayzReply.m */; };
+		57F7CC9919C71254001240DE /* Rayz.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9819C71254001240DE /* Rayz.m */; };
+		57F7CC9C19C71322001240DE /* UserRequests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9B19C71322001240DE /* UserRequests.m */; };
+		57F7CCA019C715C4001240DE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CC9F19C715C4001240DE /* User.m */; };
+		57F7CCBF19C73354001240DE /* Attachments.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F7CCBE19C73354001240DE /* Attachments.m */; };
+		9771212BC6CA421AA96A6743 /* libPods-RayzitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC1DF9536B74A90906F39E2 /* libPods-RayzitTests.a */; };
+		F892C0B744C28AAC7258AE7D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F892CEF16B7811DFF0840066 /* InfoPlist.strings */; };
+		F892C2BC55DA057B8DD29DA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F892C57460803D59144E4D3D /* main.m */; };
+		F892C43EC054EDB919F5E41C /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F892C999F7429277D7284E87 /* Utilities.m */; };
+		F892C4B5F72BBBEC94D00070 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F892C5EC696AFBBFE0594B8F /* Images.xcassets */; };
+		F892C53C17BE830C015B2FA6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892C4866FDBD274C435EB2A /* XCTest.framework */; };
+		F892C810E15F1CE9F259EE0E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F892C26B337FB4C86D911462 /* InfoPlist.strings */; };
+		F892C9B949490ECE22B42773 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892CC0C06385720000CBDAF /* CoreGraphics.framework */; };
+		F892CABD35B726B78BB62983 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892C0D95105DFDC30C09929 /* UIKit.framework */; };
+		F892CCB7131DE5139A7380DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F892C15AE8ED631AD236938F /* AppDelegate.m */; };
+		F892CDEDC13302FA45815C76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892C07FCB25549C34F0BF8E /* Foundation.framework */; };
+		F892CE20BADA3C0FF3CDCDDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892C07FCB25549C34F0BF8E /* Foundation.framework */; };
+		F892CEEAAD3DE5AA2E1B026B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F892C0D95105DFDC30C09929 /* UIKit.framework */; };
+		F892CFEA22C6DF39BFA6D15D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F892C1FE437BDC928D9C2868 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		576A2C3019CE321700642320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F892C1758544487E5B6FE8DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F892CF0BB9A3DBA8E406743F;
+			remoteInfo = Rayzit;
+		};
+		576A2C3219CE321A00642320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F892C1758544487E5B6FE8DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F892CF0BB9A3DBA8E406743F;
+			remoteInfo = Rayzit;
+		};
+		F892C1EA4050EC2B9F2F0DC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F892C1758544487E5B6FE8DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F892CF0BB9A3DBA8E406743F;
+			remoteInfo = Rayzit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23AA9FBB7B1109EB16CE8338 /* Pods-Rayzit.debug localhost.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rayzit.debug localhost.xcconfig"; path = "Pods/Target Support Files/Pods-Rayzit/Pods-Rayzit.debug localhost.xcconfig"; sourceTree = "<group>"; };
+		3BC1DF9536B74A90906F39E2 /* libPods-RayzitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RayzitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F819A58211430EE0977D7BD /* Pods-RayzitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayzitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RayzitTests/Pods-RayzitTests.release.xcconfig"; sourceTree = "<group>"; };
+		5702AC9919F5611800B680A6 /* RayzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzViewController.h; sourceTree = "<group>"; };
+		5702AC9A19F5611800B680A6 /* RayzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzViewController.m; sourceTree = "<group>"; };
+		5702AC9C19F56B7F00B680A6 /* AttachmentsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentsCollectionViewController.h; sourceTree = "<group>"; };
+		5702AC9D19F56B7F00B680A6 /* AttachmentsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentsCollectionViewController.m; sourceTree = "<group>"; };
+		570383A11B1E405600BFAE71 /* ApiRayzRepliesResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRayzRepliesResponse.h; sourceTree = "<group>"; };
+		570383A21B1E405600BFAE71 /* ApiRayzRepliesResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiRayzRepliesResponse.m; sourceTree = "<group>"; };
+		571878F619FFDD750037C41F /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		571878F719FFDD750037C41F /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		571878F919FFDDEF0037C41F /* SettingsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsManager.h; sourceTree = "<group>"; };
+		571878FA19FFDDEF0037C41F /* SettingsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsManager.m; sourceTree = "<group>"; };
+		571878FF19FFEEEA0037C41F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		571976F619DB344F00B3D233 /* ApiReRayz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiReRayz.h; sourceTree = "<group>"; };
+		571976F719DB344F00B3D233 /* ApiReRayz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiReRayz.m; sourceTree = "<group>"; };
+		571976F919DB35D500B3D233 /* ApiReRayzResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiReRayzResponse.h; sourceTree = "<group>"; };
+		571976FA19DB35D500B3D233 /* ApiReRayzResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiReRayzResponse.m; sourceTree = "<group>"; };
+		571976FF19DB409100B3D233 /* ApiAlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiAlertHelper.h; sourceTree = "<group>"; };
+		5719770019DB409100B3D233 /* ApiAlertHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiAlertHelper.m; sourceTree = "<group>"; };
+		5719770219DB444D00B3D233 /* ApiUserRayzAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiUserRayzAction.h; sourceTree = "<group>"; };
+		5719770319DB444D00B3D233 /* ApiUserRayzAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiUserRayzAction.m; sourceTree = "<group>"; };
+		5719770519DB4A1F00B3D233 /* ApiUserRayzActionResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiUserRayzActionResponse.h; sourceTree = "<group>"; };
+		5719770619DB4A1F00B3D233 /* ApiUserRayzActionResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiUserRayzActionResponse.m; sourceTree = "<group>"; };
+		5719770819DB4EC200B3D233 /* ApiLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiLocationManager.h; sourceTree = "<group>"; };
+		5719770919DB4EC200B3D233 /* ApiLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiLocationManager.m; sourceTree = "<group>"; };
+		5719770B19DB65F400B3D233 /* RayzitTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzitTheme.h; sourceTree = "<group>"; };
+		5719770C19DB65F400B3D233 /* RayzitTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzitTheme.m; sourceTree = "<group>"; };
+		5719770E19DB667700B3D233 /* UIColor+CAHexConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CAHexConverter.h"; sourceTree = "<group>"; };
+		5719770F19DB667700B3D233 /* UIColor+CAHexConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CAHexConverter.m"; sourceTree = "<group>"; };
+		571F0B4B1A00225E00AB6F1A /* ApiModel3.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApiModel3.1.xcdatamodel; sourceTree = "<group>"; };
+		571F0B4C1A00231700AB6F1A /* ApiModel3.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApiModel3.2.xcdatamodel; sourceTree = "<group>"; };
+		571F0B4E1A004AE300AB6F1A /* GradientProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientProgressView.h; sourceTree = "<group>"; };
+		571F0B4F1A004AE300AB6F1A /* GradientProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientProgressView.m; sourceTree = "<group>"; };
+		57310FE619EBFEC600D1A1D9 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		57310FE719EBFEC600D1A1D9 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		57310FE919EC2ACB00D1A1D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		57310FEB19EC357C00D1A1D9 /* LiveFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveFeedTableViewController.h; sourceTree = "<group>"; };
+		57310FEC19EC357C00D1A1D9 /* LiveFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveFeedTableViewController.m; sourceTree = "<group>"; };
+		573C56281A0A9EBB000072F7 /* AboutTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutTableViewController.h; sourceTree = "<group>"; };
+		573C56291A0A9EBB000072F7 /* AboutTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutTableViewController.m; sourceTree = "<group>"; };
+		573C562B1A0ABFB7000072F7 /* Rayzit_Promo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rayzit_Promo.mp4; sourceTree = "<group>"; };
+		573C562C1A0ABFE4000072F7 /* MoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableViewController.h; sourceTree = "<group>"; };
+		573C562D1A0ABFE4000072F7 /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableViewController.m; sourceTree = "<group>"; };
+		5741BAE019D41B83005C8F92 /* ApiStatusMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiStatusMessageResponse.h; sourceTree = "<group>"; };
+		5741BAE119D41B83005C8F92 /* ApiStatusMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiStatusMessageResponse.m; sourceTree = "<group>"; };
+		5741BAE319D43382005C8F92 /* ApiUserPowerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiUserPowerResponse.h; sourceTree = "<group>"; };
+		5741BAE419D43382005C8F92 /* ApiUserPowerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiUserPowerResponse.m; sourceTree = "<group>"; };
+		5741BAE619D4383D005C8F92 /* RayzRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzRequests.h; sourceTree = "<group>"; };
+		5741BAE719D4383D005C8F92 /* RayzRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzRequests.m; sourceTree = "<group>"; };
+		5741BAE919D43E54005C8F92 /* ApiCreateRayzResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiCreateRayzResponse.h; sourceTree = "<group>"; };
+		5741BAEA19D43E54005C8F92 /* ApiCreateRayzResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiCreateRayzResponse.m; sourceTree = "<group>"; };
+		5741BAED19D44113005C8F92 /* ApiRayz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRayz.h; sourceTree = "<group>"; };
+		5741BAEE19D44113005C8F92 /* ApiRayz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiRayz.m; sourceTree = "<group>"; };
+		5742DF6E19FE8A5300967D36 /* FayeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FayeManager.h; sourceTree = "<group>"; };
+		5742DF6F19FE8A5300967D36 /* FayeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FayeManager.m; sourceTree = "<group>"; };
+		5742DF7119FEBE1500967D36 /* ApiRayzAnswersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRayzAnswersResponse.h; sourceTree = "<group>"; };
+		5742DF7219FEBE1500967D36 /* ApiRayzAnswersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiRayzAnswersResponse.m; sourceTree = "<group>"; };
+		5742DF7419FEDDF400967D36 /* ApiModel2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApiModel2.xcdatamodel; sourceTree = "<group>"; };
+		5746220819F70AC10058F007 /* AlertUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertUtils.h; sourceTree = "<group>"; };
+		5746220919F70AC10058F007 /* AlertUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertUtils.m; sourceTree = "<group>"; };
+		5746220B19F71DC80058F007 /* StarredRayzsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarredRayzsTableViewController.h; sourceTree = "<group>"; };
+		5746220C19F71DC80058F007 /* StarredRayzsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarredRayzsTableViewController.m; sourceTree = "<group>"; };
+		5746220E19F721F90058F007 /* MyRayzsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRayzsTableViewController.h; sourceTree = "<group>"; };
+		5746220F19F721F90058F007 /* MyRayzsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRayzsTableViewController.m; sourceTree = "<group>"; };
+		575401CD1A1A120100AB3B93 /* RayzLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RayzLabelTableViewCell.xib; sourceTree = "<group>"; };
+		5758290C1B32E53200AAB03B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		575D509519EFDCAA001A9872 /* RayzTextCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzTextCollectionViewCell.h; sourceTree = "<group>"; };
+		575D509619EFDCAA001A9872 /* RayzTextCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzTextCollectionViewCell.m; sourceTree = "<group>"; };
+		575D509B19F009FE001A9872 /* MediaPickerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaPickerHelper.h; sourceTree = "<group>"; };
+		575D509C19F009FE001A9872 /* MediaPickerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaPickerHelper.m; sourceTree = "<group>"; };
+		575D509E19F00C54001A9872 /* CAFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFileManager.h; sourceTree = "<group>"; };
+		575D509F19F00C54001A9872 /* CAFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFileManager.m; sourceTree = "<group>"; };
+		575D50A119F067B8001A9872 /* AttachmentCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentCollectionViewCell.h; sourceTree = "<group>"; };
+		575D50A219F067B8001A9872 /* AttachmentCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentCollectionViewCell.m; sourceTree = "<group>"; };
+		575D50A419F13417001A9872 /* UserPowerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPowerCollectionViewCell.h; sourceTree = "<group>"; };
+		575D50A519F13417001A9872 /* UserPowerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPowerCollectionViewCell.m; sourceTree = "<group>"; };
+		576128D51B18817F00964ACC /* NearbyRayzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyRayzViewController.h; sourceTree = "<group>"; };
+		576128D61B18817F00964ACC /* NearbyRayzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyRayzViewController.m; sourceTree = "<group>"; };
+		576128D81B1881C800964ACC /* ApiModel4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApiModel4.xcdatamodel; sourceTree = "<group>"; };
+		5762D33A1AD41985005774AD /* RayzitDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayzitDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5762D33C1AD46733005774AD /* ApiModel3.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApiModel3.3.xcdatamodel; sourceTree = "<group>"; };
+		5765E64C19EF053000036122 /* NewRayzViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRayzViewController.h; sourceTree = "<group>"; };
+		5765E64D19EF053000036122 /* NewRayzViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRayzViewController.m; sourceTree = "<group>"; };
+		5765E64F19EF16A300036122 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		5765E65019EF16A300036122 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
+		57671ED519C4ADEA0081DC3A /* ApiModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApiModel.xcdatamodel; sourceTree = "<group>"; };
+		576800FD19FEF679005BB094 /* RayzAnswerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RayzAnswerTableViewCell.xib; sourceTree = "<group>"; };
+		576800FF19FEFA31005BB094 /* RayzAnswerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzAnswerTableViewCell.h; sourceTree = "<group>"; };
+		5768010019FEFA31005BB094 /* RayzAnswerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzAnswerTableViewCell.m; sourceTree = "<group>"; };
+		5768010219FF0837005BB094 /* RayzReplyRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzReplyRequests.h; sourceTree = "<group>"; };
+		5768010319FF0837005BB094 /* RayzReplyRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzReplyRequests.m; sourceTree = "<group>"; };
+		5768010519FF0A35005BB094 /* ApiRayzReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRayzReply.h; sourceTree = "<group>"; };
+		5768010619FF0A35005BB094 /* ApiRayzReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiRayzReply.m; sourceTree = "<group>"; };
+		5768010819FF0C67005BB094 /* ApiUserRayzReplyAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiUserRayzReplyAction.h; sourceTree = "<group>"; };
+		5768010919FF0C67005BB094 /* ApiUserRayzReplyAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiUserRayzReplyAction.m; sourceTree = "<group>"; };
+		5768010B19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiCreateRayzReplyResponse.h; sourceTree = "<group>"; };
+		5768010C19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiCreateRayzReplyResponse.m; sourceTree = "<group>"; };
+		5768010E19FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiPowerReportRayzReplyResponse.h; sourceTree = "<group>"; };
+		5768010F19FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiPowerReportRayzReplyResponse.m; sourceTree = "<group>"; };
+		5768011119FF1E39005BB094 /* ApiModel3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApiModel3.xcdatamodel; sourceTree = "<group>"; };
+		576A2C0D19CD95C500642320 /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attachment.h; sourceTree = "<group>"; };
+		576A2C0E19CD95C500642320 /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attachment.m; sourceTree = "<group>"; };
+		576A2C1919CDB39B00642320 /* RemoteStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteStore.h; sourceTree = "<group>"; };
+		576A2C1A19CDB39B00642320 /* RemoteStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteStore.m; sourceTree = "<group>"; };
+		576A2C2519CE295A00642320 /* ApiConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiConstants.h; sourceTree = "<group>"; };
+		576A2C2619CE295A00642320 /* ApiConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiConstants.m; sourceTree = "<group>"; };
+		576A2C2819CE2A9300642320 /* LumberjackFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackFormatter.h; sourceTree = "<group>"; };
+		576A2C2919CE2A9300642320 /* LumberjackFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackFormatter.m; sourceTree = "<group>"; };
+		576A2C2A19CE2A9300642320 /* LumberjackSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumberjackSettings.h; sourceTree = "<group>"; };
+		576A2C2B19CE2A9300642320 /* LumberjackSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumberjackSettings.m; sourceTree = "<group>"; };
+		576A2C2E19CE2D7B00642320 /* ApiTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiTests.m; sourceTree = "<group>"; };
+		576A2C3519CE342900642320 /* ApiLiveFeedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiLiveFeedResponse.h; sourceTree = "<group>"; };
+		576A2C3619CE342900642320 /* ApiLiveFeedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiLiveFeedResponse.m; sourceTree = "<group>"; };
+		576F5BD419F150E9000A992F /* RayzTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RayzTableViewCell.xib; sourceTree = "<group>"; };
+		576F5BD719F155DD000A992F /* RayzTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzTableViewCell.h; sourceTree = "<group>"; };
+		576F5BD819F155DD000A992F /* RayzTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzTableViewCell.m; sourceTree = "<group>"; };
+		576F5BDA19F178DF000A992F /* SelectDistanceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDistanceTableViewController.h; sourceTree = "<group>"; };
+		576F5BDB19F178DF000A992F /* SelectDistanceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDistanceTableViewController.m; sourceTree = "<group>"; };
+		577D2F311A10D2660056B8CF /* RayzTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzTableViewController.h; sourceTree = "<group>"; };
+		577D2F321A10D2660056B8CF /* RayzTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzTableViewController.m; sourceTree = "<group>"; };
+		577D2F341A10F9260056B8CF /* RayzDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzDetailsTableViewController.h; sourceTree = "<group>"; };
+		577D2F351A10F9260056B8CF /* RayzDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzDetailsTableViewController.m; sourceTree = "<group>"; };
+		577D2F371A1150B60056B8CF /* RayzTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzTableViewDataSource.h; sourceTree = "<group>"; };
+		577D2F381A1150B60056B8CF /* RayzTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzTableViewDataSource.m; sourceTree = "<group>"; };
+		577D2F3A1A12A23A0056B8CF /* Flurry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Flurry.h; path = "../../../../Downloads/Flurry iPhone SDK viPhone 5.4.0/Flurry-iOS-5.4.0/Flurry/Flurry.h"; sourceTree = "<group>"; };
+		577D2F3B1A12A23A0056B8CF /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_5.4.0.a; path = "../../../../Downloads/Flurry iPhone SDK viPhone 5.4.0/Flurry-iOS-5.4.0/Flurry/libFlurry_5.4.0.a"; sourceTree = "<group>"; };
+		577D2F3F1A12A25D0056B8CF /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		577D2F401A12A25D0056B8CF /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.4.0.a; sourceTree = "<group>"; };
+		578CC4611A0853EF0092DD0B /* RecordAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordAudioViewController.h; sourceTree = "<group>"; };
+		578CC4621A0853EF0092DD0B /* RecordAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordAudioViewController.m; sourceTree = "<group>"; };
+		57C854551B20657100F414C6 /* TermsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TermsWebViewController.h; sourceTree = "<group>"; };
+		57C854561B20657100F414C6 /* TermsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TermsWebViewController.m; sourceTree = "<group>"; };
+		57C854591B23081900F414C6 /* ApiCheckRayzs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiCheckRayzs.h; sourceTree = "<group>"; };
+		57C8545A1B23081900F414C6 /* ApiCheckRayzs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiCheckRayzs.m; sourceTree = "<group>"; };
+		57C854601B230FB300F414C6 /* ApiCheckRayzsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiCheckRayzsResponse.h; sourceTree = "<group>"; };
+		57C854611B230FB300F414C6 /* ApiCheckRayzsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiCheckRayzsResponse.m; sourceTree = "<group>"; };
+		57C854631B23100400F414C6 /* ApiRayzStateResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRayzStateResponse.h; sourceTree = "<group>"; };
+		57C854641B23100400F414C6 /* ApiRayzStateResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApiRayzStateResponse.m; sourceTree = "<group>"; };
+		57DBCD0B19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CAStringifiedIntervals.h"; sourceTree = "<group>"; };
+		57DBCD0C19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CAStringifiedIntervals.m"; sourceTree = "<group>"; };
+		57DBCD0F19F7E21A009CD412 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		57F7CC9119C70D01001240DE /* RayzReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayzReply.h; sourceTree = "<group>"; };
+		57F7CC9219C70D01001240DE /* RayzReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RayzReply.m; sourceTree = "<group>"; };
+		57F7CC9719C71254001240DE /* Rayz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rayz.h; sourceTree = "<group>"; };
+		57F7CC9819C71254001240DE /* Rayz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rayz.m; sourceTree = "<group>"; };
+		57F7CC9A19C71322001240DE /* UserRequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRequests.h; sourceTree = "<group>"; };
+		57F7CC9B19C71322001240DE /* UserRequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRequests.m; sourceTree = "<group>"; };
+		57F7CC9E19C715C4001240DE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		57F7CC9F19C715C4001240DE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		57F7CCA119C71C7A001240DE /* ApiEntitiesProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiEntitiesProtocol.h; sourceTree = "<group>"; };
+		57F7CCBD19C73354001240DE /* Attachments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attachments.h; sourceTree = "<group>"; };
+		57F7CCBE19C73354001240DE /* Attachments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attachments.m; sourceTree = "<group>"; };
+		63BB33AD7B41351CE53E9F55 /* Pods-RayzitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayzitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RayzitTests/Pods-RayzitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64CE369E347D82ED798949AC /* Pods-RayzitTests.release testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayzitTests.release testflight.xcconfig"; path = "Pods/Target Support Files/Pods-RayzitTests/Pods-RayzitTests.release testflight.xcconfig"; sourceTree = "<group>"; };
+		774E5A55AC556506225F0E0D /* Pods-RayzitTests.debug localhost.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayzitTests.debug localhost.xcconfig"; path = "Pods/Target Support Files/Pods-RayzitTests/Pods-RayzitTests.debug localhost.xcconfig"; sourceTree = "<group>"; };
+		7C91D411D72E1991BBBD7E70 /* Pods-Rayzit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rayzit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rayzit/Pods-Rayzit.debug.xcconfig"; sourceTree = "<group>"; };
+		91C3BAA15195D12BA569DC13 /* Pods-Rayzit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rayzit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rayzit/Pods-Rayzit.release.xcconfig"; sourceTree = "<group>"; };
+		961567671E1F4E56BB0DD525 /* libPods-Rayzit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Rayzit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9DE85029DE0BCA09B2A91B /* Pods-Rayzit.release testflight.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rayzit.release testflight.xcconfig"; path = "Pods/Target Support Files/Pods-Rayzit/Pods-Rayzit.release testflight.xcconfig"; sourceTree = "<group>"; };
+		F892C07FCB25549C34F0BF8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F892C0D95105DFDC30C09929 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F892C11E3BADB346545B19AE /* Rayzit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rayzit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F892C15AE8ED631AD236938F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F892C1BA1D6F6E90F8845170 /* RayzitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayzitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F892C34E629FCAB42BCB71C3 /* Rayzit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "Rayzit-Info.plist"; sourceTree = "<group>"; };
+		F892C4866FDBD274C435EB2A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F892C501525E31CC1FA47BE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F892C530A8C3A9B0BBE29045 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F892C533CB171DD0526D0040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F892C57460803D59144E4D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F892C5EC696AFBBFE0594B8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F892C76AE3CE04BCE50AA94D /* RayzitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "RayzitTests-Info.plist"; sourceTree = "<group>"; };
+		F892C999F7429277D7284E87 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		F892CA0607850E8B434EE746 /* Rayzit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rayzit-Prefix.pch"; sourceTree = "<group>"; };
+		F892CAA86D88EA81A031DE8B /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		F892CAF04F05A20C22436A89 /* ApiModelsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiModelsProtocol.h; sourceTree = "<group>"; };
+		F892CC0C06385720000CBDAF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F892CF3F503E863A79CA901F /* ApiRequestsProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiRequestsProtocol.h; sourceTree = "<group>"; };
+		F892CFC101E4287B3A709E47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5762D3211AD41985005774AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5762D3221AD41985005774AD /* CoreLocation.framework in Frameworks */,
+				5762D3231AD41985005774AD /* Foundation.framework in Frameworks */,
+				5762D3241AD41985005774AD /* CoreGraphics.framework in Frameworks */,
+				5758290E1B32E53C00AAB03B /* Fabric.framework in Frameworks */,
+				5762D3251AD41985005774AD /* UIKit.framework in Frameworks */,
+				5762D3261AD41985005774AD /* Crashlytics.framework in Frameworks */,
+				5762D3271AD41985005774AD /* libPods-Rayzit.a in Frameworks */,
+				5762D3281AD41985005774AD /* libFlurry_5.4.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F892C584AB7189AB7C13F843 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F892C53C17BE830C015B2FA6 /* XCTest.framework in Frameworks */,
+				F892CE20BADA3C0FF3CDCDDF /* Foundation.framework in Frameworks */,
+				F892CABD35B726B78BB62983 /* UIKit.framework in Frameworks */,
+				9771212BC6CA421AA96A6743 /* libPods-RayzitTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F892C9BAD59C335B0E8E4EB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57310FEA19EC2ACB00D1A1D9 /* CoreLocation.framework in Frameworks */,
+				F892CDEDC13302FA45815C76 /* Foundation.framework in Frameworks */,
+				F892C9B949490ECE22B42773 /* CoreGraphics.framework in Frameworks */,
+				5758290D1B32E53200AAB03B /* Fabric.framework in Frameworks */,
+				F892CEEAAD3DE5AA2E1B026B /* UIKit.framework in Frameworks */,
+				57DBCD1019F7E21A009CD412 /* Crashlytics.framework in Frameworks */,
+				105840F09DEF4FCBA7D7A740 /* libPods-Rayzit.a in Frameworks */,
+				577D2F411A12A25D0056B8CF /* libFlurry_5.4.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5719771119DB66E900B3D233 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				573C562B1A0ABFB7000072F7 /* Rayzit_Promo.mp4 */,
+				F892C5EC696AFBBFE0594B8F /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5719771219DB66F600B3D233 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				576F5BD319F150AA000A992F /* Nibs */,
+				F892C1FE437BDC928D9C2868 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5719771319DB67B600B3D233 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				577D2F301A10D24D0056B8CF /* RayzTableView */,
+				57310FEB19EC357C00D1A1D9 /* LiveFeedTableViewController.h */,
+				57310FEC19EC357C00D1A1D9 /* LiveFeedTableViewController.m */,
+				5765E64C19EF053000036122 /* NewRayzViewController.h */,
+				5765E64D19EF053000036122 /* NewRayzViewController.m */,
+				576F5BDA19F178DF000A992F /* SelectDistanceTableViewController.h */,
+				576F5BDB19F178DF000A992F /* SelectDistanceTableViewController.m */,
+				5702AC9919F5611800B680A6 /* RayzViewController.h */,
+				5702AC9A19F5611800B680A6 /* RayzViewController.m */,
+				5702AC9C19F56B7F00B680A6 /* AttachmentsCollectionViewController.h */,
+				5702AC9D19F56B7F00B680A6 /* AttachmentsCollectionViewController.m */,
+				5746220B19F71DC80058F007 /* StarredRayzsTableViewController.h */,
+				5746220C19F71DC80058F007 /* StarredRayzsTableViewController.m */,
+				5746220E19F721F90058F007 /* MyRayzsTableViewController.h */,
+				5746220F19F721F90058F007 /* MyRayzsTableViewController.m */,
+				571878F619FFDD750037C41F /* SettingsTableViewController.h */,
+				571878F719FFDD750037C41F /* SettingsTableViewController.m */,
+				578CC4611A0853EF0092DD0B /* RecordAudioViewController.h */,
+				578CC4621A0853EF0092DD0B /* RecordAudioViewController.m */,
+				573C56281A0A9EBB000072F7 /* AboutTableViewController.h */,
+				573C56291A0A9EBB000072F7 /* AboutTableViewController.m */,
+				573C562C1A0ABFE4000072F7 /* MoreTableViewController.h */,
+				573C562D1A0ABFE4000072F7 /* MoreTableViewController.m */,
+				577D2F341A10F9260056B8CF /* RayzDetailsTableViewController.h */,
+				577D2F351A10F9260056B8CF /* RayzDetailsTableViewController.m */,
+				576128D51B18817F00964ACC /* NearbyRayzViewController.h */,
+				576128D61B18817F00964ACC /* NearbyRayzViewController.m */,
+				57C854551B20657100F414C6 /* TermsWebViewController.h */,
+				57C854561B20657100F414C6 /* TermsWebViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5719771419DB6A6800B3D233 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				571F0B4D1A004AC200AB6F1A /* ProgressView */,
+				576F5BD619F15557000A992F /* TableViewCell */,
+				575D509419EFDC6A001A9872 /* CollectionViewCell */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		571F0B4D1A004AC200AB6F1A /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				571F0B4E1A004AE300AB6F1A /* GradientProgressView.h */,
+				571F0B4F1A004AE300AB6F1A /* GradientProgressView.m */,
+			);
+			path = ProgressView;
+			sourceTree = "<group>";
+		};
+		5741BAEC19D440FB005C8F92 /* ApiRequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				5741BAED19D44113005C8F92 /* ApiRayz.h */,
+				5741BAEE19D44113005C8F92 /* ApiRayz.m */,
+				571976F619DB344F00B3D233 /* ApiReRayz.h */,
+				571976F719DB344F00B3D233 /* ApiReRayz.m */,
+				5719770219DB444D00B3D233 /* ApiUserRayzAction.h */,
+				5719770319DB444D00B3D233 /* ApiUserRayzAction.m */,
+				5768010519FF0A35005BB094 /* ApiRayzReply.h */,
+				5768010619FF0A35005BB094 /* ApiRayzReply.m */,
+				5768010819FF0C67005BB094 /* ApiUserRayzReplyAction.h */,
+				5768010919FF0C67005BB094 /* ApiUserRayzReplyAction.m */,
+				57C854591B23081900F414C6 /* ApiCheckRayzs.h */,
+				57C8545A1B23081900F414C6 /* ApiCheckRayzs.m */,
+			);
+			name = ApiRequestModels;
+			sourceTree = "<group>";
+		};
+		575D509419EFDC6A001A9872 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				575D509519EFDCAA001A9872 /* RayzTextCollectionViewCell.h */,
+				575D509619EFDCAA001A9872 /* RayzTextCollectionViewCell.m */,
+				575D50A119F067B8001A9872 /* AttachmentCollectionViewCell.h */,
+				575D50A219F067B8001A9872 /* AttachmentCollectionViewCell.m */,
+				575D50A419F13417001A9872 /* UserPowerCollectionViewCell.h */,
+				575D50A519F13417001A9872 /* UserPowerCollectionViewCell.m */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		576A2C3419CE340800642320 /* ApiResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				576A2C3519CE342900642320 /* ApiLiveFeedResponse.h */,
+				576A2C3619CE342900642320 /* ApiLiveFeedResponse.m */,
+				5741BAE019D41B83005C8F92 /* ApiStatusMessageResponse.h */,
+				5741BAE119D41B83005C8F92 /* ApiStatusMessageResponse.m */,
+				5741BAE319D43382005C8F92 /* ApiUserPowerResponse.h */,
+				5742DF7119FEBE1500967D36 /* ApiRayzAnswersResponse.h */,
+				5742DF7219FEBE1500967D36 /* ApiRayzAnswersResponse.m */,
+				5741BAE419D43382005C8F92 /* ApiUserPowerResponse.m */,
+				5741BAE919D43E54005C8F92 /* ApiCreateRayzResponse.h */,
+				5741BAEA19D43E54005C8F92 /* ApiCreateRayzResponse.m */,
+				571976F919DB35D500B3D233 /* ApiReRayzResponse.h */,
+				571976FA19DB35D500B3D233 /* ApiReRayzResponse.m */,
+				5719770519DB4A1F00B3D233 /* ApiUserRayzActionResponse.h */,
+				5719770619DB4A1F00B3D233 /* ApiUserRayzActionResponse.m */,
+				5768010B19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.h */,
+				5768010C19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.m */,
+				5768010E19FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.h */,
+				5768010F19FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.m */,
+				570383A11B1E405600BFAE71 /* ApiRayzRepliesResponse.h */,
+				570383A21B1E405600BFAE71 /* ApiRayzRepliesResponse.m */,
+				57C854601B230FB300F414C6 /* ApiCheckRayzsResponse.h */,
+				57C854611B230FB300F414C6 /* ApiCheckRayzsResponse.m */,
+				57C854631B23100400F414C6 /* ApiRayzStateResponse.h */,
+				57C854641B23100400F414C6 /* ApiRayzStateResponse.m */,
+			);
+			name = ApiResponseModels;
+			sourceTree = "<group>";
+		};
+		576F5BD319F150AA000A992F /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				576F5BD419F150E9000A992F /* RayzTableViewCell.xib */,
+				576800FD19FEF679005BB094 /* RayzAnswerTableViewCell.xib */,
+				575401CD1A1A120100AB3B93 /* RayzLabelTableViewCell.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		576F5BD619F15557000A992F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				576F5BD719F155DD000A992F /* RayzTableViewCell.h */,
+				576F5BD819F155DD000A992F /* RayzTableViewCell.m */,
+				576800FF19FEFA31005BB094 /* RayzAnswerTableViewCell.h */,
+				5768010019FEFA31005BB094 /* RayzAnswerTableViewCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		577D2F301A10D24D0056B8CF /* RayzTableView */ = {
+			isa = PBXGroup;
+			children = (
+				577D2F311A10D2660056B8CF /* RayzTableViewController.h */,
+				577D2F321A10D2660056B8CF /* RayzTableViewController.m */,
+			);
+			name = RayzTableView;
+			sourceTree = "<group>";
+		};
+		577D2F3E1A12A25D0056B8CF /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				577D2F3F1A12A25D0056B8CF /* Flurry.h */,
+				577D2F401A12A25D0056B8CF /* libFlurry_5.4.0.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
+		57F7CC9D19C7157E001240DE /* ApiModels */ = {
+			isa = PBXGroup;
+			children = (
+				5741BAEC19D440FB005C8F92 /* ApiRequestModels */,
+				576A2C3419CE340800642320 /* ApiResponseModels */,
+				57F7CC9E19C715C4001240DE /* User.h */,
+				57F7CC9F19C715C4001240DE /* User.m */,
+			);
+			path = ApiModels;
+			sourceTree = "<group>";
+		};
+		B3EBF3D00F5ECA21FD32ADF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C91D411D72E1991BBBD7E70 /* Pods-Rayzit.debug.xcconfig */,
+				23AA9FBB7B1109EB16CE8338 /* Pods-Rayzit.debug localhost.xcconfig */,
+				91C3BAA15195D12BA569DC13 /* Pods-Rayzit.release.xcconfig */,
+				63BB33AD7B41351CE53E9F55 /* Pods-RayzitTests.debug.xcconfig */,
+				774E5A55AC556506225F0E0D /* Pods-RayzitTests.debug localhost.xcconfig */,
+				3F819A58211430EE0977D7BD /* Pods-RayzitTests.release.xcconfig */,
+				CE9DE85029DE0BCA09B2A91B /* Pods-Rayzit.release testflight.xcconfig */,
+				64CE369E347D82ED798949AC /* Pods-RayzitTests.release testflight.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F892C1300D60D73BC0F65EE0 /* Rayzit */ = {
+			isa = PBXGroup;
+			children = (
+				577D2F3E1A12A25D0056B8CF /* Flurry */,
+				F892CC4B8D73EC143C2AB61E /* ApiStore */,
+				F892CFC101E4287B3A709E47 /* AppDelegate.h */,
+				F892C15AE8ED631AD236938F /* AppDelegate.m */,
+				5719771319DB67B600B3D233 /* Controllers */,
+				F892CD11A21E9825FDBC4D32 /* Helpers */,
+				5719771119DB66E900B3D233 /* Resources */,
+				5719771219DB66F600B3D233 /* Storyboards */,
+				F892C4BF99C3ED2E56796F44 /* Supporting Files */,
+				5719771419DB6A6800B3D233 /* UI */,
+			);
+			path = Rayzit;
+			sourceTree = "<group>";
+		};
+		F892C3C4A30C742A7C359B3E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F892C76AE3CE04BCE50AA94D /* RayzitTests-Info.plist */,
+				F892CEF16B7811DFF0840066 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F892C4BF99C3ED2E56796F44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F892C34E629FCAB42BCB71C3 /* Rayzit-Info.plist */,
+				F892C26B337FB4C86D911462 /* InfoPlist.strings */,
+				F892C57460803D59144E4D3D /* main.m */,
+				F892CA0607850E8B434EE746 /* Rayzit-Prefix.pch */,
+				5718790019FFEEEA0037C41F /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F892C6AC139F6A845F8A6788 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				577D2F3A1A12A23A0056B8CF /* Flurry.h */,
+				577D2F3B1A12A23A0056B8CF /* libFlurry_5.4.0.a */,
+				5758290C1B32E53200AAB03B /* Fabric.framework */,
+				57DBCD0F19F7E21A009CD412 /* Crashlytics.framework */,
+				57310FE919EC2ACB00D1A1D9 /* CoreLocation.framework */,
+				F892C07FCB25549C34F0BF8E /* Foundation.framework */,
+				F892CC0C06385720000CBDAF /* CoreGraphics.framework */,
+				F892C0D95105DFDC30C09929 /* UIKit.framework */,
+				F892C4866FDBD274C435EB2A /* XCTest.framework */,
+				961567671E1F4E56BB0DD525 /* libPods-Rayzit.a */,
+				3BC1DF9536B74A90906F39E2 /* libPods-RayzitTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F892C6E89DBBC70958F30339 /* RayzitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F892C3C4A30C742A7C359B3E /* Supporting Files */,
+				576A2C2E19CE2D7B00642320 /* ApiTests.m */,
+			);
+			path = RayzitTests;
+			sourceTree = "<group>";
+		};
+		F892C773CCE08864A7638190 /* ApiRequests */ = {
+			isa = PBXGroup;
+			children = (
+				57F7CC9A19C71322001240DE /* UserRequests.h */,
+				57F7CC9B19C71322001240DE /* UserRequests.m */,
+				5741BAE619D4383D005C8F92 /* RayzRequests.h */,
+				5741BAE719D4383D005C8F92 /* RayzRequests.m */,
+				5768010219FF0837005BB094 /* RayzReplyRequests.h */,
+				5768010319FF0837005BB094 /* RayzReplyRequests.m */,
+			);
+			path = ApiRequests;
+			sourceTree = "<group>";
+		};
+		F892C784160CBF9882F57282 /* ApiProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				F892CAF04F05A20C22436A89 /* ApiModelsProtocol.h */,
+				F892CF3F503E863A79CA901F /* ApiRequestsProtocol.h */,
+				57F7CCA119C71C7A001240DE /* ApiEntitiesProtocol.h */,
+			);
+			path = ApiProtocols;
+			sourceTree = "<group>";
+		};
+		F892C89147D524E323796FB8 /* ApiHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				576A2C2519CE295A00642320 /* ApiConstants.h */,
+				576A2C2619CE295A00642320 /* ApiConstants.m */,
+				571976FF19DB409100B3D233 /* ApiAlertHelper.h */,
+				5719770019DB409100B3D233 /* ApiAlertHelper.m */,
+				5719770819DB4EC200B3D233 /* ApiLocationManager.h */,
+				5719770919DB4EC200B3D233 /* ApiLocationManager.m */,
+			);
+			path = ApiHelpers;
+			sourceTree = "<group>";
+		};
+		F892C960E32ABC5B663AAAF8 = {
+			isa = PBXGroup;
+			children = (
+				F892CA223C25A58C80B9D651 /* Products */,
+				F892C6AC139F6A845F8A6788 /* Frameworks */,
+				F892C1300D60D73BC0F65EE0 /* Rayzit */,
+				F892C6E89DBBC70958F30339 /* RayzitTests */,
+				B3EBF3D00F5ECA21FD32ADF4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F892CA223C25A58C80B9D651 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F892C11E3BADB346545B19AE /* Rayzit.app */,
+				F892C1BA1D6F6E90F8845170 /* RayzitTests.xctest */,
+				5762D33A1AD41985005774AD /* RayzitDev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F892CC4B8D73EC143C2AB61E /* ApiStore */ = {
+			isa = PBXGroup;
+			children = (
+				57F7CC9D19C7157E001240DE /* ApiModels */,
+				F892CE9C13FC9F915CCB2209 /* ApiEntities */,
+				F892C773CCE08864A7638190 /* ApiRequests */,
+				F892C89147D524E323796FB8 /* ApiHelpers */,
+				F892C784160CBF9882F57282 /* ApiProtocols */,
+				57671ED419C4ADEA0081DC3A /* ApiModel.xcdatamodeld */,
+				576A2C1919CDB39B00642320 /* RemoteStore.h */,
+				576A2C1A19CDB39B00642320 /* RemoteStore.m */,
+				57310FE619EBFEC600D1A1D9 /* LocationManager.h */,
+				57310FE719EBFEC600D1A1D9 /* LocationManager.m */,
+				5742DF6E19FE8A5300967D36 /* FayeManager.h */,
+				5742DF6F19FE8A5300967D36 /* FayeManager.m */,
+			);
+			path = ApiStore;
+			sourceTree = "<group>";
+		};
+		F892CD11A21E9825FDBC4D32 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				57DBCD0B19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.h */,
+				57DBCD0C19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.m */,
+				5719770E19DB667700B3D233 /* UIColor+CAHexConverter.h */,
+				5719770F19DB667700B3D233 /* UIColor+CAHexConverter.m */,
+				576A2C2819CE2A9300642320 /* LumberjackFormatter.h */,
+				576A2C2919CE2A9300642320 /* LumberjackFormatter.m */,
+				576A2C2A19CE2A9300642320 /* LumberjackSettings.h */,
+				576A2C2B19CE2A9300642320 /* LumberjackSettings.m */,
+				F892CAA86D88EA81A031DE8B /* Utilities.h */,
+				F892C999F7429277D7284E87 /* Utilities.m */,
+				5719770B19DB65F400B3D233 /* RayzitTheme.h */,
+				5719770C19DB65F400B3D233 /* RayzitTheme.m */,
+				5765E64F19EF16A300036122 /* AppConstants.h */,
+				5765E65019EF16A300036122 /* AppConstants.m */,
+				575D509B19F009FE001A9872 /* MediaPickerHelper.h */,
+				575D509C19F009FE001A9872 /* MediaPickerHelper.m */,
+				575D509E19F00C54001A9872 /* CAFileManager.h */,
+				575D509F19F00C54001A9872 /* CAFileManager.m */,
+				5746220819F70AC10058F007 /* AlertUtils.h */,
+				5746220919F70AC10058F007 /* AlertUtils.m */,
+				571878F919FFDDEF0037C41F /* SettingsManager.h */,
+				571878FA19FFDDEF0037C41F /* SettingsManager.m */,
+				577D2F371A1150B60056B8CF /* RayzTableViewDataSource.h */,
+				577D2F381A1150B60056B8CF /* RayzTableViewDataSource.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F892CE9C13FC9F915CCB2209 /* ApiEntities */ = {
+			isa = PBXGroup;
+			children = (
+				576A2C0D19CD95C500642320 /* Attachment.h */,
+				576A2C0E19CD95C500642320 /* Attachment.m */,
+				57F7CCBD19C73354001240DE /* Attachments.h */,
+				57F7CCBE19C73354001240DE /* Attachments.m */,
+				57F7CC9719C71254001240DE /* Rayz.h */,
+				57F7CC9819C71254001240DE /* Rayz.m */,
+				57F7CC9119C70D01001240DE /* RayzReply.h */,
+				57F7CC9219C70D01001240DE /* RayzReply.m */,
+			);
+			path = ApiEntities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5762D2E01AD41985005774AD /* RayzitDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5762D3351AD41985005774AD /* Build configuration list for PBXNativeTarget "RayzitDev" */;
+			buildPhases = (
+				5762D2E11AD41985005774AD /* Check Pods Manifest.lock */,
+				5762D2E21AD41985005774AD /* Sources */,
+				5762D3211AD41985005774AD /* Frameworks */,
+				5762D3291AD41985005774AD /* Resources */,
+				5762D3321AD41985005774AD /* Copy Pods Resources */,
+				5762D3331AD41985005774AD /* Crashlytics */,
+				5762D3341AD41985005774AD /* Increment Build on Release */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayzitDev;
+			productName = Rayzit;
+			productReference = 5762D33A1AD41985005774AD /* RayzitDev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F892CBA73EE4DD77E6FDA097 /* RayzitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F892C398D18BAC5F3C8A2B43 /* Build configuration list for PBXNativeTarget "RayzitTests" */;
+			buildPhases = (
+				C91850590BFB4A87A2187138 /* Check Pods Manifest.lock */,
+				F892C9D95E9BFD61A8B91584 /* Sources */,
+				F892C584AB7189AB7C13F843 /* Frameworks */,
+				F892CC77D667BA8054D50BD5 /* Resources */,
+				8BF8C31E046E4BCAB5D5F86F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F892C95F4AFF5BD51F9E3B4B /* PBXTargetDependency */,
+				576A2C3119CE321700642320 /* PBXTargetDependency */,
+				576A2C3319CE321A00642320 /* PBXTargetDependency */,
+			);
+			name = RayzitTests;
+			productName = RayzitTests;
+			productReference = F892C1BA1D6F6E90F8845170 /* RayzitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F892CF0BB9A3DBA8E406743F /* Rayzit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F892C5772691EFFFB5652AE0 /* Build configuration list for PBXNativeTarget "Rayzit" */;
+			buildPhases = (
+				58174DAC341D4426ACE1DA79 /* Check Pods Manifest.lock */,
+				F892C687CAB7372231ED2879 /* Sources */,
+				F892C9BAD59C335B0E8E4EB2 /* Frameworks */,
+				F892C31C207BCDADDA43E637 /* Resources */,
+				FB3A4A5E76CD4B308D775B1F /* Copy Pods Resources */,
+				57DBCD0E19F7E1DA009CD412 /* Crashlytics */,
+				579D3C7B19F9426500898D99 /* Increment Build on Release */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rayzit;
+			productName = Rayzit;
+			productReference = F892C11E3BADB346545B19AE /* Rayzit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F892C1758544487E5B6FE8DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = DMSL;
+				TargetAttributes = {
+					F892CBA73EE4DD77E6FDA097 = {
+						TestTargetID = F892CF0BB9A3DBA8E406743F;
+					};
+					F892CF0BB9A3DBA8E406743F = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F892C0736B8649D2330D2E61 /* Build configuration list for PBXProject "Rayzit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F892C960E32ABC5B663AAAF8;
+			productRefGroup = F892CA223C25A58C80B9D651 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F892CF0BB9A3DBA8E406743F /* Rayzit */,
+				F892CBA73EE4DD77E6FDA097 /* RayzitTests */,
+				5762D2E01AD41985005774AD /* RayzitDev */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5762D3291AD41985005774AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5762D32A1AD41985005774AD /* InfoPlist.strings in Resources */,
+				5762D32B1AD41985005774AD /* Localizable.strings in Resources */,
+				5762D32C1AD41985005774AD /* Images.xcassets in Resources */,
+				5762D32D1AD41985005774AD /* Main.storyboard in Resources */,
+				5762D32E1AD41985005774AD /* RayzLabelTableViewCell.xib in Resources */,
+				5762D32F1AD41985005774AD /* Rayzit_Promo.mp4 in Resources */,
+				5762D3301AD41985005774AD /* RayzTableViewCell.xib in Resources */,
+				5762D3311AD41985005774AD /* RayzAnswerTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F892C31C207BCDADDA43E637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F892C810E15F1CE9F259EE0E /* InfoPlist.strings in Resources */,
+				571878FE19FFEEEA0037C41F /* Localizable.strings in Resources */,
+				F892C4B5F72BBBEC94D00070 /* Images.xcassets in Resources */,
+				F892CFEA22C6DF39BFA6D15D /* Main.storyboard in Resources */,
+				575401CE1A1A120100AB3B93 /* RayzLabelTableViewCell.xib in Resources */,
+				573C562F1A0ACE16000072F7 /* Rayzit_Promo.mp4 in Resources */,
+				576F5BD519F150E9000A992F /* RayzTableViewCell.xib in Resources */,
+				576800FE19FEF679005BB094 /* RayzAnswerTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F892CC77D667BA8054D50BD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F892C0B744C28AAC7258AE7D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5762D2E11AD41985005774AD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5762D3321AD41985005774AD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rayzit/Pods-Rayzit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5762D3331AD41985005774AD /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 077c20f08906e39f4402c696d88fafe3f95aaab5 b2333cfd586a497dac972aa07f61fadec45f0891b5d919adf491f64e87e85878";
+		};
+		5762D3341AD41985005774AD /* Increment Build on Release */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build on Release";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" -o \"${CONFIGURATION}\" = \"Release Testflight\" ]; then\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nfi";
+		};
+		579D3C7B19F9426500898D99 /* Increment Build on Release */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build on Release";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" = \"Release\" -o \"${CONFIGURATION}\" = \"Release Testflight\" ]; then\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nfi";
+		};
+		57DBCD0E19F7E1DA009CD412 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 077c20f08906e39f4402c696d88fafe3f95aaab5 b2333cfd586a497dac972aa07f61fadec45f0891b5d919adf491f64e87e85878";
+		};
+		58174DAC341D4426ACE1DA79 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8BF8C31E046E4BCAB5D5F86F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RayzitTests/Pods-RayzitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C91850590BFB4A87A2187138 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3A4A5E76CD4B308D775B1F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rayzit/Pods-Rayzit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5762D2E21AD41985005774AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C854661B23134900F414C6 /* ApiCheckRayzsResponse.m in Sources */,
+				57C854671B23134900F414C6 /* ApiRayzStateResponse.m in Sources */,
+				57C8545C1B230C9300F414C6 /* ApiCheckRayzs.m in Sources */,
+				57C854581B20669A00F414C6 /* TermsWebViewController.m in Sources */,
+				570383A41B1E473100BFAE71 /* ApiRayzRepliesResponse.m in Sources */,
+				576128D91B1897A200964ACC /* NearbyRayzViewController.m in Sources */,
+				5762D2E31AD41985005774AD /* AttachmentsCollectionViewController.m in Sources */,
+				5762D2E41AD41985005774AD /* ApiRayz.m in Sources */,
+				5762D2E51AD41985005774AD /* ApiLocationManager.m in Sources */,
+				5762D2E61AD41985005774AD /* ApiRayzAnswersResponse.m in Sources */,
+				5762D2E71AD41985005774AD /* ApiReRayz.m in Sources */,
+				5762D2E81AD41985005774AD /* ApiRayzReply.m in Sources */,
+				5762D2E91AD41985005774AD /* ApiUserRayzActionResponse.m in Sources */,
+				5762D2EA1AD41985005774AD /* LumberjackFormatter.m in Sources */,
+				5762D2EB1AD41985005774AD /* RayzDetailsTableViewController.m in Sources */,
+				5762D2EC1AD41985005774AD /* ApiUserRayzAction.m in Sources */,
+				5762D2ED1AD41985005774AD /* ApiLiveFeedResponse.m in Sources */,
+				5762D2EE1AD41985005774AD /* AppConstants.m in Sources */,
+				5762D2EF1AD41985005774AD /* LiveFeedTableViewController.m in Sources */,
+				5762D2F01AD41985005774AD /* SettingsManager.m in Sources */,
+				5762D2F11AD41985005774AD /* SettingsTableViewController.m in Sources */,
+				5762D2F21AD41985005774AD /* User.m in Sources */,
+				5762D2F31AD41985005774AD /* main.m in Sources */,
+				5762D2F41AD41985005774AD /* RayzTextCollectionViewCell.m in Sources */,
+				5762D2F51AD41985005774AD /* RayzTableViewDataSource.m in Sources */,
+				5762D2F61AD41985005774AD /* RayzTableViewController.m in Sources */,
+				5762D2F71AD41985005774AD /* ApiUserRayzReplyAction.m in Sources */,
+				5762D2F81AD41985005774AD /* AppDelegate.m in Sources */,
+				5762D2F91AD41985005774AD /* UserPowerCollectionViewCell.m in Sources */,
+				5762D2FA1AD41985005774AD /* ApiModel.xcdatamodeld in Sources */,
+				5762D2FB1AD41985005774AD /* ApiPowerReportRayzReplyResponse.m in Sources */,
+				5762D2FC1AD41985005774AD /* RayzTableViewCell.m in Sources */,
+				5762D2FD1AD41985005774AD /* RayzRequests.m in Sources */,
+				5762D2FE1AD41985005774AD /* AlertUtils.m in Sources */,
+				5762D2FF1AD41985005774AD /* Utilities.m in Sources */,
+				5762D3001AD41985005774AD /* UIColor+CAHexConverter.m in Sources */,
+				5762D3011AD41985005774AD /* RayzitTheme.m in Sources */,
+				5762D3021AD41985005774AD /* ApiCreateRayzResponse.m in Sources */,
+				5762D3031AD41985005774AD /* AboutTableViewController.m in Sources */,
+				5762D3041AD41985005774AD /* ApiReRayzResponse.m in Sources */,
+				5762D3051AD41985005774AD /* NewRayzViewController.m in Sources */,
+				5762D3061AD41985005774AD /* GradientProgressView.m in Sources */,
+				5762D3071AD41985005774AD /* SelectDistanceTableViewController.m in Sources */,
+				5762D3081AD41985005774AD /* UserRequests.m in Sources */,
+				5762D3091AD41985005774AD /* AttachmentCollectionViewCell.m in Sources */,
+				5762D30A1AD41985005774AD /* MediaPickerHelper.m in Sources */,
+				5762D30B1AD41985005774AD /* RayzReply.m in Sources */,
+				5762D30C1AD41985005774AD /* RayzViewController.m in Sources */,
+				5762D30D1AD41985005774AD /* Attachment.m in Sources */,
+				5762D30E1AD41985005774AD /* FayeManager.m in Sources */,
+				5762D30F1AD41985005774AD /* ApiUserPowerResponse.m in Sources */,
+				5762D3101AD41985005774AD /* RecordAudioViewController.m in Sources */,
+				5762D3111AD41985005774AD /* StarredRayzsTableViewController.m in Sources */,
+				5762D3121AD41985005774AD /* Attachments.m in Sources */,
+				5762D3131AD41985005774AD /* ApiAlertHelper.m in Sources */,
+				5762D3141AD41985005774AD /* MoreTableViewController.m in Sources */,
+				5762D3151AD41985005774AD /* LumberjackSettings.m in Sources */,
+				5762D3161AD41985005774AD /* ApiStatusMessageResponse.m in Sources */,
+				5762D3171AD41985005774AD /* ApiConstants.m in Sources */,
+				5762D3181AD41985005774AD /* NSDate+CAStringifiedIntervals.m in Sources */,
+				5762D3191AD41985005774AD /* Rayz.m in Sources */,
+				5762D31A1AD41985005774AD /* LocationManager.m in Sources */,
+				5762D31B1AD41985005774AD /* MyRayzsTableViewController.m in Sources */,
+				5762D31C1AD41985005774AD /* RayzAnswerTableViewCell.m in Sources */,
+				5762D31D1AD41985005774AD /* RemoteStore.m in Sources */,
+				5762D31E1AD41985005774AD /* CAFileManager.m in Sources */,
+				5762D31F1AD41985005774AD /* ApiCreateRayzReplyResponse.m in Sources */,
+				5762D3201AD41985005774AD /* RayzReplyRequests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F892C687CAB7372231ED2879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5702AC9E19F56B7F00B680A6 /* AttachmentsCollectionViewController.m in Sources */,
+				5741BAEF19D44113005C8F92 /* ApiRayz.m in Sources */,
+				5719770A19DB4EC200B3D233 /* ApiLocationManager.m in Sources */,
+				5742DF7319FEBE1500967D36 /* ApiRayzAnswersResponse.m in Sources */,
+				571976F819DB344F00B3D233 /* ApiReRayz.m in Sources */,
+				5768010719FF0A35005BB094 /* ApiRayzReply.m in Sources */,
+				576128D71B18817F00964ACC /* NearbyRayzViewController.m in Sources */,
+				5719770719DB4A1F00B3D233 /* ApiUserRayzActionResponse.m in Sources */,
+				576A2C2C19CE2A9300642320 /* LumberjackFormatter.m in Sources */,
+				577D2F361A10F9260056B8CF /* RayzDetailsTableViewController.m in Sources */,
+				5719770419DB444D00B3D233 /* ApiUserRayzAction.m in Sources */,
+				576A2C3719CE342900642320 /* ApiLiveFeedResponse.m in Sources */,
+				5765E65119EF16A300036122 /* AppConstants.m in Sources */,
+				57310FED19EC357C00D1A1D9 /* LiveFeedTableViewController.m in Sources */,
+				571878FB19FFDDEF0037C41F /* SettingsManager.m in Sources */,
+				571878F819FFDD750037C41F /* SettingsTableViewController.m in Sources */,
+				57C854571B20657100F414C6 /* TermsWebViewController.m in Sources */,
+				57F7CCA019C715C4001240DE /* User.m in Sources */,
+				F892C2BC55DA057B8DD29DA2 /* main.m in Sources */,
+				575D509719EFDCAA001A9872 /* RayzTextCollectionViewCell.m in Sources */,
+				577D2F391A1150B60056B8CF /* RayzTableViewDataSource.m in Sources */,
+				577D2F331A10D2660056B8CF /* RayzTableViewController.m in Sources */,
+				5768010A19FF0C67005BB094 /* ApiUserRayzReplyAction.m in Sources */,
+				570383A31B1E405600BFAE71 /* ApiRayzRepliesResponse.m in Sources */,
+				F892CCB7131DE5139A7380DE /* AppDelegate.m in Sources */,
+				57C854621B230FB300F414C6 /* ApiCheckRayzsResponse.m in Sources */,
+				575D50A619F13418001A9872 /* UserPowerCollectionViewCell.m in Sources */,
+				57671ED619C4ADEA0081DC3A /* ApiModel.xcdatamodeld in Sources */,
+				5768011019FF0EE6005BB094 /* ApiPowerReportRayzReplyResponse.m in Sources */,
+				576F5BD919F155DD000A992F /* RayzTableViewCell.m in Sources */,
+				5741BAE819D4383D005C8F92 /* RayzRequests.m in Sources */,
+				5746220A19F70AC10058F007 /* AlertUtils.m in Sources */,
+				57C8545B1B23081900F414C6 /* ApiCheckRayzs.m in Sources */,
+				F892C43EC054EDB919F5E41C /* Utilities.m in Sources */,
+				5719771019DB667700B3D233 /* UIColor+CAHexConverter.m in Sources */,
+				5719770D19DB65F400B3D233 /* RayzitTheme.m in Sources */,
+				5741BAEB19D43E54005C8F92 /* ApiCreateRayzResponse.m in Sources */,
+				573C562A1A0A9EBB000072F7 /* AboutTableViewController.m in Sources */,
+				571976FB19DB35D500B3D233 /* ApiReRayzResponse.m in Sources */,
+				5765E64E19EF053000036122 /* NewRayzViewController.m in Sources */,
+				571F0B501A004AE300AB6F1A /* GradientProgressView.m in Sources */,
+				576F5BDC19F178DF000A992F /* SelectDistanceTableViewController.m in Sources */,
+				57F7CC9C19C71322001240DE /* UserRequests.m in Sources */,
+				575D50A319F067B8001A9872 /* AttachmentCollectionViewCell.m in Sources */,
+				575D509D19F009FE001A9872 /* MediaPickerHelper.m in Sources */,
+				57F7CC9319C70D01001240DE /* RayzReply.m in Sources */,
+				5702AC9B19F5611800B680A6 /* RayzViewController.m in Sources */,
+				576A2C0F19CD95C500642320 /* Attachment.m in Sources */,
+				5742DF7019FE8A5300967D36 /* FayeManager.m in Sources */,
+				5741BAE519D43382005C8F92 /* ApiUserPowerResponse.m in Sources */,
+				578CC4631A0853EF0092DD0B /* RecordAudioViewController.m in Sources */,
+				5746220D19F71DC80058F007 /* StarredRayzsTableViewController.m in Sources */,
+				57F7CCBF19C73354001240DE /* Attachments.m in Sources */,
+				5719770119DB409100B3D233 /* ApiAlertHelper.m in Sources */,
+				573C562E1A0ABFE4000072F7 /* MoreTableViewController.m in Sources */,
+				576A2C2D19CE2A9300642320 /* LumberjackSettings.m in Sources */,
+				5741BAE219D41B83005C8F92 /* ApiStatusMessageResponse.m in Sources */,
+				576A2C2719CE295A00642320 /* ApiConstants.m in Sources */,
+				57DBCD0D19F7DFE8009CD412 /* NSDate+CAStringifiedIntervals.m in Sources */,
+				57F7CC9919C71254001240DE /* Rayz.m in Sources */,
+				57310FE819EBFEC600D1A1D9 /* LocationManager.m in Sources */,
+				5746221019F721F90058F007 /* MyRayzsTableViewController.m in Sources */,
+				5768010119FEFA31005BB094 /* RayzAnswerTableViewCell.m in Sources */,
+				576A2C1B19CDB39B00642320 /* RemoteStore.m in Sources */,
+				575D50A019F00C54001A9872 /* CAFileManager.m in Sources */,
+				57C854651B23100400F414C6 /* ApiRayzStateResponse.m in Sources */,
+				5768010D19FF0DF6005BB094 /* ApiCreateRayzReplyResponse.m in Sources */,
+				5768010419FF0837005BB094 /* RayzReplyRequests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F892C9D95E9BFD61A8B91584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576A2C2F19CE2D7B00642320 /* ApiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		576A2C3119CE321700642320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F892CF0BB9A3DBA8E406743F /* Rayzit */;
+			targetProxy = 576A2C3019CE321700642320 /* PBXContainerItemProxy */;
+		};
+		576A2C3319CE321A00642320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F892CF0BB9A3DBA8E406743F /* Rayzit */;
+			targetProxy = 576A2C3219CE321A00642320 /* PBXContainerItemProxy */;
+		};
+		F892C95F4AFF5BD51F9E3B4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F892CF0BB9A3DBA8E406743F /* Rayzit */;
+			targetProxy = F892C1EA4050EC2B9F2F0DC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5718790019FFEEEA0037C41F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				571878FF19FFEEEA0037C41F /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F892C1FE437BDC928D9C2868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F892C533CB171DD0526D0040 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F892C26B337FB4C86D911462 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F892C530A8C3A9B0BBE29045 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F892CEF16B7811DFF0840066 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F892C501525E31CC1FA47BE5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5762D3361AD41985005774AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C91D411D72E1991BBBD7E70 /* Pods-Rayzit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Demetris Zeinalipour (HY45H9826Z)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = RayzitDev;
+				PROVISIONING_PROFILE = "cd5c28a3-a437-4c58-b2de-fab6815e4b72";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5762D3371AD41985005774AD /* Debug localhost */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23AA9FBB7B1109EB16CE8338 /* Pods-Rayzit.debug localhost.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Demetris Zeinalipour (HY45H9826Z)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = RayzitDev;
+				PROVISIONING_PROFILE = "cd5c28a3-a437-4c58-b2de-fab6815e4b72";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Debug localhost";
+		};
+		5762D3381AD41985005774AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C3BAA15195D12BA569DC13 /* Pods-Rayzit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Demetris Zeinalipour (QXD9LKL97X)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = RayzitDev;
+				PROVISIONING_PROFILE = "896e83f1-7e5e-41e5-92c5-c8297bc3b746";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5762D3391AD41985005774AD /* Release Testflight */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9DE85029DE0BCA09B2A91B /* Pods-Rayzit.release testflight.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Demetris Zeinalipour (QXD9LKL97X)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEV_TESTFLIGHT=1",
+				);
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = RayzitDev;
+				PROVISIONING_PROFILE = "4cff37ef-86c0-4717-b2fc-8eab7d6834a9";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Release Testflight";
+		};
+		576A2C1C19CE277100642320 /* Debug localhost */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Demetris Zeinalipour (HY45H9826Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Demetris Zeinalipour (HY45H9826Z)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"DEBUG_LOCALHOST=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "cd5c28a3-a437-4c58-b2de-fab6815e4b72";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug localhost";
+		};
+		576A2C1D19CE277100642320 /* Debug localhost */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23AA9FBB7B1109EB16CE8338 /* Pods-Rayzit.debug localhost.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd5c28a3-a437-4c58-b2de-fab6815e4b72";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Debug localhost";
+		};
+		576A2C1E19CE277100642320 /* Debug localhost */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774E5A55AC556506225F0E0D /* Pods-RayzitTests.debug localhost.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "RayzitTests/RayzitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "cy.ac.ucy.cs.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayzit.app/Rayzit";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = "Debug localhost";
+		};
+		57DBCD1119F7E9F8009CD412 /* Release Testflight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Demetris Zeinalipour (QXD9LKL97X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Demetris Zeinalipour (QXD9LKL97X)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "4cff37ef-86c0-4717-b2fc-8eab7d6834a9";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Testflight";
+		};
+		57DBCD1219F7E9F8009CD412 /* Release Testflight */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9DE85029DE0BCA09B2A91B /* Pods-Rayzit.release testflight.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"TESTFLIGHT=1",
+				);
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4cff37ef-86c0-4717-b2fc-8eab7d6834a9";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Release Testflight";
+		};
+		57DBCD1319F7E9F8009CD412 /* Release Testflight */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64CE369E347D82ED798949AC /* Pods-RayzitTests.release testflight.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "RayzitTests/RayzitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "cy.ac.ucy.cs.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayzit.app/Rayzit";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = "Release Testflight";
+		};
+		F892C3222CC224A80905B935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Demetris Zeinalipour (QXD9LKL97X)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Demetris Zeinalipour (QXD9LKL97X)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "896e83f1-7e5e-41e5-92c5-c8297bc3b746";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F892C390E21B4216CC8D6534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Demetris Zeinalipour (HY45H9826Z)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Demetris Zeinalipour (HY45H9826Z)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "cd5c28a3-a437-4c58-b2de-fab6815e4b72";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F892C81EB731EF49AF973395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BB33AD7B41351CE53E9F55 /* Pods-RayzitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "RayzitTests/RayzitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "cy.ac.ucy.cs.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayzit.app/Rayzit";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F892C8CDF5CF4232BA1034A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C3BAA15195D12BA569DC13 /* Pods-Rayzit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "896e83f1-7e5e-41e5-92c5-c8297bc3b746";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F892CB5230010D603E806B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F819A58211430EE0977D7BD /* Pods-RayzitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "RayzitTests/RayzitTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "cy.ac.ucy.cs.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rayzit.app/Rayzit";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		F892CFA3B2C21D34B68436D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C91D411D72E1991BBBD7E70 /* Pods-Rayzit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rayzit/Rayzit-Prefix.pch";
+				INFOPLIST_FILE = "Rayzit/Rayzit-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Rayzit/Flurry",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rayzit.rayzitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cd5c28a3-a437-4c58-b2de-fab6815e4b72";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5762D3351AD41985005774AD /* Build configuration list for PBXNativeTarget "RayzitDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5762D3361AD41985005774AD /* Debug */,
+				5762D3371AD41985005774AD /* Debug localhost */,
+				5762D3381AD41985005774AD /* Release */,
+				5762D3391AD41985005774AD /* Release Testflight */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F892C0736B8649D2330D2E61 /* Build configuration list for PBXProject "Rayzit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F892C390E21B4216CC8D6534 /* Debug */,
+				576A2C1C19CE277100642320 /* Debug localhost */,
+				F892C3222CC224A80905B935 /* Release */,
+				57DBCD1119F7E9F8009CD412 /* Release Testflight */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F892C398D18BAC5F3C8A2B43 /* Build configuration list for PBXNativeTarget "RayzitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F892C81EB731EF49AF973395 /* Debug */,
+				576A2C1E19CE277100642320 /* Debug localhost */,
+				F892CB5230010D603E806B70 /* Release */,
+				57DBCD1319F7E9F8009CD412 /* Release Testflight */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F892C5772691EFFFB5652AE0 /* Build configuration list for PBXNativeTarget "Rayzit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F892CFA3B2C21D34B68436D7 /* Debug */,
+				576A2C1D19CE277100642320 /* Debug localhost */,
+				F892C8CDF5CF4232BA1034A0 /* Release */,
+				57DBCD1219F7E9F8009CD412 /* Release Testflight */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		57671ED419C4ADEA0081DC3A /* ApiModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				576128D81B1881C800964ACC /* ApiModel4.xcdatamodel */,
+				5762D33C1AD46733005774AD /* ApiModel3.3.xcdatamodel */,
+				5742DF7419FEDDF400967D36 /* ApiModel2.xcdatamodel */,
+				5768011119FF1E39005BB094 /* ApiModel3.xcdatamodel */,
+				571F0B4B1A00225E00AB6F1A /* ApiModel3.1.xcdatamodel */,
+				571F0B4C1A00231700AB6F1A /* ApiModel3.2.xcdatamodel */,
+				57671ED519C4ADEA0081DC3A /* ApiModel.xcdatamodel */,
+			);
+			currentVersion = 576128D81B1881C800964ACC /* ApiModel4.xcdatamodel */;
+			path = ApiModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F892C1758544487E5B6FE8DA /* Project object */;
+}

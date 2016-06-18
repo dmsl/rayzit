@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="14A389" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Attachment" representedClassName="Attachment" syncable="YES">
+        <attribute name="filename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="md5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="audioParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Attachments" inverseName="audio" inverseEntity="Attachments" syncable="YES"/>
+        <relationship name="imagesParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Attachments" inverseName="images" inverseEntity="Attachments" syncable="YES"/>
+        <relationship name="videoParent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Attachments" inverseName="videos" inverseEntity="Attachments" syncable="YES"/>
+    </entity>
+    <entity name="Attachments" representedClassName="Attachments" syncable="YES">
+        <relationship name="audio" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Attachment" inverseName="audioParent" inverseEntity="Attachment" syncable="YES"/>
+        <relationship name="images" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Attachment" inverseName="imagesParent" inverseEntity="Attachment" syncable="YES"/>
+        <relationship name="rayz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rayz" inverseName="attachments" inverseEntity="Rayz" syncable="YES"/>
+        <relationship name="reply" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RayzReply" inverseName="attachments" inverseEntity="RayzReply" syncable="YES"/>
+        <relationship name="videos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Attachment" inverseName="videoParent" inverseEntity="Attachment" syncable="YES"/>
+    </entity>
+    <entity name="Rayz" representedClassName="Rayz" syncable="YES">
+        <attribute name="deliveredK" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="follow" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="hidden" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="maxDistance" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="mtype" attributeType="String" defaultValueString="rayz" syncable="YES"/>
+        <attribute name="rayz_message" attributeType="String" syncable="YES"/>
+        <attribute name="rayzId" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="report" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="rerayz" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="starred" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" attributeType="Date" syncable="YES"/>
+        <attribute name="userId" attributeType="String" syncable="YES"/>
+        <relationship name="attachments" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Attachments" inverseName="rayz" inverseEntity="Attachments" syncable="YES"/>
+        <relationship name="replies" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="RayzReply" inverseName="rayz" inverseEntity="RayzReply" syncable="YES"/>
+    </entity>
+    <entity name="RayzReply" representedClassName="RayzReply" syncable="YES">
+        <attribute name="mtype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rayz_reply_message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rayzId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rayzReplyId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="report" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="upVotes" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="attachments" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Attachments" inverseName="reply" inverseEntity="Attachments" syncable="YES"/>
+        <relationship name="rayz" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rayz" inverseName="replies" inverseEntity="Rayz" syncable="YES"/>
+    </entity>
+    <fetchRequest name="getAllRayzs" entity="Rayz" predicateString="TRUEPREDICATE"/>
+    <fetchRequest name="getRayzs" entity="Rayz" predicateString="hidden == 0"/>
+    <elements>
+        <element name="Attachment" positionX="9" positionY="3" width="128" height="150"/>
+        <element name="Attachments" positionX="16" positionY="-270" width="128" height="118"/>
+        <element name="Rayz" positionX="342" positionY="-33" width="128" height="268"/>
+        <element name="RayzReply" positionX="-270" positionY="72" width="128" height="210"/>
+    </elements>
+</model>

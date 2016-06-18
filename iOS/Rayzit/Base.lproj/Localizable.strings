@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  Rayzit
+
+  Created by Chrysovalantis Anastasiou on 28/10/14.
+  Copyright (c) 2014 DMSL. All rights reserved.
+*/
+
+"settings.location.footer.title1"="why should I keep location on?\n";
+"settings.location.footer.text1"="Location allows you to send and receive accurate location based messages. If it is turned off, you will receive rayz messages based on your last known location and you may miss important rayz messages around you!\n\n";
+"settings.location.footer.title2"="does location use GPS and drains my battery?\n";
+"settings.location.footer.text2"="No. Location uses a cell-tower based location service instead of GPS positioning. This does not cause excessive battery consumption";
+
+"new.powerbar.info.title"="Rayz Power";
+"new.powerbar.info.text"="Your Rayz power will decrease every time you rayz or re-rayz a message and whenever you power up or down a Rayz reply. It gradually reloads. To reload faster, Rayz useful answers that will be powered up by others.";
+
+"about.sections.section1"="version";
+"about.sections.section2"="information";
+"about.sections.section3"="description";
+"about.sections.section4"="developed by";
+
+"about.section1.content1"="1.0.0"; //TODO pull this from prorject
+
+"about.section2.content1"="Send Feedback";
+"about.section2.content2"="Terms of Service";
+"about.section2.content3"="Rules";
+"about.section2.content4"="Privacy Policy";
+"about.section2.content5"="Change Log";
+
+"about.section3.content1"="RayzIt is an award-winning messaging technology that delivers your questions, inquiries and ideas to the closest users around, regardless of how far these users are and who they are. We utilize a combination of state-of-the art computational techniques and crowdsourcing concepts to introduce one of the most compelling social interaction experiences available, as you will instantly see who is Rayzing around you and engage immediately!";
+
+"terms.of.use"="IMPORTANT: BY USING RAYZIT, YOU ARE AGREEING TO BE BOUND BY THE <a href=http://rayzit.com/tos>RAYZIT TERMS-OF-USE</a> (End User Licence Terms - EULA) AND THE <a href=http://rayzit.com/rules>RAYZIT RULES</a>. There will be no tolerance for violation of the terms or rules and any violators will be suspended from the Rayzit service immediately.<br><br>By clicking AGREE you indicate that you have read and understood the Rayzit Terms-of-Use and the Rules";
+
+//website links
+"website.ucy"="http://ucy.ac.cy";
+"website.dmsl"="http://dmsl.cs.ucy.ac.cy";
+"website.rayzit.contact"="http://rayzit.com/contact";
+"website.rayzit.tos"="http://rayzit.com/tos";
+"website.rayzit.rules"="http://rayzit.com/rules";
+"website.rayzit.privacy"="http://rayzit.com/privacy";
