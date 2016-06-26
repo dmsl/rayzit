@@ -1,0 +1,116 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Rayzit.Pages.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    shell:SystemTray.IsVisible="True"
+    shell:SystemTray.BackgroundColor="#EC3E23"
+    shell:SystemTray.ForegroundColor="WhiteSmoke">
+
+    <!--Transitions-->
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Background="#EC3E23">
+            <TextBlock Text="ABOUT" Style="{StaticResource PhoneTextNormalStyle}" Foreground="White" FontWeight="Bold"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer>
+                <StackPanel>
+
+                    <StackPanel Margin="0,0,0,30">
+                        <!-- HEADER -->
+                        <TextBlock TextWrapping="Wrap" Text="version" FontSize="30" Foreground="#B2EC3E23"/>
+                        <!-- BODY -->
+                        <TextBlock x:Name="AppVersion" Text="2.0.0" FontSize="24" Foreground="#B2363636"/>
+                    </StackPanel>
+
+                    <Grid Margin="0,0,0,30">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0">
+                            <!-- HEADER -->
+                            <TextBlock TextWrapping="Wrap" Text="information" FontSize="30" Foreground="#B2EC3E23"/>
+                            <!-- BODY -->
+                            <HyperlinkButton Margin="-12,5,0,5" Foreground="#B2363636" NavigateUri="http://rayzit.com/contact" TargetName="_anything" Content="Send Feedback" HorizontalAlignment="Left"/>
+
+                            <HyperlinkButton Margin="-12,5,0,5" Foreground="#B2363636" NavigateUri="http://rayzit.com/tos" TargetName="_anything" Content="Terms of Service" HorizontalAlignment="Left"/>
+
+                            <HyperlinkButton Margin="-12,5,0,5" Foreground="#B2363636" NavigateUri="http://rayzit.com/rules" TargetName="_anything" Content="Rules" HorizontalAlignment="Left"/>
+
+                            <HyperlinkButton Margin="-12,5,0,5" Foreground="#B2363636" NavigateUri="http://rayzit.com/privacy" TargetName="_anything" Content="Privacy Policy" HorizontalAlignment="Left"/>
+
+                            <HyperlinkButton Margin="-12,5,0,5" Foreground="#B2363636" NavigateUri="http://rayzit.com/wpchangelog" TargetName="_anything" Content="Change Log" HorizontalAlignment="Left"/>
+                        </StackPanel>
+
+                        <Image Margin="0,-70,0,0" VerticalAlignment="Top" Grid.Column="1" Source="/Assets/Images/rayzit_logo_icon.png" Stretch="None"/>
+
+                    </Grid>
+
+                    <StackPanel Margin="0,0,0,30">
+                        <!-- HEADER -->
+                        <TextBlock TextWrapping="Wrap" Text="description" FontSize="30" Foreground="#B2EC3E23"/>
+                        <!-- BODY -->
+                        <TextBlock TextWrapping="Wrap" FontSize="24" Foreground="#B2363636" Text="RayzIt is an award-winning messaging technology that delivers your questions, inquiries and ideas to the closest users around, regardless of how far these users are and who they are. We utilize a combination of state-of-the art computational techniques and crowdsourcing concepts to introduce one of the most compelling social interaction experiences available, as you will instantly see who is Rayzing around you and engage immediately!">
+                        </TextBlock>
+                    </StackPanel>
+
+                    <StackPanel>
+                        <!-- HEADER -->
+                        <TextBlock TextWrapping="Wrap" Text="developed by" FontSize="30" Foreground="#B2EC3E23"/>
+                        <!-- BODY -->
+                        <Grid HorizontalAlignment="Left" Width="440">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" HorizontalAlignment="Left" MouseLeftButtonDown="DMSL_Logo_OnClick" Source="/Assets/Images/dmsl_logo.png"></Image>
+                            <Image Grid.Column="1" Margin="5,0,0,0" HorizontalAlignment="Left" MouseLeftButtonDown="UCY_Logo_OnClick" Source="/Assets/Images/ucy_logo.png"></Image>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

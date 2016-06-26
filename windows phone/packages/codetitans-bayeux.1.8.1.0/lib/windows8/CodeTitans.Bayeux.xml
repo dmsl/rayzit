@@ -1,0 +1,1891 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeTitans.Bayeux</name>
+    </assembly>
+    <members>
+        <member name="T:CodeTitans.Diagnostics.DebugEntry">
+            <summary>
+            Class wrapping single debug log entry.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugEntry.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugEntry.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.LogTime">
+            <summary>
+            Gets the exact time, the log entry was captured.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.Category">
+            <summary>
+            Name of the category this entry belongs.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.Message">
+            <summary>
+            The debug log entry message.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.Exception">
+            <summary>
+            Exception associated with the debug log entry.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.StackTrace">
+            <summary>
+            Gets the stack-trace associated with the debug log entry.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.HasStackTrace">
+            <summary>
+            Gets an indication, if stack-trace is available for this debug log entry.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Diagnostics.DebugListenerEventArgs">
+            <summary>
+            Arguments passed along with event, that specified event listener has received some debug log entries.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugListenerEventArgs.Listener">
+            <summary>
+            Gets the source debug log listener.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugListenerEventArgs.Entries">
+            <summary>
+            Gets the recently added entries.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Diagnostics.DebugLog">
+            <summary>
+            Common class for writing logs inside whole CodeTitans libraries.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.Condition">
+            <summary>
+            Gets the condition define name, when debug logs are captured.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryApp">
+            <summary>
+            Name of the 'Application' category.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryGeneral">
+            <summary>
+            Name of the 'General' category.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryCore">
+            <summary>
+            Name of the 'Core' category.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryBayeux">
+            <summary>
+            Name of the 'Bayeux' category.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteLine(System.String,System.String)">
+            <summary>
+            Writes debug log message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteLine(System.String,System.String,System.Exception)">
+            <summary>
+            Writes debug log message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteException(System.String,System.Exception)">
+            <summary>
+            Writes exception info to the debug log.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Log(System.String)">
+            <summary>
+            Writes general debug log message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Log(System.Exception)">
+            <summary>
+            Writes general exception message to the log.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteBayeuxLine(System.String)">
+            <summary>
+            Writes Bayeux debug message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteBayeuxException(System.Exception)">
+            <summary>
+            Writes info about exception in Bayeux module.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteCoreLine(System.String)">
+            <summary>
+            Writes Core debug message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteCoreException(System.Exception)">
+            <summary>
+            Writes info about exception in Core module.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteAppException(System.Exception)">
+            <summary>
+            Writes info about exception in Application module.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteAppLine(System.String)">
+            <summary>
+            Writes Application level debug message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Break">
+            <summary>
+            Breaks execution into debugger if attached and compiled for DEBUG mode.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.AddListener(CodeTitans.Diagnostics.IDebugTraceListener)">
+            <summary>
+            Adds given listener to the collections of notified ones, when new log entries are captured.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.RemoveListener(System.String)">
+            <summary>
+            Releases a listener with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.RemoveListeners">
+            <summary>
+            Releases all resources used by registered debug log listeners.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Dispose">
+            <summary>
+            Releases all used resources.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugLog.Listeners">
+            <summary>
+            Gets the list of available debug trace listeners.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Diagnostics.IDebugTraceListener">
+            <summary>
+            Interface defining trace listeners behaviour.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.IDebugTraceListener.WriteLine(CodeTitans.Diagnostics.DebugEntry)">
+            <summary>
+            Writes a debug entry into the log.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.IDebugTraceListener.Name">
+            <summary>
+            Gets the name of this trace listener.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Diagnostics.StandardDebugListener">
+            <summary>
+            Class that captures application debug logs and transfers them into standard debug output.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.StandardDebugListener.NewLine">
+            <summary>
+            New line definition.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.StandardDebugListener.ListenerName">
+            <summary>
+            Gets the name of this trace listener.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.StandardDebugListener.WriteLine(CodeTitans.Diagnostics.DebugEntry)">
+            <summary>
+            Writes a debug entry into the log.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.StandardDebugListener.Name">
+            <summary>
+            Gets the name of this trace listener.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Event">
+            <summary>
+            Helper class for invoking events in thread-safe manner.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Event.Invoke``1(System.EventHandler{``0},System.Object,``0)">
+            <summary>
+            Invokes event with given parameter.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Event.Invoke(System.ComponentModel.PropertyChangedEventHandler,System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Invokes event with given parameter.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Event.Invoke(System.ComponentModel.PropertyChangedEventHandler,System.Object,System.String)">
+            <summary>
+            Invokes event with given parameter.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Event.InvokeDelayed``1(System.Int32,System.EventHandler{``0},System.Object,``0)">
+            <summary>
+            Invokes an event with given parameters and a given dalay.
+            Currently it uses default ThreadPool, so the number of calls is limited to its the maximum number of threads.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.HttpDataSource">
+            <summary>
+            Class responsible for transmitting text data for designated web servers over HTTP protocol.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.IHttpDataSource">
+            <summary>
+            Interface defining communication protocol between HTTP client and its abstract data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.AddHeader(System.String,System.String)">
+            <summary>
+            Adds or replaces additional header sent via this data source with next request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.RemoveHeader(System.String)">
+            <summary>
+            Removes header with specified name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequest(System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequest(System.String,System.Byte[],System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequest(System.String,System.Byte[],System.Int32,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequest(System.String,System.String,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequestAsync(System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequestAsync(System.String,System.Byte[],System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequestAsync(System.String,System.Byte[],System.Int32,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.SendRequestAsync(System.String,System.String,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.IHttpDataSource.Cancel">
+            <summary>
+            Cancels current operation.
+            Throws an exception when nothing is actually processed.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.IHttpDataSource.DataReceived">
+            <summary>
+            Event fired each time new data has been received based on sent request.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.IHttpDataSource.DataReceiveFailed">
+            <summary>
+            Event fired each time data reception failed due to any issue.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.IHttpDataSource.IsActive">
+            <summary>
+            Gets an indication if there is an ongoing request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.IHttpDataSource.Timeout">
+            <summary>
+            Gets or sets the timeout for next requests (ms).
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.IHttpDataSource.NetworkCredential">
+            <summary>
+            Gets or sets the network login credentials.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.IHttpDataSource.UserAgent">
+            <summary>
+            Gets or sets the user-agent name.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.IHttpDataSource.Tag">
+            <summary>
+            Gets or sets any associated object with the request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.IHttpDataSource.ContentType">
+            <summary>
+            Gets or sets the content type of message sent.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.IHttpDataSource.AcceptContentType">
+            <summary>
+            Gets the content type accepted by data source.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSource.MethodPost">
+            <summary>
+            Gets the POST method name.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSource.MethodGet">
+            <summary>
+            Gets the GET method name.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSource.MethodDelete">
+            <summary>
+            Gets the DELETE method name.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSource.MethodPut">
+            <summary>
+            Gets the PUT method name.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSource.DefaultTimeout">
+            <summary>
+            Defines the default value of timeout.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.#ctor(System.String,System.Text.Encoding,System.String,System.Text.Encoding,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.#ctor(System.String,System.Text.Encoding,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequest(System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequest(System.String,System.Byte[],System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequest(System.String,System.Byte[],System.Int32,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequest(System.String,System.String,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequestAsync(System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequestAsync(System.String,System.Byte[],System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequestAsync(System.String,System.Byte[],System.Int32,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.SendRequestAsync(System.String,System.String,System.String,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends asynchronous request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.InternalSendRequest(System.String,System.String,System.Byte[],System.Int32,System.String,System.Boolean,CodeTitans.Bayeux.HttpDataSourceResponseType)">
+            <summary>
+            Sends request to the data source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.DebugLogWriteSentContentDescription(System.String,System.String)">
+            <summary>
+            Writes debug log info about the data send to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.DebugLogWriteReceivedContentDescription(System.String,System.String,System.Boolean)">
+            <summary>
+            Writes debug log info about the data received from the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.GetResponse(System.Net.HttpWebRequest)">
+            <summary>
+            Gets the response object in synchronous way.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.GetRequestStream(System.Net.HttpWebRequest)">
+            <summary>
+            Gets the request stream in synchronous way.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.Cancel">
+            <summary>
+            Cancels current operation.
+            Throws an exception when nothing is actually processed.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.AddHeader(System.String,System.String)">
+            <summary>
+            Adds or replaces additional header sent via this connection with next request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.RemoveHeader(System.String)">
+            <summary>
+            Removes header with specified name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.AppendAdditionalInfo(System.Net.HttpWebRequest)">
+            <summary>
+            Add new extensions to <see cref="T:System.Net.HttpWebRequest"/> before sending to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.ProcessResponse(System.Net.HttpWebRequest,System.Net.HttpWebResponse,CodeTitans.Bayeux.HttpDataSourceResponseType,System.Exception)">
+            <summary>
+            Processes the content of response received in context of given request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.ReadToEnd(System.IO.StreamReader,System.Int64)">
+            <summary>
+            Reads data from given source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.ReadToEnd(System.IO.BinaryReader,System.Int32)">
+            <summary>
+            Reads data from given source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.WriteRequestData(System.IO.Stream,System.Byte[],System.Int32)">
+            <summary>
+            Writes data to the server as part of the request stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.ReadResponseBinaryData(System.IO.Stream,System.Int32)">
+            <summary>
+            Reads data received from server and interprets according to given encoding.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSource.ReadResponseStringData(System.IO.Stream,System.Int64,System.Text.Encoding)">
+            <summary>
+            Reads data received from server and interprets according to given encoding.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.HttpDataSource.DataReceived">
+            <summary>
+            Event fired if data has been received for current request.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.HttpDataSource.DataReceiveFailed">
+            <summary>
+            Event fired if data reception failed for current request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.IsActive">
+            <summary>
+            Gets an indication if there is an ongoing request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.ContentType">
+            <summary>
+            Gets or sets the content type of message sent.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.AcceptContentType">
+            <summary>
+            Gets the content type accepted by data source.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.NetworkCredential">
+            <summary>
+            Gets or sets the network login credentials.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.Timeout">
+            <summary>
+            Gets or sets the timeout for next request (ms).
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.UserAgent">
+            <summary>
+            Gets or sets the user-agent name.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.Tag">
+            <summary>
+            Gets or sets any associated object with the request.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.HttpDataSource.AsyncDataRequest">
+            <summary>
+            Wrapper class for asynchronous data to send for given request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.AsyncDataRequest.Request">
+            <summary>
+            Gets request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.AsyncDataRequest.DataDescription">
+            <summary>
+            Gets data associated with given request, that should be printed in debug logs to reflect the current action.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.AsyncDataRequest.Data">
+            <summary>
+            Gets data associated with given request, that should be send to the server.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.AsyncDataRequest.DataLength">
+            <summary>
+            Gets the data length associated with the request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSource.AsyncDataRequest.ResponseType">
+            <summary>
+            Gets the type of expected response.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.HttpDataSourceEventArgs">
+            <summary>
+            Event data transmitted together with <see cref="T:CodeTitans.Bayeux.HttpDataSource"/>.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSourceEventArgs.#ctor(CodeTitans.Bayeux.IHttpDataSource,System.Net.HttpStatusCode,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSourceEventArgs.#ctor(CodeTitans.Bayeux.IHttpDataSource,System.Net.HttpStatusCode,System.String,System.String,System.Byte[],System.IO.Stream)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.HttpDataSourceEventArgs.ToString">
+            <summary>
+            Gets the text representation of this object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSourceEventArgs.DataSource">
+            <summary>
+            Gets the reference to data source object associated with this args.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSourceEventArgs.StatusCode">
+            <summary>
+            Gets the data status.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSourceEventArgs.StatusDescription">
+            <summary>
+            Gets the text description of the status.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSourceEventArgs.StringData">
+            <summary>
+            Gets the received string data.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSourceEventArgs.BinaryData">
+            <summary>
+            Gets the received binary data.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.HttpDataSourceEventArgs.StreamData">
+            <summary>
+            Gets the received data.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.HttpDataSourceResponseType">
+            <summary>
+            Enumeration describing what type of response is expected from given IHttpDataSource.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSourceResponseType.AsString">
+            <summary>
+            Should provide string response.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSourceResponseType.AsBinary">
+            <summary>
+            Should provide binary response.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.HttpDataSourceResponseType.AsRawStream">
+            <summary>
+            Should provide access to underlying stream object if possible.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxAdvice">
+            <summary>
+            Wrapper class over Bayeux advice.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxAdvice.#ctor(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxAdvice.Write(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Writes JSON representation of this object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxAdvice.Reconnect">
+            <summary>
+            Reconnection action requested by server.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxAdvice.Interval">
+            <summary>
+            Gets the reconnect interval.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxAdvice.Data">
+            <summary>
+            Raw advice data.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxAdviceReconnectType">
+            <summary>
+            Reconnection action specified by Bayeux server to its clients.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxAdviceReconnectType.None">
+            <summary>
+            Advice saying 'do nothing' and 'don't even try to connect'.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxAdviceReconnectType.Handshake">
+            <summary>
+            Advice saying 'try to redo handshake'.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxAdviceReconnectType.Retry">
+            <summary>
+            Advice saying 'try again that operation'.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxChannel">
+            <summary>
+            Wrapper class over Bayeux channel name.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxChannel.MetaMarks">
+            <summary>
+            Special marks that are allowed in channel name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxChannel.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxChannel.ToString">
+            <summary>
+            Gets the string representation of this object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxChannel.IsValid(System.String)">
+            <summary>
+            Returns 'true' if given text is a valid Bayeux channel name.
+            It should consist of number letters or digits separated by '/'.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxChannel.FullName">
+            <summary>
+            Gets the full name of the channel.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxChannel.Segments">
+            <summary>
+            Gets the segments of the channel.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxConnection">
+            <summary>
+            Class for managing client Bayeux connection.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.#ctor(CodeTitans.Bayeux.IHttpDataSource)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.#ctor(CodeTitans.Bayeux.IHttpDataSource,CodeTitans.Bayeux.IHttpDataSource)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Finalize">
+            <summary>
+            Destructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.OnConnected(CodeTitans.Bayeux.BayeuxConnectionEventArgs)">
+            <summary>
+            Helper method to fire Connected event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.OnConnectionFailed(CodeTitans.Bayeux.BayeuxConnectionEventArgs)">
+            <summary>
+            Helper method to fire ConnectionFailed event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.OnDisconnected(CodeTitans.Bayeux.BayeuxConnectionEventArgs)">
+            <summary>
+            Helper method to fire Disconnected event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.OnDataReceived(CodeTitans.Bayeux.BayeuxConnectionEventArgs)">
+            <summary>
+            Helper method to fire DataReceived event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.OnDataFailed(CodeTitans.Bayeux.BayeuxConnectionEventArgs)">
+            <summary>
+            Helper method to fire DataFailed event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.OnEventReceived(CodeTitans.Bayeux.BayeuxConnectionEventArgs)">
+            <summary>
+            Helper method to fire EventReceived event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.OnResponseReceived(CodeTitans.Bayeux.BayeuxConnectionEventArgs)">
+            <summary>
+            Helper method to fire ResponseReceived event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.ReconnectLongPollingConnection(System.Boolean)">
+            <summary>
+            Sends asynchronously long-polling request again.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.AddHeader(System.String,System.String)">
+            <summary>
+            Adds or replaces additional header sent via this connection with next request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.RemoveHeader(System.String)">
+            <summary>
+            Removes header with specified name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Handshake(CodeTitans.Bayeux.BayeuxConnectionTypes,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable,System.Boolean)">
+            <summary>
+            Sends handshake request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Handshake(CodeTitans.Bayeux.BayeuxConnectionTypes,CodeTitans.JSon.IJSonWritable,System.String,System.String,System.Boolean)">
+            <summary>
+            Sends handshake request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Handshake">
+            <summary>
+            Sends handshake request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.HandshakeSync">
+            <summary>
+            Sends handshake request to the server in a synchronous way.
+            Useful only when testing as blocks the current thread.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Connect(CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable,System.Boolean)">
+            <summary>
+            Sends connect request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Connect">
+            <summary>
+            Sends connect request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.ConnectSync">
+            <summary>
+            Sends connect request to the server in a synchronous way.
+            Useful only when testing as blocks the current thread.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Disconnect(CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable,System.Boolean)">
+            <summary>
+            Sends disconnect request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Disconnect">
+            <summary>
+            Sends disconnect request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.DisconnectSync">
+            <summary>
+            Sends disconnect request to the server in a synchronous way.
+            Useful only when testing as blocks the current thread.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.AbandonConnection">
+            <summary>
+            Changes instantly state to disconnected without any communication.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Subscribe(CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable,System.String,System.Boolean)">
+            <summary>
+            Sends subscription request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Subscribe(System.String)">
+            <summary>
+            Sends subscription request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.SubscribeSync(System.String)">
+            <summary>
+            Sends subscription request to the server in a synchronous way.
+            Useful only when testing as blocks the current thread.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Unsubscribe(CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable,System.String,System.Boolean)">
+            <summary>
+            Sends unsubscription request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Unsubscribe(System.String)">
+            <summary>
+            Sends unsubscription request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.UnsubscribeSync(System.String)">
+            <summary>
+            Sends unsubscription request to the server in a synchronous way.
+            Useful only when testing as blocks the current thread.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Publish(CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable,System.String,CodeTitans.JSon.IJSonWritable,System.Boolean)">
+            <summary>
+            Sends publish request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Publish(System.String,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Sends subscription request to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.PublishSync(System.String,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Sends subscription request to the server in a synchronous way.
+            Useful only when testing as blocks the current thread.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.StartLongPolling">
+            <summary>
+            Starts another long-polling HTTP connection to asynchronously receive events from Bayeux server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.StartLongPolling(CodeTitans.Bayeux.Requests.BayeuxRequest)">
+            <summary>
+            Starts another long-polling HTTP connection to asynchronously receive events from Bayeux server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.StopLongPolling">
+            <summary>
+            Stops listening for asynchronous data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Send(System.String,System.Boolean)">
+            <summary>
+            Sends a bayeux message to the server. The message must be prepared first as a JSON string.
+            Connection must be established first otherwise the exception will be thrown.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Send(CodeTitans.Bayeux.Requests.BayeuxRequest,System.Boolean)">
+            <summary>
+            Sends a bayeux message to the server.
+            Connection must be established first otherwise the exception will be thrown.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Send(CodeTitans.Bayeux.Requests.BayeuxRequest,System.String,System.Boolean)">
+            <summary>
+            Sends a bayeux message to the server with the ability to override the JSON returned by request object itself
+            with the one specified as raw JSON data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.SerializeRequest(CodeTitans.Bayeux.Requests.BayeuxRequest)">
+            <summary>
+            Converts <see cref="T:CodeTitans.Bayeux.Requests.BayeuxRequest"/> to string containing its JSON representation.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.SendRequest(CodeTitans.Bayeux.Requests.BayeuxRequest,System.Boolean)">
+            <summary>
+            Sends bayeux message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Cancel">
+            <summary>
+            Cancels the currently executed asynchronous server request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Subscribed(System.String)">
+            <summary>
+            Checks if subscribed to given channel.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.ProvideResponse(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Get the custom bayeux-response associated with given message.
+            By default returns a generic response.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.ProcessResponse(CodeTitans.Bayeux.Requests.BayeuxRequest,CodeTitans.Bayeux.Responses.BayeuxResponse)">
+            <summary>
+            Process given response. Request is also provided.
+            The default behavior is that it only passes response to request, however there might be
+            a situation, when no request was given (when a 'text' message has been sent).
+            Returning 'true' as a result will filter out the ResponseReceived event.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Dispose">
+            <summary>
+            Release all native resources.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnection.Dispose(System.Boolean)">
+            <summary>
+            Release all native resources used by this object.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.Connected">
+            <summary>
+            Event fired when handshaking with remote server completed with success.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.ConnectionFailed">
+            <summary>
+            Event fired when handshaking with remote server failed.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.Disconnected">
+            <summary>
+            Event fired when disconnected from remote server (with special request or due to some critical errors).
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.DataReceived">
+            <summary>
+            Event fired each time data has been received from remote server.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.DataFailed">
+            <summary>
+            Event fired each time data has been received from remote server, but JSON parser failed to read it.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.EventReceived">
+            <summary>
+            Event fired when asynchronous event has been received.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.ResponseReceived">
+            <summary>
+            Event fired each time a message has been processed.
+            </summary>
+        </member>
+        <member name="E:CodeTitans.Bayeux.BayeuxConnection.LongPollingFailed">
+            <summary>
+            Event fired, when long-polling connection failed to connect a given by LongPollingConnectRetries number of tries.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.Request">
+            <summary>
+            Gets the current request that is being processed.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.LongPollingRequest">
+            <summary>
+            Gets the request that will be sent to the remove server to poll the asynchronous data.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.ClientID">
+            <summary>
+            Gets or sets the client identifier.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.State">
+            <summary>
+            Gets the current state of the connection.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.IndentedRequest">
+            <summary>
+            Gets or sets indication if sent requests should be indented.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.Timeout">
+            <summary>
+            Gets or sets the timeout for next requests (ms).
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.LongPollingTimeout">
+            <summary>
+            Gets or sets the timeout of the long polling connection.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.LongPollingConnectRetries">
+            <summary>
+            Gets or sets the number of tries, the long-polling connection uses to reestabilish
+            a connection with server in case of network failures.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.LongPollingRetryDelay">
+            <summary>
+            Gets or sets the delay between long polling connection retries.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.NetworkCredential">
+            <summary>
+            Gets or sets the network login credentials.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.UserAgent">
+            <summary>
+            Gets or sets the user-agent name.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.IsLongPolling">
+            <summary>
+            Gets indication if secondary connection is polling server for asynchronous messages.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.DefaultHandshakeConnectionTypes">
+            <summary>
+            Gets the default connection types presented while handshaking.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.DefaultHandshakeData">
+            <summary>
+            Gets the default data presented while handshaking.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnection.DefaultHandshakeExt">
+            <summary>
+            Gets the default ext presented while handshaking.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxConnectionEventArgs">
+            <summary>
+            Argument class passed together with <see cref="T:CodeTitans.Bayeux.BayeuxConnection"/> events.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnectionEventArgs.#ctor(CodeTitans.Bayeux.BayeuxConnection,System.Net.HttpStatusCode,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnectionEventArgs.#ctor(CodeTitans.Bayeux.BayeuxConnection,System.Net.HttpStatusCode,System.String,System.String,CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnectionEventArgs.#ctor(CodeTitans.Bayeux.BayeuxConnection,System.Net.HttpStatusCode,System.String,System.String,CodeTitans.JSon.IJSonObject,CodeTitans.Bayeux.Responses.BayeuxResponse)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnectionEventArgs.#ctor(CodeTitans.Bayeux.BayeuxConnection,System.Net.HttpStatusCode,System.String,System.String,CodeTitans.JSon.JSonReaderException)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnectionEventArgs.Connection">
+            <summary>
+            Gets the reference to the <see cref="T:CodeTitans.Bayeux.BayeuxConnection"/> instance associated with this arguments.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnectionEventArgs.StatusCode">
+            <summary>
+            Gets the current operation status code.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnectionEventArgs.StatusDescription">
+            <summary>
+            Gets the current operation description.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnectionEventArgs.Data">
+            <summary>
+            Gets the data received as the last message in case it can't be parsed as JSON structure.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnectionEventArgs.Message">
+            <summary>
+            Gets the JSON structured message received by <see cref="T:CodeTitans.Bayeux.BayeuxConnection"/> associated with this arguments.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnectionEventArgs.Exception">
+            <summary>
+            Gets the exception causing data not to be correctly parsed.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxConnectionEventArgs.Response">
+            <summary>
+            Gets the full response from the server.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxConnectionState">
+            <summary>
+            Type describing current state of the Bayeux connection.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionState.Disconnected">
+            <summary>
+            Connection is not performed with the remote server.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionState.Connecting">
+            <summary>
+            Connection is establishing.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionState.Connected">
+            <summary>
+            Connection established successfully.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxConnectionTypes">
+            <summary>
+            Types of connection handled by Bayeux server and client.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionTypes.None">
+            <summary>
+            Connection supports nothing.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionTypes.LongPolling">
+            <summary>
+            Connection supports long waiting for asynchronous response (events).
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionTypes.CallbackPolling">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionTypes.Iframe">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionTypes.Flash">
+            <summary>
+            ?
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.BayeuxConnectionTypes.RequestResponse">
+            <summary>
+            Connection will respond to each request.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxConnectionTypesHelper">
+            <summary>
+            Helper class to support conversions to/from string objects.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnectionTypesHelper.ToString(CodeTitans.Bayeux.BayeuxConnectionTypes)">
+            <summary>
+            Converts the <see cref="T:CodeTitans.Bayeux.BayeuxConnectionTypes"/> value into a string.
+            If it is a combination of few values, then 'null' will be returned.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnectionTypesHelper.ToCollection(CodeTitans.Bayeux.BayeuxConnectionTypes)">
+            <summary>
+            Converts <see cref="T:CodeTitans.Bayeux.BayeuxConnectionTypes"/> flag fields into a collection of strings.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxConnectionTypesHelper.Parse(System.String)">
+            <summary>
+            Converts a string into a <see cref="T:CodeTitans.Bayeux.BayeuxConnectionTypes"/> value.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxCredentials">
+            <summary>
+            Class wrapping credentials info for bayeux handshake request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxCredentials.#ctor(System.String,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxCredentials.Write(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Serializes an object as a JSON formatted string.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxCredentials.UserName">
+            <summary>
+            Gets the user's name.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxCredentials.Password">
+            <summary>
+            Gets the password to access the remote service.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxError">
+            <summary>
+            Wrapper class over Bayeux error.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxError.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxError.Message">
+            <summary>
+            Gets error message.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxError.Code">
+            <summary>
+            Gets the error code associated with this message.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxError.Arguments">
+            <summary>
+            Gets the list of arguments associated with this error.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxEventData">
+            <summary>
+            Wrapper class that could be used as a JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxEventData.#ctor">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxEventData.#ctor(System.String,System.Object[])">
+            <summary>
+            Init constructor, where all the &lt;key,value&gt; pairs are passed at once.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxEventData.Set(System.String,System.Object)">
+            <summary>
+            Sets the given value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxEventData.Write(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Write as JSON.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxException">
+            <summary>
+            Exception thrown by <see cref="T:CodeTitans.Bayeux.BayeuxConnection"/> class.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxException.#ctor">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxException.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxException.#ctor(System.String,CodeTitans.Bayeux.Requests.BayeuxRequest,CodeTitans.Bayeux.Responses.BayeuxResponse,CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxException.#ctor(System.String,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxException.Request">
+            <summary>
+            Gets the request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxException.Response">
+            <summary>
+            Gets the response.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxException.JSonResponse">
+            <summary>
+            Gets the JSON response received from server.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.BayeuxHandshakeExtension">
+            <summary>
+            Standard bayeux extension to pass user' name and password along with the handshake request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxHandshakeExtension.#ctor(System.String,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.BayeuxHandshakeExtension.Write(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Serializes an object as a JSON formatted string.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.BayeuxHandshakeExtension.Credentials">
+            <summary>
+            Gets the user's credentials when accessing the server.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Channels.ChannelDispatcher">
+            <summary>
+            Class responsible for dispatching incomming bayeux channels for dedicated handlers.
+            Handler is registered for a signle channel using a 'strict' matching
+            or for multiple channels if using wildcards '*' or '**'.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.ChannelDispatcher.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.ChannelDispatcher.Register(System.String,CodeTitans.Bayeux.Channels.IChannelHandler)">
+            <summary>
+            Registers new handler to notify, when processing expected channel.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.ChannelDispatcher.Register(System.String,CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Registers new handler to notify, when processing expected channel.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.ChannelDispatcher.RegisterDefault(CodeTitans.Bayeux.Channels.IChannelHandler)">
+            <summary>
+            Registers the default handler.
+            If during processing a given channel doesn't fit for any handler, this one will get called.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.ChannelDispatcher.RegisterDefault(CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Registers the default handler.
+            If during processing a given channel doesn't fit for any handler, this one will get called.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.ChannelDispatcher.Handle(System.String,System.Object)">
+            <summary>
+            Handles incomming notification from given channel.
+            Internal collection of processors is looked for the best matching one and this one will get right to proceed with notifiation.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Channels.ChannelDispatcher.DefaultProcessor">
+            <summary>
+            Gets or sets the default channel processor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Channels.ChannelDispatcher.DefaultHandler">
+            <summary>
+            Gets the default handler for channels that didn't match any other criteria.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Channels.IChannelHandler">
+            <summary>
+            Interface defining handler of the channel.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.IChannelHandler.Handle(System.String,System.String[],System.Object,System.Object)">
+            <summary>
+            Method called, when incomming channel is matching given criteria and should be now handled.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Channels.Processors.BasicChannelProcessor">
+            <summary>
+            Basic channel comparer. Channels must be equal full, char by char.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor">
+            <summary>
+            Default channel comparer. Defines API for basic functionality, ie. validation, matching and notifications.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.MetaMarks">
+            <summary>
+            Special marks that are allowed in channel name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.#ctor(System.String,System.String[],CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.#ctor(CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.IsValid(System.String)">
+            <summary>
+            Returns 'true' if given text is a valid Bayeux channel name.
+            It should consist of number letters or digits separated by '/'.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.Matches(System.String,System.String[])">
+            <summary>
+            Checks if given channel matches the one described by this processor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.Notify(System.String,System.String[],System.Object)">
+            <summary>
+            Notify external handler, that found a matching channel.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.Channel">
+            <summary>
+            Gets the channel current handler is monitoring for.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.Segments">
+            <summary>
+            Gets the channel's segments current handler is looking for.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.Handler">
+            <summary>
+            Gets the handler called when channel is matching the expected one.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Channels.Processors.ChannelProcessor.State">
+            <summary>
+            Gets the any object that represents any user-state.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.BasicChannelProcessor.#ctor(System.String,System.String[],CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.BasicChannelProcessor.#ctor(CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.BasicChannelProcessor.Matches(System.String,System.String[])">
+            <summary>
+            Checks if given channel matches the one described by this processor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Channels.Processors.GlobalWildcardChannelProcessor">
+            <summary>
+            Advanced comparer for bayeux channels.
+            It assumes that source channel definition ends with global wildcard ('**')
+            that allows matching any longer channels. Single segments can also be taken as identical
+            when source pattern is defined as '*'.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.GlobalWildcardChannelProcessor.#ctor(System.String,System.String[],CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.GlobalWildcardChannelProcessor.Matches(System.String,System.String[])">
+            <summary>
+            Checks if given channel matches the one described by this processor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Channels.Processors.WildcardChannelProcessor">
+            <summary>
+            Advanced comparer for bayeux channels.
+            It allowes some of the segments be identical if source pattern is defined as '*'.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.WildcardChannelProcessor.#ctor(System.String,System.String[],CodeTitans.Bayeux.Channels.IChannelHandler,System.Object)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Channels.Processors.WildcardChannelProcessor.Matches(System.String,System.String[])">
+            <summary>
+            Checks if given channel matches the one described by this processor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Requests.BayeuxRequest">
+            <summary>
+            Class wrapping Bayeux message sent to the server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.BayeuxRequest.#ctor(System.String,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.BayeuxRequest.ToString">
+            <summary>
+            Gets the JSON string representation of this request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.BayeuxRequest.WriteOptionalFields(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Writes additional data associated with this request, that is option for most of them.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.BayeuxRequest.ProcessResponse(CodeTitans.Bayeux.Responses.BayeuxResponse)">
+            <summary>
+            Processes response received from remote server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.BayeuxRequest.ProcessFailed(CodeTitans.Bayeux.HttpDataSourceEventArgs)">
+            <summary>
+            Process failure response from remote server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.BayeuxRequest.Write(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Writes content of this object to a JSON stream.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.ID">
+            <summary>
+            Gets or sets the ID of this request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.ClientID">
+            <summary>
+            Gets or sets the indication of the client connected to the server.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.Channel">
+            <summary>
+            Bayeux channel, where the data should be sent.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.FormattedOutput">
+            <summary>
+            Gets or sets the format style of produced output.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.RequestMethod">
+            <summary>
+            Gets or sets HTTP request method (POST/GET).
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.Tag">
+            <summary>
+            Custom value associated with this request.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.HasData">
+            <summary>
+            Checks if there is data defined.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.BayeuxRequest.HasExt">
+            <summary>
+            Checks if there is ext defined.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Requests.ConnectRequest">
+            <summary>
+            Generic Bayeux connect request.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.Requests.ConnectRequest.MetaChannel">
+            <summary>
+            Channel name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.ConnectRequest.#ctor(System.String,CodeTitans.Bayeux.BayeuxConnectionTypes,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.ConnectRequest.ConnectionType">
+            <summary>
+            Gets the connection type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Requests.DisconnectRequest">
+            <summary>
+            Generic Bayeux disconnect request.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.Requests.DisconnectRequest.MetaChannel">
+            <summary>
+            Channel name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.DisconnectRequest.#ctor(System.String,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Requests.HandshakeRequest">
+            <summary>
+            Generic Bayeux handshake request.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.Requests.HandshakeRequest.MetaChannel">
+            <summary>
+            Channel name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.HandshakeRequest.#ctor(CodeTitans.Bayeux.BayeuxConnectionTypes,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.HandshakeRequest.#ctor(CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.HandshakeRequest.SupportedConnectionTypes">
+            <summary>
+            Type of the connection.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.HandshakeRequest.Version">
+            <summary>
+            Version of the Bayeux protocol.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.HandshakeRequest.MinimumVersion">
+            <summary>
+            Minimum version of the Bayeux protocol expected.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Requests.PublishRequest">
+            <summary>
+            Generic Bayeux publish request.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.PublishRequest.#ctor(System.String,System.String,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.PublishRequest.EventData">
+            <summary>
+            Gets the data associated with this request.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Requests.SubscribeRequest">
+            <summary>
+            Generic Bayeux subscribe request.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.Requests.SubscribeRequest.MetaChannel">
+            <summary>
+            Channel name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.SubscribeRequest.#ctor(System.String,System.String,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.SubscribeRequest.SubscriptionChannel">
+            <summary>
+            Gets the name of the channel, where to subscribe.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Requests.UnsubscribeRequest">
+            <summary>
+            Generic Bayeux unsubscribe request.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Bayeux.Requests.UnsubscribeRequest.MetaChannel">
+            <summary>
+            Channel name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Requests.UnsubscribeRequest.#ctor(System.String,System.String,CodeTitans.JSon.IJSonWritable,CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Requests.UnsubscribeRequest.SubscriptionChannel">
+            <summary>
+            Gets the name of the channel, where to unsubscribe.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Responses.BayeuxResponse">
+            <summary>
+            Response returned by Bayeux server.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.BayeuxResponse.#ctor(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.BayeuxResponse.ReadOptionalFields(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Reads additional fields associated with this response while parsing.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.BayeuxResponse.Read(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Reads the response from given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.BayeuxResponse.WriteOptionalFields(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Writes additional fields related to this response.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.BayeuxResponse.Write(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Writes content of this object to a JSON stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.BayeuxResponse.ToString">
+            <summary>
+            Gets string representation of this object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.ID">
+            <summary>
+            ID of the message.
+            This value is optional for asynchronous events.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.ClientID">
+            <summary>
+            Receiver ClientID.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.Channel">
+            <summary>
+            Channel over which response is valid.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.Successful">
+            <summary>
+            Result of the operation.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.Timestamp">
+            <summary>
+            Optional operation timestamp.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.Error">
+            <summary>
+            Error description.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.Advice">
+            <summary>
+            Additional server connection advice in case of errors or resource problems on server side.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.Data">
+            <summary>
+            Response data.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.BayeuxResponse.Ext">
+            <summary>
+            Extension data passed optionally.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Responses.HandshakeResponse">
+            <summary>
+            Generic handshake response.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.HandshakeResponse.#ctor(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.HandshakeResponse.SupportedConnectionTypes">
+            <summary>
+            Type of the connection.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Responses.SubscribeResponse">
+            <summary>
+            Generic subscription response.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.SubscribeResponse.#ctor(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.SubscribeResponse.SubscriptionChannel">
+            <summary>
+            Gets the name of the channel, where to subscribe.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Bayeux.Responses.UnsubscribeResponse">
+            <summary>
+            Generic unsubscription response.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Bayeux.Responses.UnsubscribeResponse.#ctor(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Bayeux.Responses.UnsubscribeResponse.SubscriptionChannel">
+            <summary>
+            Gets the name of the channel, where to unsubscribe.
+            </summary>
+        </member>
+    </members>
+</doc>

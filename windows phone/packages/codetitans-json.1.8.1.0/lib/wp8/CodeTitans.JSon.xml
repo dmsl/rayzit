@@ -1,0 +1,2868 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CodeTitans.JSon</name>
+    </assembly>
+    <members>
+        <member name="T:CodeTitans.Diagnostics.DebugEntry">
+            <summary>
+            Class wrapping single debug log entry.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugEntry.#ctor(System.String,System.String,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugEntry.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            A <see cref="T:System.String"/> that represents the current <see cref="T:System.Object"/>.
+            </returns>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.LogTime">
+            <summary>
+            Gets the exact time, the log entry was captured.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.Category">
+            <summary>
+            Name of the category this entry belongs.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.Message">
+            <summary>
+            The debug log entry message.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.Exception">
+            <summary>
+            Exception associated with the debug log entry.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.StackTrace">
+            <summary>
+            Gets the stack-trace associated with the debug log entry.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugEntry.HasStackTrace">
+            <summary>
+            Gets an indication, if stack-trace is available for this debug log entry.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Diagnostics.DebugLog">
+            <summary>
+            Common class for writing logs inside whole CodeTitans libraries.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.Condition">
+            <summary>
+            Gets the condition define name, when debug logs are captured.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryApp">
+            <summary>
+            Name of the 'Application' category.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryGeneral">
+            <summary>
+            Name of the 'General' category.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryCore">
+            <summary>
+            Name of the 'Core' category.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.DebugLog.CategoryBayeux">
+            <summary>
+            Name of the 'Bayeux' category.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteLine(System.String,System.String)">
+            <summary>
+            Writes debug log message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteLine(System.String,System.String,System.Exception)">
+            <summary>
+            Writes debug log message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteException(System.String,System.Exception)">
+            <summary>
+            Writes exception info to the debug log.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Log(System.String)">
+            <summary>
+            Writes general debug log message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Log(System.Exception)">
+            <summary>
+            Writes general exception message to the log.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteBayeuxLine(System.String)">
+            <summary>
+            Writes Bayeux debug message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteBayeuxException(System.Exception)">
+            <summary>
+            Writes info about exception in Bayeux module.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteCoreLine(System.String)">
+            <summary>
+            Writes Core debug message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteCoreException(System.Exception)">
+            <summary>
+            Writes info about exception in Core module.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteAppException(System.Exception)">
+            <summary>
+            Writes info about exception in Application module.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.WriteAppLine(System.String)">
+            <summary>
+            Writes Application level debug message.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Break">
+            <summary>
+            Breaks execution into debugger if attached and compiled for DEBUG mode.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.AddListener(CodeTitans.Diagnostics.IDebugTraceListener)">
+            <summary>
+            Adds given listener to the collections of notified ones, when new log entries are captured.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.RemoveListener(System.String)">
+            <summary>
+            Releases a listener with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.RemoveListeners">
+            <summary>
+            Releases all resources used by registered debug log listeners.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.DebugLog.Dispose">
+            <summary>
+            Releases all used resources.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.DebugLog.Listeners">
+            <summary>
+            Gets the list of available debug trace listeners.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Diagnostics.IDebugTraceListener">
+            <summary>
+            Interface defining trace listeners behaviour.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.IDebugTraceListener.WriteLine(CodeTitans.Diagnostics.DebugEntry)">
+            <summary>
+            Writes a debug entry into the log.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.IDebugTraceListener.Name">
+            <summary>
+            Gets the name of this trace listener.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Diagnostics.StandardDebugListener">
+            <summary>
+            Class that captures application debug logs and transfers them into standard debug output.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.StandardDebugListener.NewLine">
+            <summary>
+            New line definition.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Diagnostics.StandardDebugListener.ListenerName">
+            <summary>
+            Gets the name of this trace listener.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Diagnostics.StandardDebugListener.WriteLine(CodeTitans.Diagnostics.DebugEntry)">
+            <summary>
+            Writes a debug entry into the log.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Diagnostics.StandardDebugListener.Name">
+            <summary>
+            Gets the name of this trace listener.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Helpers.IStringReader">
+            <summary>
+            Interface allowing to read characters.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.IStringReader.ReadNext">
+            <summary>
+            Reads next character from the input source.
+            Automaticaly updates current char, EOF and traced position.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.IStringReader.ReadLine">
+            <summary>
+            Reads a set of characters until end-of-line in input source or till the end.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Helpers.IStringReader.CurrentChar">
+            <summary>
+            Gets the last-read character.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Helpers.IStringReader.IsEmpty">
+            <summary>
+            Gets an indication if given source is empty.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Helpers.IStringReader.IsEof">
+            <summary>
+            Gets an indication if end-of-file has been reached.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Helpers.IStringReader.Line">
+            <summary>
+            Gets the current line.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.Helpers.IStringReader.LineOffset">
+            <summary>
+            Gets the character offset within the line.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Helpers.StringReaderWrapper">
+            <summary>
+            Class that wraps reading of a string.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Helpers.NumericHelper">
+            <summary>
+            Class with numeric helper methods.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.NumericHelper.TryParseDouble(System.String,System.Globalization.NumberStyles,System.Double@)">
+            <summary>
+            Tries to convert a string representation into a numeric value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.NumericHelper.TryParseDecimal(System.String,System.Globalization.NumberStyles,System.Decimal@)">
+            <summary>
+            Tries to convert a string representation into a numeric value.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Helpers.ReflectionHelper">
+            <summary>
+            Class with helper methods of accessing metadata through reflection on different platforms.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetCustomAttribute``1(System.Reflection.PropertyInfo)">
+            <summary>
+            Returns a custom attribute of required type or null.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetCustomAttribute(System.Reflection.PropertyInfo,System.Type)">
+            <summary>
+            Returns a custom attribute of required type or null.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetCustomAttribute``1(System.Type)">
+            <summary>
+            Returns a custom attribute of required type or null.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetCustomAttribute``1(System.Reflection.FieldInfo)">
+            <summary>
+            Returns a custom attribute of required type or null.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetCustomAttributes``1(System.Reflection.FieldInfo,System.Boolean)">
+            <summary>
+            Returns a custom attributes enumeration of required type or null.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.IsGenericType(System.Type)">
+            <summary>
+            Gets an indication, if type is generics.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetFirstGenericArgument(System.Type)">
+            <summary>
+            Gets the first generic argument of a given generic type.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetFields(System.Type)">
+            <summary>
+            Gets a collection of fields for a given type.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetFields(System.Type,System.Reflection.BindingFlags)">
+            <summary>
+            Gets a collection of fields for a given type.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetProperties(System.Type,System.Reflection.BindingFlags)">
+            <summary>
+            Gets a collection of properties for a given type.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.ReflectionHelper.GetField(System.Type,System.String)">
+            <summary>
+            Gets a field of specified name for a given type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.Serializable">
+            <summary>
+            Since Windows Phone7 is based on Silverlight and doesn't support automatic serialization,
+            here we need to define missing attributes to allow our code to compile (as it is also
+            compiled against .NET 2.0+, CompactFramework 2.0+ and Mono 2.0+, where it is defined).
+            </summary>
+        </member>
+        <member name="T:CodeTitans.Helpers.StringHelper">
+            <summary>
+            Helper class for managing string operations.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Helpers.StringHelper.HexDigits">
+            <summary>
+            Digits being a part of hexadecimal number.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Helpers.StringHelper.UnsecureChars">
+            <summary>
+            Digits that represent the unsafe characters inside string and using them should actually be replaced by combinations.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.CreateReader(System.String)">
+            <summary>
+            Creates a reader instance for a given string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.CreateReader(System.IO.TextReader)">
+            <summary>
+            Creates a reader instance for a given text reader.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.GetSecureString(System.String)">
+            <summary>
+            Gets the secured string, while special characters are presented as escaped ones.
+            It is used by JSON writer and StringFiles writer mostly.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.WriteSecureString(System.IO.TextWriter,System.String)">
+            <summary>
+            Writes the secured string, while special characters are presented as escaped ones.
+            It is used by JSON writer and StringFiles writer mostly.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.ReadWhiteChars(CodeTitans.Helpers.IStringReader)">
+            <summary>
+            Reads from the current input stream all the whitespaces.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.ReadWhiteChars(CodeTitans.Helpers.IStringReader,System.Int32@)">
+            <summary>
+            Reads from the current input stream all the whitespaces.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.ReadDecimalNumberChars(CodeTitans.Helpers.IStringReader,System.Text.StringBuilder)">
+            <summary>
+            Reads characters that might be a number and copies them to given output.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.ReadIntegerNumberChars(CodeTitans.Helpers.IStringReader,System.Text.StringBuilder)">
+            <summary>
+            Reads characters that might be a number and copies them to given output.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.ReadStringChars(CodeTitans.Helpers.IStringReader,System.Text.StringBuilder,System.Text.StringBuilder,System.Boolean,System.Int32@,System.Int32@)">
+            <summary>
+            Reads the string from given input stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.StringHelper.ReadKeywordChars(CodeTitans.Helpers.IStringReader,System.Text.StringBuilder)">
+            <summary>
+            Reads the keyword definition chars from given input.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.Helpers.DateTimeHelper.TicksAt1970">
+            <summary>
+            Number of tics since 1970-01-01. Required for DateTime -- Unix epoch conversions.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.DateTimeHelper.ParseDateTime(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Parses string in following formats to DateTime representation:
+             - @decimal@ - 1970-01-01 + decimal (millisec) - UTC!
+             - \/Date(decimal)\/ - 1970-01-01 + decimal (millisec) - UTC!
+             - \/Date(yyyy,MM,dd[,hh,mm,ss,mmm])\/ - direct params - UTC!
+             - decimal - 1970-01-01 + decimal (millisec/sec) - UTC!
+             - ISO format - with time zones support
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.DateTimeHelper.ParseDateTime(System.String,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Parses several string formats into a DateTime object.
+            Check other overloaded methods for more detailed description.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.Helpers.DateTimeHelper.ToDateTime(System.Int64,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Converts given decimal value into a DateTime object.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonMutableObject">
+            <summary>
+            Interface of mutable JSON object.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonObject">
+            <summary>
+            Interface implemented by any JSON object. It allows easy value extraction, conversion and type check.
+            In case operation is not allowed on a given type (e.g.: enumeration of object over a decimal number)
+            an <see cref="T:System.InvalidOperationException"/> will be thrown.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonObject.ToDateTimeValue(CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Gets the DateTime value for given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonObject.ToValue(System.Type)">
+            <summary>
+            Gets the value of given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonObject.ToObjectValue``1">
+            <summary>
+            Get the value of given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonObject.Contains(System.String)">
+            <summary>
+            Checks if member element with given name exists.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonObject.CreateMutableClone">
+            <summary>
+            Creates mutable clone of this object and all underlaying items (if available).
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonObject.CreateImmutableClone">
+            <summary>
+            Creates immutable clone of this object and all underlaying items (if available).
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonObject.ToString(System.String)">
+            <summary>
+            Converts current IJSonObject into a string using formatting.
+            Currently supported formats are:
+             - 'null' value - for using ToString() call
+             - 'i' - to force indented output
+             - 'n' - to disable indented output, but leave spaces after array item separators and between object name and value
+             - 'c' - to disable indented output and compact content as much as possible
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.StringValue">
+            <summary>
+            Gets the string value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Int32Value">
+            <summary>
+            Gets the Int32 value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.UInt32Value">
+            <summary>
+            Gets the UInt32 value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Int64Value">
+            <summary>
+            Gets the Int64 value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.UInt64Value">
+            <summary>
+            Gets the UInt64 value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.SingleValue">
+            <summary>
+            Gets the Single value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.DoubleValue">
+            <summary>
+            Gets the Double value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.DecimalValue">
+            <summary>
+            Gets the Decimal value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.DateTimeValue">
+            <summary>
+            Gets the DateTime value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.TimeSpanValue">
+            <summary>
+            Gets the TimeSpan value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.BooleanValue">
+            <summary>
+            Gets the Boolean value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.GuidValue">
+            <summary>
+            Gets the Guid value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.IsNull">
+            <summary>
+            Checks if given value is null.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.IsTrue">
+            <summary>
+            Gets the Boolean value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.IsFalse">
+            <summary>
+            Gets the Boolean value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.IsEnumerable">
+            <summary>
+            Checks if given value is a collection.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.IsArray">
+            <summary>
+            Checks if given value is an array.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.ObjectValue">
+            <summary>
+            Gets the raw, unwrapped copy of the value.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Length">
+            <summary>
+            Gets the number of stored elements.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.Int32)">
+            <summary>
+            Gets the element at given index.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.ArrayItems">
+            <summary>nonexistence
+            Gets the enumerable collection of elements if this object was an array.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Count">
+            <summary>
+            Gets the number of stored elements.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String)">
+            <summary>
+            Gets the member element with given name.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.String)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.String,System.Boolean)">
+            <summary>
+            Gets the member element with given name.
+            If it doesn't exist, the given string is converted as IJSonObject.
+            Third parameter must be equal to 'true'.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.Int32)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.UInt32)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.Int64)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.UInt64)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.Single)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.Double)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.Decimal)">
+            <summary>
+            Gets the member element with given name.
+            If 
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.DateTime)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.DateTime,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.TimeSpan)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.Guid)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Item(System.String,System.Boolean)">
+            <summary>
+            Gets the member element with given name.
+            In case of nonexistence, the default value will be returned.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.Names">
+            <summary>
+            Gets the collection of names available inside given object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.ObjectItems">
+            <summary>
+            Gets the enumerable collection of elements if this is an object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.IsMutable">
+            <summary>
+            Gets an indication, if given object is mutable.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonObject.AsMutable">
+            <summary>
+            Gets the mutable version of this object if available or throws cast exception.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String)">
+            <summary>
+            Sets the string value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.Int32)">
+            <summary>
+            Sets the Int32 value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.UInt32)">
+            <summary>
+            Sets the UInt32 value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.Int64)">
+            <summary>
+            Sets the Int64 value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.UInt64)">
+            <summary>
+            Sets the UInt64 value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.Single)">
+            <summary>
+            Sets the float value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.Double)">
+            <summary>
+            Sets the double value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.Decimal)">
+            <summary>
+            Sets the decimal value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.DateTime)">
+            <summary>
+            Sets the DateTime value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.DateTime,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Sets the DateTime value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.TimeSpan)">
+            <summary>
+            Sets the TimeSpan value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.Boolean)">
+            <summary>
+            Sets the bool value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.Guid)">
+            <summary>
+            Sets the Guid value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Sets the IJSonObject value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetNull">
+            <summary>
+            Sets the null value or clears the collection.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.String)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.Int32)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.UInt32)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.Int64)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.UInt64)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.Single)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.Double)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.Decimal)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.DateTime)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.DateTime,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.TimeSpan)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.Boolean)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,System.Guid)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValueAt(System.Int32,CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Sets the element value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetNullAt(System.Int32)">
+            <summary>
+            Sets the null value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetArrayAt(System.Int32)">
+            <summary>
+            Creates new mutable array at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetDictionaryAt(System.Int32)">
+            <summary>
+            Creates new mutable dictionary at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.String)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.Int32)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.UInt32)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.Int64)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.UInt64)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.Single)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.Double)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.Decimal)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.DateTime)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.DateTime,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.TimeSpan)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.Boolean)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,System.Guid)">
+            <summary>
+            Inserts new value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertValueAt(System.Int32,CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Inserts new values at given indx.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertNullAt(System.Int32)">
+            <summary>
+            Inserts null value at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertArrayAt(System.Int32)">
+            <summary>
+            Inserts new mutable array at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.InsertDictionaryAt(System.Int32)">
+            <summary>
+            Inserts new mutable dictionary at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.RemoveAt(System.Int32)">
+            <summary>
+            Removes item at given index.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.Clear">
+            <summary>
+            Removes all items from the collection.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.String)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.Int32)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.UInt32)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.Int64)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.UInt64)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.Single)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.Double)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.Decimal)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.DateTime)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.DateTime,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.TimeSpan)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.Boolean)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,System.Guid)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetValue(System.String,CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Sets value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetNull(System.String)">
+            <summary>
+            Sets null value with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetArray(System.String)">
+            <summary>
+            Adds new mutable array with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.SetDictionary(System.String)">
+            <summary>
+            Adds new mutable dictionary with given name.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonMutableObject.Remove(System.String)">
+            <summary>
+            Removes item with given name.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonReader">
+            <summary>
+            Interface defining all read operation that might convert a JSON string into its tree representation that could be traversed.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.Read(System.IO.TextReader)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.Read(System.String)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.Read(System.IO.TextReader,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.Read(System.String,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonObject(System.IO.TextReader)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonObject(System.String)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonObject(System.IO.TextReader,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonObject(System.String,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonMutableObject(System.IO.TextReader)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonMutableObject(System.String)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonMutableObject(System.IO.TextReader,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReader.ReadAsJSonMutableObject(System.String,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonWritable">
+            <summary>
+            Interface implemented by all types of custom classes that support JSON serialization.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWritable.Write(CodeTitans.JSon.IJSonWriter)">
+            <summary>
+            Serializes an object as a JSON formatted string.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonReadable">
+            <summary>
+            Interface implemented by all types of custom classes that support JSON deserialization.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonReadable.Read(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Deserialize an object from a JSON data input.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonSerializable">
+            <summary>
+            Interface implemented by custom classes supporting JSON serialization and deserialization.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonWriter">
+            <summary>
+            Interface defining all types of writings that are possible to serialize object into a JSon string.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonWriterArrayItem">
+            <summary>
+            Interface defining all serialization methods available for JSON Array.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonWriterItem">
+            <summary>
+            Interface defining basic serialization methods available for both JSON Object and Array.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.WriteObject">
+            <summary>
+            Writes automatically object begin/end statements, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.WriteObject(System.String)">
+            <summary>
+            Writes automatically embedded object begin/end statements for parent object's member name, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.WriteArray">
+            <summary>
+            Writes automatically array begin/end statements, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.WriteArray(System.String)">
+            <summary>
+            Writes automatically embedded array begin/end statements for parent object's member name, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.Write(System.Collections.IEnumerable)">
+            <summary>
+            Writes enumerable collection as a JSON array.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.Write(System.Collections.IDictionary)">
+            <summary>
+            Writes a dictionary as a JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.Write(CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Writes a serializable object as JSON string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterItem.Write(System.Object)">
+            <summary>
+            Writes whole object represented as dictionary or enumerable collection.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.DBNull)">
+            <summary>
+            Writes a 'null' value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.String)">
+            <summary>
+            Writes string value.
+            It can be used only as an array element or value for object member.
+            If 'null' value is passed it will emit the JSON 'null' for given member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.Int32)">
+            <summary>
+            Writes integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.UInt32)">
+            <summary>
+            Writes unsigned integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.Int64)">
+            <summary>
+            Writes integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.UInt64)">
+            <summary>
+            Writes unsigned long integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.Single)">
+            <summary>
+            Writes decimal value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.Double)">
+            <summary>
+            Writes decimal value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.Decimal)">
+            <summary>
+            Writes decimal value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.DateTime)">
+            <summary>
+            Writes DateTime value.
+            It can be used only as an array element or value for object member.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.DateTime,CodeTitans.JSon.JSonWriterDateFormat)">
+            <summary>
+            Writes DateTime value.
+            It can be used only as an array element or value for object member.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.TimeSpan)">
+            <summary>
+            Writes TimeSpan value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.Boolean)">
+            <summary>
+            Writes Boolean value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValue(System.Guid)">
+            <summary>
+            Writes Guid value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValueNull">
+            <summary>
+            Writes 'null' value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterArrayItem.WriteValueDynamic(System.Object)">
+            <summary>
+            Writes a value based on dynamic type checking.
+            It can be then a string, number, embedded dictionary or array.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.IJSonWriterObjectItem">
+            <summary>
+            Interface defining all serialization methods available for JSON Object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.DBNull)">
+            <summary>
+            Writes a 'null' text as a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.String)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            If 'null' value is passed it will emit the JSON 'null' for given member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.Int32)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.UInt32)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.Int64)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.UInt64)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.Single)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.Double)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.Decimal)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.DateTime)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.DateTime,CodeTitans.JSon.JSonWriterDateFormat)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.TimeSpan)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.Boolean)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String,System.Guid)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMemberNull(System.String)">
+            <summary>
+            Writes 'null' JSON value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriterObjectItem.WriteMember(System.String)">
+            <summary>
+            Writes a member only to an object.
+            It requires to be called before writing an object (or array) inside current object.
+            Writing values after call to this function is also allowed, however it is not recommended
+            due to number of checks performed. The better performance can be achieved
+            if other overloaded functions are used.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriter.WriteObjectBegin">
+            <summary>
+            Writes an object start.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriter.WriteObjectEnd">
+            <summary>
+            Writes an object end.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriter.WriteArrayBegin">
+            <summary>
+            Writes an array start.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriter.WriteArrayEnd">
+            <summary>
+            Writes an array end.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.IJSonWriter.Close">
+            <summary>
+            Closes the output and releases internal resources.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.IJSonWriter.IsValid">
+            <summary>
+            Checks if given instance of JSON writer contains a valid content.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonDateTimeKind">
+            <summary>
+            Kinds of DateTime conversions, when read from JSON string or decimal.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonDateTimeKind.Default">
+            <summary>
+            Default behavior.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonDateTimeKind.UnixEpochSeconds">
+            <summary>
+            Expected decimal value with Unix Epoch time in seconds.
+            In case of text formats fallback into Default behavior.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonDateTimeKind.UnixEpochMilliseconds">
+            <summary>
+            Expected decimal value with Unix Epoch time in milliseconds.
+            In case of text formats fallback into Default behavior.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonDateTimeKind.Ticks">
+            <summary>
+            Expected decimal value with ticks.
+            In case of text formats fallback into Default behavior.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonException">
+            <summary>
+            Generic exception thrown by a JSON reader or writer.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonException.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonException.#ctor(System.String,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonIgnoreAttribute">
+            <summary>
+            Attribute describing that given field or property should be skipped while JSON serializing / deserializing.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonMemberAttribute">
+            <summary>
+            Attribute describing JSON object member created based on given field or property.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.Single)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.Double)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.DateTime)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.TimeSpan)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.Guid)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.Int64)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.Int32)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonMemberAttribute.Name">
+            <summary>
+            Gets name of the JSON object's member.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonMemberAttribute.DefaultValue">
+            <summary>
+            Gets the default value when deserialized JSON misses that field.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonMemberAttribute.SkipWhenNull">
+            <summary>
+            Gets or sets an indication that if value of this item is null, then it won't be serialized.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonMemberAttribute.SuppressThrowWhenMissing">
+            <summary>
+            Gets or sets an indication if an <see cref="T:CodeTitans.JSon.JSonMemberMissingException"/> should be thrown, when field or property is missing during deserialization.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonMemberAttribute.ReadAs">
+            <summary>
+            Gets or sets type that will override the field's / property's type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonMemberMissingException">
+            <summary>
+            Exception class thrown when 
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberMissingException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberMissingException.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberMissingException.#ctor(System.String,System.Type,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMemberMissingException.#ctor(System.String,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonMemberMissingException.ObjectType">
+            <summary>
+            Gets the type of the object that is being processed.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonMemberMissingException.MemberName">
+            <summary>
+            Gets the name of missing member.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonMutableObject">
+            <summary>
+            Factory creating JSON mutable objects.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMutableObject.CreateArray">
+            <summary>
+            Creates new instance of mutable JSON array object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMutableObject.CreateArray(CodeTitans.JSon.Objects.JSonArray)">
+            <summary>
+            Creates new instance of mutable JSON array object filled with given data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMutableObject.CreateDictionary">
+            <summary>
+            Creates new instance of mutable JSON dictionary object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonMutableObject.CreateDictionary(CodeTitans.JSon.Objects.JSonDictionary)">
+            <summary>
+            Creates new instance of mutable JSON dictionary object filled with cloned data from source dictionary.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonReader">
+            <summary>
+            Reader class capable of parsing texts and providing them as JSON objects (or arrays of objects).
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReader.NullString">
+            <summary>
+            Value of JSON 'null' keyword string.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReader.TrueString">
+            <summary>
+            Value of JSON 'true' keyword string.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReader.FalseString">
+            <summary>
+            Value of JSON 'false' keyword string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.#ctor(System.Boolean)">
+            <summary>
+            Init constructor.
+            Sets an indication if it is allowed to read multiple JSON objects from the same input source, if they are placed one after another.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.Reset(CodeTitans.Helpers.IStringReader,CodeTitans.JSon.ReaderHelpers.IObjectFactory)">
+            <summary>
+            Returns reader to the original state.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadNextToken">
+            <summary>
+            Reads next token from the input source.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadNextToken(System.Boolean)">
+            <summary>
+            Reads next token from the input source with a possibility to treat already known character as the one read.
+            Option required mostly for JSON elements that don't have a closing tokens (i.e.: ']' for arrays) and used for number and keywords.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.Read">
+            <summary>
+            Converts an input string into a dictionary, array, string or number, depending on the JSON string structure.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.AddValue(System.Collections.Generic.ICollection{System.Object},System.Object,System.Int32,CodeTitans.JSon.JSonReaderTokenInfo)">
+            <summary>
+            Adds new element to an array.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadArray">
+            <summary>
+            Read an array from input stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.AddValue(System.Collections.Generic.IDictionary{System.String,System.Object},System.String@,System.Object,System.Boolean@,System.Boolean@,CodeTitans.JSon.JSonReaderTokenInfo)">
+            <summary>
+            Adds value to the dictionary.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadObject">
+            <summary>
+            Reads a dictonary from an input stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadKeyword">
+            <summary>
+            Reads a keyword from the input stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadString">
+            <summary>
+            Reads the string from input stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadNumber">
+            <summary>
+            Read number from an input stream.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.Read(System.IO.TextReader)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.Read(System.String)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.Read(System.IO.TextReader,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.Read(System.String,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of .NET arrays, dictionaries, strings and decimals.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonObject(System.IO.TextReader)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing IJSonReadable interface as those objects exposes
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonObject(System.String)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing IJSonReadable interface as those objects exposes
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonObject(System.IO.TextReader,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonObject(System.String,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonMutableObject(System.IO.TextReader)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonMutableObject(System.String)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonMutableObject(System.IO.TextReader,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReader.ReadAsJSonMutableObject(System.String,CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Converts a JSON string from given input into a tree of JSON-specific objects.
+            It then allows easier deserialization for objects implementing <see cref="T:CodeTitans.JSon.IJSonMutableObject"/> interface as those objects expose
+            more functionality then the standard .NET ones.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonReaderException">
+            <summary>
+            Exception thrown by <see cref="T:CodeTitans.JSon.JSonReader"/> class.
+            It indicates the token, that caused it and place inside the input string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReaderException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReaderException.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReaderException.#ctor(System.String,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReaderException.#ctor(System.String,System.String,System.Int32,System.Int32,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReaderException.#ctor(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReaderException.#ctor(System.String,CodeTitans.JSon.JSonReaderTokenInfo)">
+            <summary>
+            Internal init constuctor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonReaderException.InvalidToken">
+            <summary>
+            Token caused the exception to be thrown.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonReaderException.Line">
+            <summary>
+            Line in input source, where invalid token was spot.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonReaderException.Offset">
+            <summary>
+            Char offset inside the line of source code, where invalid token was spot.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonReaderNumberFormat">
+            <summary>
+            Enumeration defining, what data type should be used, to hold information about numbers.
+            This can have an mostly on rounding and some impact on memory footprint.
+            However, when a given format is forced, and the value number can't be parsed to fit into that format,
+            the whole JSON parsing will faild with an exception (i.e. forcing AsInt32 and receiving decimal value).
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReaderNumberFormat.Default">
+            <summary>
+            Default behaviour. If number can be stored as Int64 or UInt64, this type is used, otherwise Double.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReaderNumberFormat.AsInt32">
+            <summary>
+            Force all numeric values parsed to be an Int32.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReaderNumberFormat.AsInt64">
+            <summary>
+            Force all numeric values parsed to be an Int64.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReaderNumberFormat.AsDouble">
+            <summary>
+            Force all numeric values to be Double.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonReaderNumberFormat.AsDecimal">
+            <summary>
+            Force all numeric values to be Decimal.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonReaderTokenInfo.#ctor(System.String,CodeTitans.JSon.JSonReaderTokenType,System.Int32,System.Int32)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonReaderTokenType">
+            <summary>
+            Enumeration describing possible JSON tokens.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonSerializableAttribute">
+            <summary>
+            Attribute marking class or struct that support automatic serialization into and deserialization from JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonSerializableAttribute.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonSerializableAttribute.Flags">
+            <summary>
+            Gets binding flags used, when accessing fields and properties.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonSerializableAttribute.AllowAllFields">
+            <summary>
+            Gets or sets an indication if all fields should be used when serializing / deserializing, even if not marked with <see cref="T:CodeTitans.JSon.JSonMemberAttribute"/>.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonSerializableAttribute.AllowAllProperties">
+            <summary>
+            Gets or sets an indication if all properties should be used when serializing / deserializing, even if not marked with <see cref="T:CodeTitans.JSon.JSonMemberAttribute"/>.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonSerializableAttribute.IgnoreStatic">
+            <summary>
+            Gets or sets an indication if static fields should be ignored when performing serialization / deserialization.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonSerializableAttribute.SuppressThrowWhenMissing">
+            <summary>
+            Gets or sets an indication if an <see cref="T:CodeTitans.JSon.JSonMemberMissingException"/> should be thrown, when field or property is missing during deserialization.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonWriter">
+            <summary>
+            Class that allows to construct the JSON objects and writes them into given <see cref="T:System.IO.TextWriter"/> output.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.#ctor(System.IO.TextWriter)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.#ctor(System.IO.TextWriter,System.Boolean)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.#ctor(System.Text.StringBuilder)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.#ctor(System.Text.StringBuilder,System.Boolean)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.#ctor(System.Boolean)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.ToString">
+            <summary>
+            Get the JSON string representation stored inside.
+            Before accessing it, use <seealso cref="P:CodeTitans.JSon.JSonWriter.IsValid"/> property to validate
+            if content has a JSON valid structure.
+            </summary>
+            <returns>String representing JSON object.</returns>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteObjectBegin">
+            <summary>
+            Writes an object start.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteObjectEnd">
+            <summary>
+            Writes an object end.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteObject">
+            <summary>
+            Writes automatically object begin/end statements, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteObject(System.String)">
+            <summary>
+            Writes automatically embedded object begin/end statements for parent object's member name, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteArrayBegin">
+            <summary>
+            Writes an array start.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteArrayEnd">
+            <summary>
+            Writes an array end.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteArray">
+            <summary>
+            Writes automatically array begin/end statements, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteArray(System.String)">
+            <summary>
+            Writes automatically embedded array begin/end statements for parent object's member name, if call to this method is enclosed in 'using' statement.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.DBNull)">
+            <summary>
+            Writes a 'null' text as a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.String)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            If 'null' value is passed it will emit the JSON 'null' for given member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.Int32)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.UInt32)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.Int64)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.UInt64)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.Single)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.Double)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.Decimal)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.DateTime)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.DateTime,CodeTitans.JSon.JSonWriterDateFormat)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.TimeSpan)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.Boolean)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String,System.Guid)">
+            <summary>
+            Writes a member with a value.
+            It requires to be put inside an object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMemberNull(System.String)">
+            <summary>
+            Writes 'null' JSON value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteMember(System.String)">
+            <summary>
+            Writes a member only to an object.
+            It requires to be called before writing an object (or array) inside current object.
+            Writing values after call to this function is also allowed, however it is not recommented
+            due to number of checks performed. The better performance can be achieved
+            if other overloaded functions are used.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.DBNull)">
+            <summary>
+            Writes a 'null' value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.String)">
+            <summary>
+            Writes string value.
+            It can be used only as an array element or value for object member.
+            If 'null' value is passed it will emit the JSON 'null' for given member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.Int32)">
+            <summary>
+            Writes integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.UInt32)">
+            <summary>
+            Writes unsigned integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.Int64)">
+            <summary>
+            Writes integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.UInt64)">
+            <summary>
+            Writes unsigned long integer value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.Single)">
+            <summary>
+            Writes decimal value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.Double)">
+            <summary>
+            Writes decimal value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.Decimal)">
+            <summary>
+            Writes decimal value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.DateTime)">
+            <summary>
+            Writes DateTime value.
+            It can be used only as an array element or value for object member.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.DateTime,CodeTitans.JSon.JSonWriterDateFormat)">
+            <summary>
+            Writes DateTime value.
+            It can be used only as an array element or value for object member.
+            Before writing, the date is converted into universal time representation and written as string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.TimeSpan)">
+            <summary>
+            Writes TimeSpan value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.Boolean)">
+            <summary>
+            Writes Boolean value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValue(System.Guid)">
+            <summary>
+            Writes Guid value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValueNull">
+            <summary>
+            Writes 'null' value.
+            It can be used only as an array element or value for object member.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.WriteValueDynamic(System.Object)">
+            <summary>
+            Writes a value based on dynamic type checking.
+            It can be then a string, number, embedded dictionary or array.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.ToString(System.DateTime)">
+            <summary>
+            Converts DateTime to String.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.ToString(System.DateTime,CodeTitans.JSon.JSonWriterDateFormat)">
+            <summary>
+            Converts DateTime to String.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.ToQuoteValue(CodeTitans.JSon.JSonWriterDateFormat)">
+            <summary>
+            Gets an indication, if given data-time format requires to be serialized as number or quoted string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.ToString(System.TimeSpan)">
+            <summary>
+            Converts TimeSpan to String.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.ToString(System.Boolean)">
+            <summary>
+            Converts Boolean to String.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.ToString(System.Guid)">
+            <summary>
+            Converts Guid to String.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.Write(System.Collections.IEnumerable)">
+            <summary>
+            Writes enumerable collection as a JSON array.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.Write(System.Collections.IDictionary)">
+            <summary>
+            Writes a dictionary as a JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.Write(CodeTitans.JSon.IJSonWritable)">
+            <summary>
+            Writes a serializable object as JSON string.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.Write(System.Object)">
+            <summary>
+            Writes whole object represented as dictionary or enumerable collection.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.Finalize">
+            <summary>
+            Finalizer.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.Close">
+            <summary>
+            Closes the output and releases internal resources.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriter.Dispose">
+            <summary>
+            Releases managed and native resources.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonWriter.Indent">
+            <summary>
+            Gets or sets the indication, if generated content should be indented.
+            The setting take effect from the next writing, so the previously
+            written elements are no affected.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonWriter.CompactEnumerables">
+            <summary>
+            Gets or sets the indication, if generated enumerables (JSON arrays and JSON dictionaries)
+            should have a whitespace after a comma (,) or after semicolon (:).
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonWriter.IsValid">
+            <summary>
+            Checks if given instance of JSON writer contains a valid content.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonWriterDateFormat">
+            <summary>
+            Enumeration defining possible DateTime formats when serializing.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterDateFormat.Default">
+            <summary>
+            Serialize date in universal date-time pattern.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterDateFormat.JavaScript">
+            <summary>
+            Serialize in JavaScript pattern ("/Date()/").
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterDateFormat.UnixEpochSeconds">
+            <summary>
+            Serialize date as a number of seconds since 1970-01-01.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterDateFormat.UnixEpochMilliseconds">
+            <summary>
+            Serialize date as a number of miliseconds since 1970-01-01.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterDateFormat.Ticks">
+            <summary>
+            Serizalize date as a number of ticks.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonWriterException">
+            <summary>
+            Exception thrown when writing data into a JSON string.
+            It indicates the state problems during last operation, i.e.: inconsistent calls like open object with a try to close as an array.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriterException.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriterException.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriterException.#ctor(System.String,System.Exception)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriterException.#ctor(System.String,CodeTitans.JSon.JSonWriterTokenType,CodeTitans.JSon.JSonWriterTokenType)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriterException.#ctor(CodeTitans.JSon.JSonWriterTokenType,CodeTitans.JSon.JSonWriterTokenType)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.JSonWriterException.#ctor(CodeTitans.JSon.JSonWriterTokenType,CodeTitans.JSon.JSonWriterTokenType,System.Boolean)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonWriterException.ExpectedToken">
+            <summary>
+            Expected token during writing.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.JSonWriterException.SpotToken">
+            <summary>
+            Token spot at current writing operation.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonWriterTokenInfo">
+            <summary>
+            Internal class used by <see cref="T:CodeTitans.JSon.JSonWriter"/> to keep the status of current writing progress.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.JSonWriterTokenType">
+            <summary>
+            Enumeration describing JSON serialization tokens.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterTokenType.Nothing">
+            <summary>
+            No token.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterTokenType.Object">
+            <summary>
+            Token is a JSON object.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterTokenType.Array">
+            <summary>
+            Token is a JSON array.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.JSonWriterTokenType.MemberValue">
+            <summary>
+            Token is a JSON object member.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.Objects.JSonArray">
+            <summary>
+            Internal wrapper class that describes array of IJSonObjects and provides <see cref="T:CodeTitans.JSon.IJSonObject"/> access interface.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonArray.#ctor(System.Collections.Generic.ICollection{System.Object})">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonArray.#ctor(System.Boolean)">
+            <summary>
+            Default constructor for inheriting classes.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonArray.#ctor(System.Collections.Generic.ICollection{System.Object},System.Boolean)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonArray.#ctor(System.Collections.Generic.ICollection{CodeTitans.JSon.IJSonObject})">
+            <summary>
+            Private constructor for cloning only.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonArray.ToDateTimeValue(CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Gets the DateTime value for given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonArray.CodeTitans#JSon#IJSonObject#ToValue(System.Type)">
+            <summary>
+            Gets the value of given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonArray.CodeTitans#JSon#IJSonObject#ToObjectValue``1">
+            <summary>
+            Get the value of given JSON object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonArray.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.Objects.JSonBooleanObject">
+            <summary>
+            Internal wrapper class that describes JSON boolean value.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.Objects.JSonDecimalObject">
+            <summary>
+            Internal wrapper class that describes numeric type and provides <see cref="T:CodeTitans.JSon.IJSonObject"/> access interface.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.Objects.JSonDecimalObject.EpsilonDouble">
+            <summary>
+            Gest the comparison epsilon value.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.Objects.JSonDecimalObject.EpsilonSingle">
+            <summary>
+            Gets the comparison epsilon value.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.Objects.JSonDecimalObject.EpsilonDecimal">
+            <summary>
+            Gets the comparison epsilon value.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalObject.ToDateTimeValue(CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Gets the DateTime value for given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalObject.CodeTitans#JSon#IJSonObject#ToValue(System.Type)">
+            <summary>
+            Gets the value of given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalObject.CodeTitans#JSon#IJSonObject#ToObjectValue``1">
+            <summary>
+            Get the value of given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonBooleanObject.#ctor(System.Boolean)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonBooleanObject.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalDecimalObject.#ctor(System.Decimal)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalDecimalObject.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalDoubleObject.#ctor(System.Double)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalDoubleObject.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalInt32Object.#ctor(System.Int32)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalInt32Object.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalInt64Object.#ctor(System.Int64)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalInt64Object.#ctor(System.UInt64)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalInt64Object.#ctor(System.Int64,System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalInt64Object.#ctor(System.DateTime,CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalInt64Object.#ctor(System.TimeSpan)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalInt64Object.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalInt64Object.StringRepresentation">
+            <summary>
+            Gets or sets the string representation of this object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalSingleObject.#ctor(System.Single)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalSingleObject.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalUInt32Object.#ctor(System.UInt32)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalUInt32Object.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDecimalUInt64Object.#ctor(System.UInt64)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDecimalUInt64Object.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.Objects.JSonDictionary">
+            <summary>
+            Internal wrapper class that describes JSON object and provides <see cref="T:CodeTitans.JSon.IJSonObject"/> access interface.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDictionary.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDictionary.#ctor(System.Boolean)">
+            <summary>
+            Default constructor for inheriting classes.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDictionary.#ctor(System.Collections.Generic.Dictionary{System.String,CodeTitans.JSon.IJSonObject})">
+            <summary>
+            Private constructor for cloning only.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDictionary.ToDateTimeValue(CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Gets the DateTime value for given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDictionary.CodeTitans#JSon#IJSonObject#ToValue(System.Type)">
+            <summary>
+            Gets the value of given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonDictionary.CodeTitans#JSon#IJSonObject#ToObjectValue``1">
+            <summary>
+            Get the value of given JSON object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonDictionary.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.Objects.JSonObjectConverter">
+            <summary>
+            Class that converts IJSonObject to given type.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.Objects.JSonObjectConverter.IndentEnabled">
+            <summary>
+            Format value for indented output.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.Objects.JSonObjectConverter.IndentDisabled">
+            <summary>
+            Format value for disabled indented output.
+            </summary>
+        </member>
+        <member name="F:CodeTitans.JSon.Objects.JSonObjectConverter.CompactEnumerables">
+            <summary>
+            Format value for disabled indented output and compacted enumerables.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonObjectConverter.ToObject(CodeTitans.JSon.IJSonObject,System.Type)">
+            <summary>
+            Gets the object value from given <see cref="T:CodeTitans.JSon.IJSonObject"/>.
+            It is capable of converting most of the FCL types and also all custom classes/structures marked with JSonSerializable attribute.
+            It can also detect if a collection of objects should be returned.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonObjectConverter.ToObject``1(CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Gets the object value from given IJSonObject.
+            It is capable of converting most of the FCL types and also all custom classes/structures marked with JSonSerializable attribute.
+            It can also detect if a collection of objects should be returned.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.Objects.JSonStringObject">
+            <summary>
+            Internal wrapper class that describes string and provides <see cref="T:CodeTitans.JSon.IJSonObject"/> access interface.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonStringObject.#ctor(System.String)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonStringObject.#ctor(System.Guid)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonStringObject.ToDateTimeValue(CodeTitans.JSon.JSonDateTimeKind)">
+            <summary>
+            Gets the DateTime value for given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonStringObject.CodeTitans#JSon#IJSonObject#ToValue(System.Type)">
+            <summary>
+            Gets the value of given JSON object.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.Objects.JSonStringObject.CodeTitans#JSon#IJSonObject#ToObjectValue``1">
+            <summary>
+            Get the value of given JSON object.
+            </summary>
+        </member>
+        <member name="P:CodeTitans.JSon.Objects.JSonStringObject.Data">
+            <summary>
+            Gets or sets the value of internal data.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.FclObjectDecimalFactory">
+            <summary>
+            Object factory class providing numbers as Decimal type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.FclObjectFactory">
+            <summary>
+            Class that wraps operation on creating default .NET types based on read data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.FclObjectFactory.Create(CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Creates a proper FCL factory for given numer formatting parsing.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.FclObjectDoubleFactory">
+            <summary>
+            Object factory class providing numbers as Double type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.FclObjectInt32Factory">
+            <summary>
+            Object factory class providing numbers as Int32 type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.FclObjectInt64Factory">
+            <summary>
+            Object factory class providing numbers as Int64 type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonMutableObjectDecimalFactory">
+            <summary>
+            Object factory class providing numbers as Decimal type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.JSonMutableObjectFactory">
+            <summary>
+            Class that wraps creation of JSON-specific implementations based on read data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.JSonMutableObjectFactory.Create(CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Creates a proper FCL factory for given numer formatting parsing.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonMutableObjectDoubleFactory">
+            <summary>
+            Object factory class providing numbers as Double type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonMutableObjectInt32Factory">
+            <summary>
+            Object factory class providing numbers as Int32 type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonMutableObjectInt64Factory">
+            <summary>
+            Object factory class providing numbers as Int64 type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonObjectDecimalFactory">
+            <summary>
+            Object factory class providing numbers as Decimal type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.JSonObjectFactory">
+            <summary>
+            Class that wraps creation of JSON-specific implementations based on read data.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.JSonObjectFactory.Create(CodeTitans.JSon.JSonReaderNumberFormat)">
+            <summary>
+            Creates a proper FCL factory for given numer formatting parsing.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonObjectDoubleFactory">
+            <summary>
+            Object factory class providing numbers as Double type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonObjectInt32Factory">
+            <summary>
+            Object factory class providing numbers as Int32 type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.Factories.JSonObjectInt64Factory">
+            <summary>
+            Object factory class providing numbers as Int64 type.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.ObjectFactoryHelper">
+            <summary>
+            Helper class for ObjectFactories.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.ObjectFactoryHelper.ParseNumber(CodeTitans.JSon.ReaderHelpers.IObjectFactory,System.String)">
+            <summary>
+            Tries to parse a string into a number.
+            First it tries to parse as Int64 or UInt64 and if the number 
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.ObjectFactoryHelper.ParseDecimal(CodeTitans.JSon.ReaderHelpers.IObjectFactory,System.String)">
+            <summary>
+            Parse string as 'Decimal' and return a factory specific number wrapper.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.ObjectFactoryHelper.ParseDouble(CodeTitans.JSon.ReaderHelpers.IObjectFactory,System.String)">
+            <summary>
+            Parse string as 'Double' and return a factory specific number wrapper.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.ObjectFactoryHelper.ParseInt64(CodeTitans.JSon.ReaderHelpers.IObjectFactory,System.String)">
+            <summary>
+            Parse string as 'Int64' and return a factory specific number wrapper.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.ObjectFactoryHelper.ParseInt32(CodeTitans.JSon.ReaderHelpers.IObjectFactory,System.String)">
+            <summary>
+            Parse string as 'Int32' and return a factory specific number wrapper.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.TokenData">
+            <summary>
+            Info class about token.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.TokenDataChar">
+            <summary>
+            Class describing single character tokens.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.TokenDataChar.#ctor(System.Char,CodeTitans.JSon.JSonReaderTokenType)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.ReaderHelpers.TokenDataString">
+            <summary>
+            Class describing string tokens.
+            </summary>
+        </member>
+        <member name="M:CodeTitans.JSon.ReaderHelpers.TokenDataString.#ctor(System.String,CodeTitans.JSon.JSonReaderTokenType,System.Object,CodeTitans.JSon.IJSonObject)">
+            <summary>
+            Init constructor.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.WriterHelpers.ArrayWriter">
+            <summary>
+            Helper class to write array begin/end statements.
+            </summary>
+        </member>
+        <member name="T:CodeTitans.JSon.WriterHelpers.ObjectWriter">
+            <summary>
+            Helper class to write object begin/end statements.
+            </summary>
+        </member>
+    </members>
+</doc>

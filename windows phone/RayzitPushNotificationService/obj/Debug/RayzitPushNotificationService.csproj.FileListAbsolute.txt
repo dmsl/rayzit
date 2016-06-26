@@ -1,0 +1,9 @@
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\RayzitPushNotificationService.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\RayzitPushNotificationService.pdb
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\CodeTitans.Bayeux.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\CodeTitans.JSon.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\CodeTitans.Bayeux.xml
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\CodeTitans.JSon.xml
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\obj\Debug\RayzitPushNotificationService.csprojResolveAssemblyReference.cache
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\obj\Debug\RayzitPushNotificationService.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\obj\Debug\RayzitPushNotificationService.pdb

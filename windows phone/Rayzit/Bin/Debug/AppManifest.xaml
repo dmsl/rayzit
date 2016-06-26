@@ -1,0 +1,19 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Rayzit" EntryPointType="Rayzit.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Rayzit" Source="Rayzit.dll" />
+    <AssemblyPart x:Name="CodeTitans.JSon" Source="CodeTitans.JSon.dll" />
+    <AssemblyPart x:Name="Coding4Fun.Toolkit.Controls" Source="Coding4Fun.Toolkit.Controls.dll" />
+    <AssemblyPart x:Name="FlurryWP8SDK" Source="FlurryWP8SDK.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Interactions" Source="Microsoft.Expression.Interactions.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="RayzitBackgroundAgent" Source="RayzitBackgroundAgent.dll" />
+    <AssemblyPart x:Name="RayzitPushNotificationService" Source="RayzitPushNotificationService.dll" />
+    <AssemblyPart x:Name="RayzitServiceClient" Source="RayzitServiceClient.dll" />
+    <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />
+    <AssemblyPart x:Name="System.Net.Http.Extensions" Source="System.Net.Http.Extensions.dll" />
+    <AssemblyPart x:Name="System.Net.Http.Primitives" Source="System.Net.Http.Primitives.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="CodeTitans.Bayeux" Source="CodeTitans.Bayeux.dll" />
+  </Deployment.Parts>
+</Deployment>

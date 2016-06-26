@@ -1,0 +1,95 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Rayzit.Pages.Attachments.Attachments"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    toolkit:TiltEffect.IsTiltEnabled="True"
+    shell:SystemTray.BackgroundColor="#EC3E23"
+    shell:SystemTray.ForegroundColor="WhiteSmoke">
+
+    <!--Transitions-->
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#FFFDFDFD">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Background="#EC3E23" x:Name="PageTitle">
+            <TextBlock Text="ATTACHMENTS" Style="{StaticResource PhoneTextNormalStyle}" Foreground="White" FontWeight="Bold"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,10,12,0">
+
+            <toolkit:LongListMultiSelector x:Name="AttachmentsGridSelector"
+        		ItemsSource="{Binding Attachments}" Margin="-5,0,0,0"
+        		IsGroupingEnabled="False"
+        		GridCellSize="210,180"
+        		LayoutMode="Grid"
+        		HideEmptyGroups="True">
+                <toolkit:LongListMultiSelector.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="1" Tap="OnPictureItemTap">
+                            <toolkit:ContextMenuService.ContextMenu>
+                                <toolkit:ContextMenu Visibility="{Binding Type, Converter={StaticResource AttachmentSaveConverter}}" Unloaded="ContextMenu_Unloaded" IsZoomEnabled="False">
+                                    <toolkit:MenuItem Header="save to library" Click="SaveAttachment"/>
+                                </toolkit:ContextMenu>
+                            </toolkit:ContextMenuService.ContextMenu>
+
+                            <Image Source="{Binding ThumbImage}" Stretch="UniformToFill"/>
+                            <Image Source="{Binding ThumbType}" Height="25" Width="25" HorizontalAlignment="Left" VerticalAlignment="Bottom" Stretch="UniformToFill"/>
+                        </Grid>
+                    </DataTemplate>
+                </toolkit:LongListMultiSelector.ItemTemplate>
+            </toolkit:LongListMultiSelector>
+
+        </Grid>
+
+        <Grid x:Name="ZoomGrid" Grid.Row="1" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">
+            <Image x:Name="ZoomImage" CacheMode="BitmapCache" ManipulationDelta="ZoomGrid_OnManipulationDelta" Source="{Binding ThumbImage}" Stretch="Uniform" DoubleTap="ZoomImage_OnDoubleTap">
+                <toolkit:ContextMenuService.ContextMenu>
+                    <toolkit:ContextMenu Visibility="{Binding Type, Converter={StaticResource AttachmentSaveConverter}}" Unloaded="ContextMenu_Unloaded" IsZoomEnabled="False">
+                        <toolkit:MenuItem Header="save to library" Click="SaveAttachment"/>
+                    </toolkit:ContextMenu>
+                </toolkit:ContextMenuService.ContextMenu>
+                
+                <Image.RenderTransform>
+                    <CompositeTransform x:Name="ImageTransformation" ScaleX="1" ScaleY="1"/>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

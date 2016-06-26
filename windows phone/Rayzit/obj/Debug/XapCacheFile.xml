@@ -1,0 +1,99 @@
+﻿<xapCache source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Bin\Debug\Rayzit_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="24/6/2016 7:10:34 PM">
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\obj\Debug\Rayzit.dll" archivePath="Rayzit.dll" lastWriteTime="24/6/2016 7:10:31 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\add.png" archivePath="Assets\AppBar\add.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\all.png" archivePath="Assets\AppBar\all.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\appbar.calendar.png" archivePath="Assets\AppBar\appbar.calendar.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\appbar.interface.livefeed.png" archivePath="Assets\AppBar\appbar.interface.livefeed.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\appbar.interface.stopfeed.png" archivePath="Assets\AppBar\appbar.interface.stopfeed.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\appbar.list.reorder.down.png" archivePath="Assets\AppBar\appbar.list.reorder.down.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\appbar.list.reorder.up.png" archivePath="Assets\AppBar\appbar.list.reorder.up.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\ApplicationBar.Select.png" archivePath="Assets\AppBar\ApplicationBar.Select.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\attach.png" archivePath="Assets\AppBar\attach.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\back.png" archivePath="Assets\AppBar\back.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\cancel.png" archivePath="Assets\AppBar\cancel.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\check.png" archivePath="Assets\AppBar\check.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\distance.png" archivePath="Assets\AppBar\distance.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\favs.addto.png" archivePath="Assets\AppBar\favs.addto.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\favs.removefrom.png" archivePath="Assets\AppBar\favs.removefrom.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\feature.search.png" archivePath="Assets\AppBar\feature.search.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\next.png" archivePath="Assets\AppBar\next.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\refresh.png" archivePath="Assets\AppBar\refresh.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\save.png" archivePath="Assets\AppBar\save.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\send.png" archivePath="Assets\AppBar\send.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\settings.png" archivePath="Assets\AppBar\settings.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\AppBar\unread.png" archivePath="Assets\AppBar\unread.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\audio_indi.png" archivePath="Assets\Attachments\audio_indi.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\delete_attachment.png" archivePath="Assets\Attachments\delete_attachment.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\image_indi.png" archivePath="Assets\Attachments\image_indi.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_1.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_1.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_10.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_10.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_2.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_2.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_3.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_3.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_4.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_4.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_5.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_5.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_6.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_6.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_7.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_7.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_8.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_8.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\Microphone Levels\mic_level_9.png" archivePath="Assets\Attachments\Microphone Levels\mic_level_9.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\microphone.png" archivePath="Assets\Attachments\microphone.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\play.png" archivePath="Assets\Attachments\play.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\record.png" archivePath="Assets\Attachments\record.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\speaker.png" archivePath="Assets\Attachments\speaker.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\stop.png" archivePath="Assets\Attachments\stop.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\video.png" archivePath="Assets\Attachments\video.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\video_indi.png" archivePath="Assets\Attachments\video_indi.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Attachments\video_white.png" archivePath="Assets\Attachments\video_white.png" lastWriteTime="24/6/2016 7:08:48 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Images\dmsl_logo.png" archivePath="Assets\Images\dmsl_logo.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Images\rayzit_logo_icon.png" archivePath="Assets\Images\rayzit_logo_icon.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Images\ucy_logo.png" archivePath="Assets\Images\ucy_logo.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\IntroVideo\intro.mp4" archivePath="Assets\IntroVideo\intro.mp4" lastWriteTime="24/6/2016 7:08:51 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\arrow_left.png" archivePath="Assets\list_icons\arrow_left.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\arrow_right.png" archivePath="Assets\list_icons\arrow_right.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\attach_ico.png" archivePath="Assets\list_icons\attach_ico.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\distance_limitation.png" archivePath="Assets\list_icons\distance_limitation.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\followersIcon.png" archivePath="Assets\list_icons\followersIcon.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\powerDownIco.png" archivePath="Assets\list_icons\powerDownIco.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\powerUpIco.png" archivePath="Assets\list_icons\powerUpIco.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\reportIco.png" archivePath="Assets\list_icons\reportIco.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\rerayz_icon.png" archivePath="Assets\list_icons\rerayz_icon.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\share_ico.png" archivePath="Assets\list_icons\share_ico.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\list_icons\unread_Bubble.png" archivePath="Assets\list_icons\unread_Bubble.png" lastWriteTime="24/6/2016 7:08:50 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Assets\Toast\toast_ico.png" archivePath="Assets\Toast\toast_ico.png" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\libs\FlurryWP8SDK.dll" archivePath="libs\FlurryWP8SDK.dll" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Pages\Tutorial\image\appBar.png" archivePath="Pages\Tutorial\image\appBar.png" lastWriteTime="24/6/2016 7:09:02 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Resources\HelperClasses\SoundEffects\audio\MessageFailed.mp3" archivePath="Resources\HelperClasses\SoundEffects\audio\MessageFailed.mp3" lastWriteTime="24/6/2016 7:09:10 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Resources\HelperClasses\SoundEffects\audio\MessageSent.mp3" archivePath="Resources\HelperClasses\SoundEffects\audio\MessageSent.mp3" lastWriteTime="24/6/2016 7:09:11 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\small_tile.png" archivePath="small_tile.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\SplashScreenImage.screen-720p.jpg" archivePath="SplashScreenImage.screen-720p.jpg" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\SplashScreenImage.screen-WVGA.jpg" archivePath="SplashScreenImage.screen-WVGA.jpg" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\SplashScreenImage.screen-WXGA.jpg" archivePath="SplashScreenImage.screen-WXGA.jpg" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\tile_wide.png" archivePath="tile_wide.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="24/6/2016 7:09:11 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="24/6/2016 7:09:10 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="24/6/2016 7:09:10 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="24/6/2016 7:09:11 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="24/6/2016 7:09:11 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="24/6/2016 7:10:33 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\codetitans-json.1.8.1.0\lib\wp8\CodeTitans.JSon.dll" archivePath="CodeTitans.JSon.dll" lastWriteTime="24/6/2016 7:08:37 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll" archivePath="Coding4Fun.Toolkit.Controls.dll" lastWriteTime="24/6/2016 7:08:38 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\libs\FlurryWP8SDK.dll" archivePath="FlurryWP8SDK.dll" lastWriteTime="24/6/2016 7:08:49 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="25/9/2012 1:41:02 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="1/1/2013 5:57:00 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="24/6/2016 7:08:44 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\RayzitBackgroundAgent.dll" archivePath="RayzitBackgroundAgent.dll" lastWriteTime="24/6/2016 7:10:29 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\RayzitPushNotificationService.dll" archivePath="RayzitPushNotificationService.dll" lastWriteTime="24/6/2016 7:10:28 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitServiceClient\Bin\Debug\RayzitServiceClient.dll" archivePath="RayzitServiceClient.dll" lastWriteTime="24/6/2016 7:10:28 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.dll" archivePath="System.Net.Http.dll" lastWriteTime="24/6/2016 7:08:43 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll" archivePath="System.Net.Http.Extensions.dll" lastWriteTime="24/6/2016 7:08:42 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll" archivePath="System.Net.Http.Primitives.dll" lastWriteTime="24/6/2016 7:08:42 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Windows Phone\v8.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="25/9/2012 1:41:02 AM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\CodeTitans.Bayeux.dll" archivePath="CodeTitans.Bayeux.dll" lastWriteTime="24/6/2016 7:08:36 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\codetitans-json.1.8.1.0\lib\wp8\CodeTitans.JSon.xml" archivePath="CodeTitans.JSon.xml" lastWriteTime="24/6/2016 7:08:37 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.xml" archivePath="System.Net.Http.xml" lastWriteTime="24/6/2016 7:08:43 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.Extensions.xml" archivePath="System.Net.Http.Extensions.xml" lastWriteTime="24/6/2016 7:08:42 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.Primitives.xml" archivePath="System.Net.Http.Primitives.xml" lastWriteTime="24/6/2016 7:08:43 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitPushNotificationService\Bin\Debug\CodeTitans.Bayeux.xml" archivePath="CodeTitans.Bayeux.xml" lastWriteTime="24/6/2016 7:08:36 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\appicon.png" archivePath="appicon.png" lastWriteTime="24/6/2016 7:08:46 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\medium_tile.png" archivePath="medium_tile.png" lastWriteTime="24/6/2016 7:08:47 PM" />
+  <file source="C:\Users\Costantinos\Source\Workspaces\Rayzit\Rayzit\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="24/6/2016 7:10:33 PM" />
+</xapCache>

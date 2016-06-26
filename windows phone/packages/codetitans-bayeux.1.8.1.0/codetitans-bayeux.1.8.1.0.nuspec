@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>codetitans-bayeux</id>
+    <version>1.8.1.0</version>
+    <title>Bayeux@CodeTitans Package</title>
+    <authors>Paweł Hofman</authors>
+    <owners>Paweł Hofman</owners>
+    <licenseUrl>http://codetitans.codeplex.com/license</licenseUrl>
+    <projectUrl>http://codetitans.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple Bayeux protocol implementation for variety of .NET platforms.</description>
+    <releaseNotes>Changes in this release:
+ * Extended support for Windows 8 Store and Windows Phone 8
+ * Initial release on NuGet</releaseNotes>
+    <copyright>Copyright © 2010-2013 Paweł Hofman, CodeTitans</copyright>
+    <language />
+    <tags>bayeux codetitans "Windows Phone" phone wp7 wp8 net20 net30 net35 net40 silverlight sl30 sl40 sl50 cometd</tags>
+    <dependencies>
+      <dependency id="codetitans-json" version="1.8.1.0" />
+    </dependencies>
+    <references>
+      <reference file="CodeTitans.Bayeux.dll" />
+    </references>
+  </metadata>
+</package>

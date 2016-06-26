@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD4DA602-145D-44FC-A8C4-D3158B25371D}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rayzit</RootNamespace>
+    <AssemblyName>Rayzit</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Rayzit_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Rayzit.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Attachments\Attachments.xaml.cs">
+      <DependentUpon>Attachments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Attachments\AttachmentThumbnails.cs" />
+    <Compile Include="Pages\Attachments\AudioRecorder.xaml.cs">
+      <DependentUpon>AudioRecorder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Attachments\VideoRecorder.xaml.cs">
+      <DependentUpon>VideoRecorder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\NewRayz.xaml.cs">
+      <DependentUpon>NewRayz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RayzDetails.xaml.cs">
+      <DependentUpon>RayzDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RayzitSettings.cs" />
+    <Compile Include="Pages\Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Tutorial\RayzitTutorial.xaml.cs">
+      <DependentUpon>RayzitTutorial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Controls\PathControl.cs" />
+    <Compile Include="Resources\Controls\SplitPanel.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\AttachmentSaveConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\DeleteRazyReplyVisibility.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\HyperLinkConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\RayzDistanceConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\RDateConverterBG.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\SendingProgressBarConverter.cs" />
+    <Compile Include="Resources\HelperClasses\ErrorReporting\AsyncSynchronizationContext.cs" />
+    <Compile Include="Resources\HelperClasses\RichTextViewer.cs" />
+    <Compile Include="Resources\HelperClasses\RpncMngr\RpncMngr.cs" />
+    <Compile Include="Resources\HelperClasses\test.cs" />
+    <Compile Include="Resources\HelperClasses\WrapLongListSelector.cs" />
+    <Compile Include="Resources\UriMapper\CustomUriMapper.cs" />
+    <Compile Include="ViewModels\Geohash.cs" />
+    <Compile Include="ViewModels\NearByRayzComparer.cs" />
+    <Compile Include="ViewModels\RayzReplyComparer.cs" />
+    <Page Include="Pages\NewRayz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Application\MessageBoxMessagesRD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\HelperClasses\ChatUtil.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\AttachmentConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\PowerButtonsConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\MaxRayzReplyBubble.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\ReadUnreadRayzConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\ReplyBackgroundConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\ReportConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\ReportVisibilityConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\StarUnstarCM.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\UnreadLineConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Encryption\MD5.cs" />
+    <Compile Include="Resources\HelperClasses\FlipTile\FlipTileManager.cs" />
+    <Compile Include="Resources\HelperClasses\Location\LocationFinder.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\NewMessageConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\RDateConverter.cs" />
+    <Compile Include="Resources\HelperClasses\Converters\ReadUnreadConverter.cs" />
+    <Compile Include="Resources\HelperClasses\NetworkManager\NetworkChecker.cs" />
+    <Compile Include="Resources\HelperClasses\NetworkManager\NetworkCheckerErrorMessages.cs" />
+    <Compile Include="Resources\HelperClasses\PowerBar.cs" />
+    <Compile Include="Resources\HelperClasses\PullDetector.cs" />
+    <Compile Include="Resources\HelperClasses\PullDetectorM.cs" />
+    <Compile Include="Resources\HelperClasses\SoundEffects\SoundEffects.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\RayzComparer.cs" />
+    <Compile Include="ViewModels\RayzDataContext.cs" />
+    <Page Include="Resources\Theme\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Attachments\Attachments.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Attachments\AudioRecorder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Attachments\VideoRecorder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RayzDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Tutorial\RayzitTutorial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Application\PanoramaRD.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Application\LongListSelector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Application\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appicon.png" />
+    <Content Include="Assets\AppBar\add.png" />
+    <Content Include="Assets\AppBar\all.png" />
+    <Content Include="Assets\AppBar\appbar.calendar.png" />
+    <Content Include="Assets\AppBar\appbar.interface.livefeed.png" />
+    <Content Include="Assets\AppBar\appbar.interface.stopfeed.png" />
+    <Content Include="Assets\AppBar\appbar.list.reorder.down.png" />
+    <Content Include="Assets\AppBar\appbar.list.reorder.up.png" />
+    <Content Include="Assets\AppBar\ApplicationBar.Select.png" />
+    <Content Include="Assets\AppBar\attach.png" />
+    <Content Include="Assets\AppBar\back.png" />
+    <Content Include="Assets\AppBar\cancel.png" />
+    <Content Include="Assets\AppBar\check.png" />
+    <Content Include="Assets\AppBar\distance.png" />
+    <Content Include="Assets\AppBar\favs.addto.png" />
+    <Content Include="Assets\AppBar\favs.removefrom.png" />
+    <Content Include="Assets\AppBar\feature.search.png" />
+    <Content Include="Assets\AppBar\next.png" />
+    <Content Include="Assets\AppBar\refresh.png" />
+    <Content Include="Assets\AppBar\save.png" />
+    <Content Include="Assets\AppBar\send.png" />
+    <Content Include="Assets\AppBar\settings.png" />
+    <Content Include="Assets\AppBar\unread.png" />
+    <Content Include="Assets\Attachments\audio_indi.png" />
+    <Content Include="Assets\Attachments\delete_attachment.png" />
+    <Content Include="Assets\Attachments\image_indi.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_1.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_10.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_2.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_3.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_4.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_5.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_6.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_7.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_8.png" />
+    <Content Include="Assets\Attachments\Microphone Levels\mic_level_9.png" />
+    <Content Include="Assets\Attachments\microphone.png" />
+    <Content Include="Assets\Attachments\play.png" />
+    <Content Include="Assets\Attachments\record.png" />
+    <Content Include="Assets\Attachments\speaker.png" />
+    <Content Include="Assets\Attachments\stop.png" />
+    <Content Include="Assets\Attachments\video.png" />
+    <Content Include="Assets\Attachments\video_indi.png" />
+    <Content Include="Assets\Attachments\video_white.png" />
+    <Content Include="Assets\Images\dmsl_logo.png" />
+    <Content Include="Assets\Images\rayzit_logo_icon.png" />
+    <Content Include="Assets\Images\ucy_logo.png" />
+    <Content Include="Assets\IntroVideo\intro.mp4" />
+    <Content Include="Assets\list_icons\arrow_left.png" />
+    <Content Include="Assets\list_icons\arrow_right.png" />
+    <Content Include="Assets\list_icons\attach_ico.png" />
+    <Content Include="Assets\list_icons\distance_limitation.png" />
+    <Content Include="Assets\list_icons\followersIcon.png" />
+    <Content Include="Assets\list_icons\powerDownIco.png" />
+    <Content Include="Assets\list_icons\powerUpIco.png" />
+    <Content Include="Assets\list_icons\reportIco.png" />
+    <Content Include="Assets\list_icons\rerayz_icon.png" />
+    <Content Include="Assets\list_icons\share_ico.png" />
+    <Content Include="Assets\list_icons\unread_Bubble.png" />
+    <Content Include="Assets\Toast\toast_ico.png" />
+    <Content Include="libs\FlurryWP8SDK.dll" />
+    <Content Include="medium_tile.png" />
+    <Content Include="Pages\Tutorial\image\appBar.png" />
+    <Content Include="Resources\HelperClasses\SoundEffects\audio\MessageFailed.mp3" />
+    <Content Include="Resources\HelperClasses\SoundEffects\audio\MessageSent.mp3" />
+    <Content Include="small_tile.png" />
+    <Content Include="SplashScreenImage.screen-720p.jpg" />
+    <Content Include="SplashScreenImage.screen-WVGA.jpg" />
+    <Content Include="SplashScreenImage.screen-WXGA.jpg" />
+    <Content Include="tile_wide.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CodeTitans.JSon">
+      <HintPath>..\packages\codetitans-json.1.8.1.0\lib\wp8\CodeTitans.JSon.dll</HintPath>
+    </Reference>
+    <Reference Include="Coding4Fun.Toolkit.Controls">
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.0.7\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="FlurryWP8SDK, Version=3.1.1.0, Culture=neutral, PublicKeyToken=d822942b4ec01210, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Interactions" />
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=8.0.1.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.15\lib\sl4-windowsphone71\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Interactivity" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RayzitBackgroundAgent\RayzitBackgroundAgent.csproj">
+      <Project>{E2077F33-211A-4D10-A37E-504DA4985F86}</Project>
+      <Name>RayzitBackgroundAgent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RayzitPushNotificationService\RayzitPushNotificationService.csproj">
+      <Project>{1043CBCB-A64A-4E1E-AF49-037947AEA6A9}</Project>
+      <Name>RayzitPushNotificationService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RayzitServiceClient\RayzitServiceClient.csproj">
+      <Project>{55CEF5F6-97EA-497B-AE8B-8DCDEB913831}</Project>
+      <Name>RayzitServiceClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SampleData\SampleDataSource\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.10\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

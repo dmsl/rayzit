@@ -1,0 +1,15 @@
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\RayzitBackgroundAgent.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\RayzitBackgroundAgent.pdb
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\CodeTitans.JSon.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\RayzitServiceClient.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\System.Net.Http.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\RayzitServiceClient.pdb
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\CodeTitans.JSon.xml
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\System.Net.Http.xml
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\obj\Debug\RayzitBackgroundAgent.csprojResolveAssemblyReference.cache
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\obj\Debug\RayzitBackgroundAgent.dll
+C:\Users\Costantinos\Source\Workspaces\Rayzit\RayzitBackgroundAgent\obj\Debug\RayzitBackgroundAgent.pdb

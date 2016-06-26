@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>codetitans-json</id>
+    <version>1.8.1.0</version>
+    <title>JSON@CodeTitans Package</title>
+    <authors>Paweł Hofman</authors>
+    <owners>Paweł Hofman</owners>
+    <licenseUrl>http://codetitans.codeplex.com/license</licenseUrl>
+    <projectUrl>http://codetitans.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Easy of use JSON library for .NET platforms. Provides reader, writer and ability to build mutable JSON data at runtime.</description>
+    <releaseNotes>Changes in this release:
+ * minor project updates to support NuGet builds
+ 
+v1.8.0:
+ * Extended support for Windows 8 Store and Windows Phone 8
+ * Updated locations for reported errors during parsing
+ * Extended number of supported DateTime formats, while parsing
+ * Other minor fixes</releaseNotes>
+    <copyright>Copyright © 2010-2013 Paweł Hofman, CodeTitans</copyright>
+    <language />
+    <tags>json codetitans "Windows Phone" phone wp7 wp8 net20 net30 net35 net40 silverlight sl30 sl40 sl50</tags>
+    <references>
+      <reference file="CodeTitans.JSon.dll" />
+    </references>
+  </metadata>
+</package>

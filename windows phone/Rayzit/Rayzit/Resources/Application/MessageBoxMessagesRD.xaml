@@ -1,0 +1,52 @@
+﻿<ResourceDictionary 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!-- General Error Title -->
+    <system:String x:Key="GeneralErrorTitle">Warning</system:String>
+    <system:String x:Key="UnexpectedErrorTitle">Oops...</system:String>
+
+    <system:String x:Key="VersionKeyErrorMessage">You are using an outdated version of this application. Please update to the latest release from the Windows Phone Marketplace.</system:String>
+    
+    <!-- Rayz Power -->
+    <system:String x:Key="RayzPowerTitle">Rayz Power</system:String>
+    <system:String x:Key="RayzPowerMessage">Your Rayz power will decrease every time you rayz or re-rayz a message and whenever you power up or down a Rayz reply. It gradually reloads. To reload faster, Rayz useful answers that will be powered up by others.</system:String>
+
+    <!-- Intro Video -->
+    <system:String x:Key="IntroVideoTitle">Rayzit Intro Video</system:String>
+    <system:String x:Key="IntroVideoMessage">Would you like to take a minute to see an intro video about Rayzit?</system:String>
+    
+    <!-- Not Enough Rayz Power Error -->
+    <system:String x:Key="RayzPowerNotEnoughMessage">Not enough Rayz power! Your Rayz power decreases every time you Rayz or Re-Rayz a question and whenever you power up or down a Rayz Reply. It gradually reloads. To reload faster, Rayz useful answers that will be powered up by others.</system:String>
+    
+    <!-- Internet Connection Error -->
+    <system:String x:Key="InternetConnectionTitle">Internet Connection Problem</system:String>
+    <system:String x:Key="InternetConnectionMessage">Internet connection not available.</system:String>
+
+    <!-- Message Not Send Yet Error -->
+    <system:String x:Key="MessageNotSendTitle">Warning</system:String>
+    <system:String x:Key="MessageNotSendMessage">Please send the message before trying to perform this action.</system:String>
+
+    <!-- Stop Live Feed Confirmation -->
+    <system:String x:Key="LiveFeedConfirmationTitle">Really stop live feed</system:String>
+    <system:String x:Key="LiveFeedConfirmationMessage">Do you really want to stop receiving live feed messages?</system:String>
+
+    <!-- Location Error -->
+    <system:String x:Key="LocationTitle">Location Services Disabled</system:String>
+    <system:String x:Key="LocationMessage">Rayzit uses your coarse location (i.e., within 100-300 meters) to propagate your messages and responses to geographically close-by users. Please turn on Location services in the device settings.</system:String>
+
+    <!-- Location Setting Error -->
+    <system:String x:Key="LocationSettingTitle">Location Setting Disabled</system:String>
+    <system:String x:Key="LocationSettingMessage">The location setting must be enabled to complete this action.</system:String>
+
+    <!-- Geolocation Data Not Available -->
+    <system:String x:Key="WaitingGeolocationTitle">Await for location coordinates!</system:String>
+    <system:String x:Key="WaitingGeolocationMessage">Please wait for valid location coordinates.</system:String>
+
+    <!-- Background Agents Errors - Microsoft specific -->
+    <system:String x:Key="BackgroundAgentDisabledMessage">Background agents for this application have been disabled by the user.</system:String>
+    <system:String x:Key="BackgroundAgentsExitedMessage">BNS Error: The maximum number of ScheduledActions of this type have already been added.</system:String>
+    <system:String x:Key="BackgroundAgentsExited2Message">The maximum number of ScheduledActions of this type have already been added.</system:String>
+
+</ResourceDictionary>
