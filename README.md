@@ -46,25 +46,25 @@ DEALINGS IN THE SOFTWARE.
 
 Short description of the contents included in this release.
 
-### Android
-The Source code for the Rayzit Android. Current Leader: Dimosthenis Stefanidis. 
-Try: https://play.google.com/store/apps/details?id=com.dmsl.rayzit
-
 ### Windows
-The Source code for the Rayzit Windows Client. Current Leader: Constantinos Costa. 
+The Source code for the native Rayzit Windows Client. Current Leader: Constantinos Costa. 
 Try: https://www.microsoft.com/en-us/store/apps/rayzit/9nblggh09tgh
 
 ### iOS
-The Source code for the Rayzit iOS Client. Current Leader: Chrysovalantis Anastasiou. 
+The Source code for the native Rayzit iOS Client. Current Leader: Chrysovalantis Anastasiou. 
 Try: https://itunes.apple.com/us/app/rayzit/
 
-### API
-The Source code for the Rayzit Web API Client. Current Leader: Constantinos Costa. 
-Try: https://api.rayzit.com/
+### Android
+The Source code for the native Rayzit Android (using Ionic/AngularJS). Current Leader: Dimosthenis Stefanidis. 
+Try: https://play.google.com/store/apps/details?id=com.dmsl.rayzit
 
 ### Web widget
-The Source code for the Rayzit web widget. Current Leader: Dimosthenis Stefanidis. 
+The Source code for the Rayzit web widget (using Ionic/AngularJS). Current Leader: Dimosthenis Stefanidis. 
 Try: http://rayzit.com/www/index.html#/tab/livefeed
+
+### API 
+The Source code for the Rayzit Web API Client (JSON). Current Leader: Constantinos Costa. 
+Try: https://api.rayzit.com/
 
 ### Spitfire
 The Source code for the Spitfire All k Nearest Neighbors Query Processing algorithm. Current Leader: Constantinos Costa. 
