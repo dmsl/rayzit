@@ -1,4 +1,4 @@
-# Rayzit / Spitfire
+# Spitfire 
 
 Spitfire is an open source, MIT licensed, distributed
 algorithm that provides a scalable and high-performance AkNN
