@@ -16,7 +16,7 @@ to be operational.
 ## Overview
 Spitfire deploys a fast load-balanced partitioning along with an efficient replication-set selection, to provide fast main-memory computations of the exact AkNN results in a batch-oriented manner. The pruning efficiency of the Spitfire algorithm plays a pivotal role in reducing communication and response time up to an order of magnitude, compared to three state-of-the-art distributed AkNN algorithms executed in distributed main-memory.
 
-Spitfire is based on a IEEE TKDE'16 journal paper and a respective IEEE ICDE'16 poster paper. Its source code can be downloaded at https://github.com/dmsl/rayzit/spitfire. The source code of the Rayzit service (iOS, Windows, Web, Android) can be downloaded at https://github.com/dmsl/rayzit.
+Spitfire is based on a IEEE TKDE'16 journal paper and a respective IEEE ICDE'16 poster paper. Its source code can be downloaded at https://github.com/dmsl/rayzit/tree/master/web. The source code of the Rayzit service (iOS, Windows, Web, Android) can be downloaded at https://github.com/dmsl/rayzit.
 
 Enjoy Spitfire!
 
