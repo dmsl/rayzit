@@ -66,6 +66,9 @@ Try: https://api.rayzit.com/
 The Source code for the Rayzit web widget. Current Leader: Dimosthenis Stefanidis. 
 Try: http://rayzit.com/www/index.html#/tab/livefeed
 
+### Spitfire
+The Source code for the Spitfire All k Nearest Neighbors Query Processing algorithm. Current Leader: Constantinos Costa. 
+Try: https://github.com/dmsl/rayzit/spitfire
 
 Project Leader: Demetris Zeinalipour
 
