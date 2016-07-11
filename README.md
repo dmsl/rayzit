@@ -1,5 +1,7 @@
 # Rayzit
 
+[![Join the chat at https://gitter.im/dmsl/rayzit](https://badges.gitter.im/dmsl/rayzit.svg)](https://gitter.im/dmsl/rayzit?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 An award-winning crowd messaging technology that delivers your questions, inquiries and ideas to the closest users around.
 
 ## Preface 
