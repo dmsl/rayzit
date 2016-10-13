@@ -70,7 +70,7 @@ Try: https://api.rayzit.com/
 
 ### Spitfire
 The Source code for the Spitfire All k Nearest Neighbors Query Processing algorithm. Current Leader: Constantinos Costa. 
-Try: https://github.com/dmsl/rayzit/spitfire
+Try: https://github.com/dmsl/rayzit/tree/master/spitfire
 
 Project Leader: Demetris Zeinalipour
 
