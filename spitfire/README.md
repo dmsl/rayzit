@@ -1,6 +1,6 @@
 # Spitfire 
 
-Spitfire is an open source, MIT licensed, distributed
+Spitfire is an open source, GPL licensed, distributed
 algorithm that provides a scalable and high-performance AkNN
 processing framework to our award-winning geo-social network
 named Rayzit.
