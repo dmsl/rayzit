@@ -13,6 +13,12 @@ Contact: info@rayzit.com
 
 It is recommended to watch the video tutorials of the Rayzit system on http://rayzit.com/, before proceeding with these instructions.
 
+In case you have any publications resulting from the Rayzit platform, please cite the following paper(s):
+
+- "Distributed In-Memory Processing of All k Nearest Neighbor Queries", Georgios Chatzimilioudis, Constantinos Costa, Demetrios Zeinalipour-Yazti, Wang-Chien Lee and Evaggelia Pitoura, IEEE Transactions on Knowledge and Data Engineering (TKDE'16), IEEE Computer Society, Vol. 28, Iss. 4, pp. 925-938, 2016. Download: http://www.cs.ucy.ac.cy/~dzeina/papers/tkde16-spitfire.pdf
+
+- "Rayzit: An Anonymous and Dynamic Crowd Messaging Architecture", Constantinos Costa, Chrysovalantis Anastasiou, Georgios Chatzimilioudis and Demetrios Zeinalipour-Yazti, Proceedings of the 3rd IEEE International Workshop on Mobile Data Management, Mining, and Computing on Social Networks, collocated with IEEE MDM '15 (Mobisocial '15), Vol. 2, pp. 98-103, Pittsburgh, PA, USA, 2015. Download: http://www.cs.ucy.ac.cy/~dzeina/papers/mobisocial15-rayzit.pdf
+
 We hope that you find our Rayzit useful for your research and innovation activities.  We would like to have your feedback, comments and remarks and of course any experiences and test results from your own experimental setups. Currently, we can offer only limited support and assistance on the code, due to lack of resources, but we will try to get back to you as soon as possible. Questions and feedback may be sent to info@rayzit.com
 
 Enjoy Rayzit!
