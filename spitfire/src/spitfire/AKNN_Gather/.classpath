@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/spymemcached-2.8.12-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/spymemcached-2.8.12-javadocs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/spymemcached-2.8.12.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/netty-3.5.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/httpcore-nio-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/httpcore-4.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/couchbase-client-1.1.4-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/couchbase-client-1.1.4-javadocs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/couchbase-client-1.1.4.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/couchbase-client-1.1.4-javadocs.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/Couchbase-Java-Client-1.1.4/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/google-gson-2.2.2/gson-2.2.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/google-gson-2.2.2/gson-2.2.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/AKNN_Centralized/google-gson-2.2.2/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Costantinos/Documents/MSCworkspace/pj.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://www.cs.rit.edu/~ark/pj/doc"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
