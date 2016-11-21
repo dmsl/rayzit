@@ -61,7 +61,7 @@ The Datsets used for the experimental evaluation.
 ### Automation
 The automation scripts used to launch the experiments
 
-Authors: Constantinos Costa and George Chatzimilioudis 
+Authors: Constantinos Costa, George Chatzimilioudis 
 (costa.c@cs.ucy.ac.cy; gchatzim@cs.ucy.ac.cy)
 
-
+Supervisor: Demetrios Zeinalipour-Yazti
